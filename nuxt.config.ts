@@ -7,5 +7,5 @@ export default defineNuxtConfig({
     },
   },
   extends: [],
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: ["nuxt-primevue", "@nuxtjs/tailwindcss"],
 });
