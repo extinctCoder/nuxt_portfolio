@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 import TabView from "primevue/tabview";
 import TabPanel from "primevue/tabpanel";
 </script>
@@ -46,7 +46,5 @@ import TabPanel from "primevue/tabpanel";
         </TabView>
       </div>
     </template>
-
-    <script setup></script>
   </div>
 </template>
