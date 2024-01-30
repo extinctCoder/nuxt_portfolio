@@ -15,8 +15,5 @@
     "vue": "^3.4.14",
     "vue-router": "^4.2.5"
   },
-  "dependencies": {
-    "@nuxt/ui": "^2.13.0",
-    "@nuxt/ui-pro": "^0.7.4"
-  }
+  "dependencies": {}
 }
