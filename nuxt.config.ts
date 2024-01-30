@@ -2,9 +2,9 @@
 export default defineNuxtConfig({
   devtools: {
     enabled: true,
-
     timeline: {
-      enabled: true
-    }
-  }
-})
+      enabled: true,
+    },
+  },
+  modules: ["@nuxtjs/tailwindcss"],
+});
