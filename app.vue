@@ -1,10 +1,8 @@
 <template>
   <div data-theme="light" class="h-screen flex flx-col">
-    <div class="min-h-full min-w-min bg-pink-400">
-      <SideNav />
-    </div>
+    <SideNav />
     <div class="min-h-full w-full overflow-auto bg-green-400">
-      <TestBed />
+      <div class="container mx-auto"><TestBed /></div>
     </div>
   </div>
 </template>
