@@ -28,6 +28,8 @@ const people = [
   "Therese Wunsch",
   "Benedict Kessler",
   "Katelyn Rohan",
+  "Sabbir Ahmed",
+  "Sabbir Shourov",
 ];
 const selectedPerson = ref(people[0]);
 const query = ref("");
