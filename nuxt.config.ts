@@ -7,9 +7,9 @@ export default defineNuxtConfig({
     },
   },
   extends: [],
-  modules: ["nuxt-primevue", "@nuxtjs/tailwindcss"],
-  primevue: {
-    /* Options */
-  },
-  css: ["primevue/resources/themes/aura-light-green/theme.css"],
+  modules: ["@nuxtjs/tailwindcss"],
+  // primevue: {
+  //   /* Options */
+  // },
+  // css: ["primevue/resources/themes/aura-light-green/theme.css"],
 });
