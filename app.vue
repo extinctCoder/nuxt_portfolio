@@ -1,7 +1,6 @@
 <template>
   <div data-theme="light" class="min-h-screen flex flx-col">
-    <div class="min-h-full bg-pink-400">
-      hjello
+    <div class="min-h-full min-w-min bg-pink-400">
       <SideNav />
     </div>
     <div class="min-h-full min-w-full overflow-auto bg-green-400">
