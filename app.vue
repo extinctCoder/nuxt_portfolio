@@ -1,5 +1,5 @@
 <template>
-  <div data-theme="light" class="min-h-screen flex flx-col">
+  <div data-theme="light" class="h-screen flex flx-col">
     <div class="min-h-full min-w-min bg-pink-400">
       <SideNav />
     </div>
