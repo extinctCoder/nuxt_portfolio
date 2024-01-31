@@ -1,5 +1,5 @@
 <template>
-  <div class="flex w-48 flex-row items-center">
+  <div class="flex min-w-48 flex-row items-center">
     <div className="avatar">
       <div className="w-24 rounded-xl">
         <img
