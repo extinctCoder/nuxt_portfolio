@@ -1,11 +1,9 @@
 <template>
   <div data-theme="light" class="h-screen flex flx-col">
     <SideNav />
-    <div class="flex flex-row">
-      <div class="bg-red-700">hi</div>
-      <div class="min-h-full w-full overflow-auto bg-green-400">
-        <div class="container mx-auto"><TestBed /></div>
-      </div>
+    <div class="min-h-full w-full overflow-auto bg-green-400">
+      <div class="">hi</div>
+      <div class="container mx-auto min-h-full bg-red-700">bye</div>
     </div>
   </div>
 </template>
