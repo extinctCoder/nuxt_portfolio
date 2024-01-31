@@ -17,4 +17,7 @@ export default {
     require("@tailwindcss/aspect-ratio"),
     require("@tailwindcss/container-queries"),
   ],
+  daisyui: {
+    themes: ["light", "dark", "dracula"],
+  },
 };
