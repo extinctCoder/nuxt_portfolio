@@ -1,3 +1,3 @@
 <template>
-  <TestBed />
+  <SideNav />
 </template>
