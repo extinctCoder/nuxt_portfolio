@@ -2,7 +2,7 @@
   <div data-theme="light" class="min-h-screen flex flx-col">
     <div class="min-h-full bg-pink-400">
       hjello
-      <!-- <SideNav /> -->
+      <SideNav />
     </div>
     <div class="min-h-full min-w-full overflow-auto bg-green-400">
       hjello Lorem ipsum dolor sit amet consectetur adipisicing elit. In cum
@@ -537,7 +537,6 @@
       Repellendus, iusto accusantium? Repudiandae natus nihil modi, accusamus
       ipsam consectetur temporibus possimus voluptatem dolores minus rerum
       fugiat officiis.
-      <!-- <SideNav /> -->
     </div>
   </div>
 </template>
