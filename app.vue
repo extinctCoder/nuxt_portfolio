@@ -3,7 +3,7 @@
     <SideNav />
     <div class="min-h-full w-full bg-green-400">
       <div class="">hi</div>
-      <div class="container mx-auto min-h-full bg-red-700 overflow-y-auto">
+      <div class="container mx-auto h-full bg-red-700 overflow-auto">
         <TestBed />
       </div>
     </div>
