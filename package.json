@@ -10,13 +10,12 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@headlessui/vue": "^1.7.17",
     "@nuxtjs/tailwindcss": "^6.11.2",
     "nuxt": "^3.9.3",
     "nuxt-primevue": "^0.2.2",
     "vue": "^3.4.14",
     "vue-router": "^4.2.5"
   },
-  "dependencies": {
-    "@headlessui/vue": "^1.7.17"
-  }
+  "dependencies": {}
 }
