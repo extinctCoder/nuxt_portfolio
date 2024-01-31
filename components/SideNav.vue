@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-red-500 flex flex-col items-center">
+  <div class="bg-red-500/20 flex flex-row items-center">
     <div className="avatar">
       <div className="w-24 rounded-xl">
         <img
