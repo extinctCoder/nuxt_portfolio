@@ -1,3 +1,3 @@
 <template>
-  <SideNav />
+  <div data-theme="light" class="min-h-full"><SideNav /></div>
 </template>
