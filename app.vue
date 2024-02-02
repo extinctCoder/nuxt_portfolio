@@ -1,26 +1,71 @@
 <template>
-  <fwb-sidebar>
-    <fwb-sidebar-item>
-      <template #icon>
-        <svg
-          class="h-5 w-5 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor"
-          viewBox="0 0 22 21"
-        >
-          <path
-            d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z"
-          />
-          <path
-            d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z"
-          />
-        </svg>
-      </template>
-      <template #default>Dashboard</template>
-    </fwb-sidebar-item>
-  </fwb-sidebar>
+  <fwb-accordion>
+    <fwb-accordion-panel>
+      <fwb-accordion-header>header</fwb-accordion-header>
+      <fwb-accordion-content>
+        <div>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Flowbite is an open-source library of interactive components built
+            on top of Tailwind CSS including buttons, dropdowns, modals,
+            navbars, and more.
+          </p>
+          <p class="text-gray-500 dark:text-gray-400">
+            Check out this guide to learn how to
+            <a
+              href="/docs/getting-started/introduction/"
+              class="text-blue-600 hover:underline dark:text-blue-500"
+              >get started</a
+            >
+            and start developing websites even faster with components on top of
+            Tailwind CSS.
+          </p>
+        </div>
+      </fwb-accordion-content>
+    </fwb-accordion-panel>
+    <fwb-accordion-panel>
+      <fwb-accordion-header>another header</fwb-accordion-header>
+      <fwb-accordion-content>
+        <div>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Flowbite is first conceptualized and designed using the Figma
+            software so everything you see in the library has a design
+            equivalent in our Figma file.
+          </p>
+          <p class="text-gray-500 dark:text-gray-400">
+            Check out the
+            <a
+              href="https://flowbite.com/figma/"
+              class="text-blue-600 hover:underline dark:text-blue-500"
+              >Figma design system</a
+            >
+            based on the utility classes from Tailwind CSS and components from
+            Flowbite.
+          </p>
+        </div>
+      </fwb-accordion-content>
+    </fwb-accordion-panel>
+    <fwb-accordion-panel>
+      <fwb-accordion-header>and one more header</fwb-accordion-header>
+      <fwb-accordion-content>
+        <div>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            Flowbite is first conceptualized and designed using the Figma
+            software so everything you see in the library has a design
+            equivalent in our Figma file.
+          </p>
+          <p class="text-gray-500 dark:text-gray-400">
+            Check out the
+            <a
+              href="https://flowbite.com/figma/"
+              class="text-blue-600 hover:underline dark:text-blue-500"
+              >Figma design system</a
+            >
+            based on the utility classes from Tailwind CSS and components from
+            Flowbite.
+          </p>
+        </div>
+      </fwb-accordion-content>
+    </fwb-accordion-panel>
+  </fwb-accordion>
 </template>
-<script lang="ts" setup>
-import { FwbSidebar, FwbSidebarItem } from "flowbite-vue";
-</script>
+<script lang="ts" setup></script>
