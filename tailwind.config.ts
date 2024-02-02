@@ -6,16 +6,18 @@ export default {
     "./plugins/**/*.{js,ts}",
     "./app.vue",
     "./error.vue",
+    "./node_modules/flowbite/**/*.{js,ts}",
   ],
   theme: {
     extend: {},
   },
   plugins: [
-    require("daisyui"),
+    // require("daisyui"),
     require("@tailwindcss/typography"),
     require("@tailwindcss/forms"),
     require("@tailwindcss/aspect-ratio"),
     require("@tailwindcss/container-queries"),
+    require("flowbite/plugin"),
   ],
   daisyui: {
     themes: ["light", "dark", "dracula"],
