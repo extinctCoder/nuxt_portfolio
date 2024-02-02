@@ -17,6 +17,7 @@
     "@tailwindcss/forms": "^0.5.7",
     "@tailwindcss/typography": "^0.5.10",
     "daisyui": "^4.6.1",
+    "flowbite": "^2.2.1",
     "nuxt": "^3.9.3",
     "nuxt-headlessui": "^1.1.5",
     "prettier": "^3.2.4",
