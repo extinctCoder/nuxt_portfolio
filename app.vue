@@ -1,71 +1,43 @@
 <template>
-  <fwb-accordion>
-    <fwb-accordion-panel>
-      <fwb-accordion-header>header</fwb-accordion-header>
-      <fwb-accordion-content>
-        <div>
-          <p class="mb-2 text-gray-500 dark:text-gray-400">
-            Flowbite is an open-source library of interactive components built
-            on top of Tailwind CSS including buttons, dropdowns, modals,
-            navbars, and more.
-          </p>
-          <p class="text-gray-500 dark:text-gray-400">
-            Check out this guide to learn how to
-            <a
-              href="/docs/getting-started/introduction/"
-              class="text-blue-600 hover:underline dark:text-blue-500"
-              >get started</a
-            >
-            and start developing websites even faster with components on top of
-            Tailwind CSS.
-          </p>
-        </div>
-      </fwb-accordion-content>
-    </fwb-accordion-panel>
-    <fwb-accordion-panel>
-      <fwb-accordion-header>another header</fwb-accordion-header>
-      <fwb-accordion-content>
-        <div>
-          <p class="mb-2 text-gray-500 dark:text-gray-400">
-            Flowbite is first conceptualized and designed using the Figma
-            software so everything you see in the library has a design
-            equivalent in our Figma file.
-          </p>
-          <p class="text-gray-500 dark:text-gray-400">
-            Check out the
-            <a
-              href="https://flowbite.com/figma/"
-              class="text-blue-600 hover:underline dark:text-blue-500"
-              >Figma design system</a
-            >
-            based on the utility classes from Tailwind CSS and components from
-            Flowbite.
-          </p>
-        </div>
-      </fwb-accordion-content>
-    </fwb-accordion-panel>
-    <fwb-accordion-panel>
-      <fwb-accordion-header>and one more header</fwb-accordion-header>
-      <fwb-accordion-content>
-        <div>
-          <p class="mb-2 text-gray-500 dark:text-gray-400">
-            Flowbite is first conceptualized and designed using the Figma
-            software so everything you see in the library has a design
-            equivalent in our Figma file.
-          </p>
-          <p class="text-gray-500 dark:text-gray-400">
-            Check out the
-            <a
-              href="https://flowbite.com/figma/"
-              class="text-blue-600 hover:underline dark:text-blue-500"
-              >Figma design system</a
-            >
-            based on the utility classes from Tailwind CSS and components from
-            Flowbite.
-          </p>
-        </div>
-      </fwb-accordion-content>
-    </fwb-accordion-panel>
-  </fwb-accordion>
+  <fwb-button @click="showModal"> Open modal </fwb-button>
+
+  <fwb-modal v-if="isShowModal" @close="closeModal">
+    <template #header>
+      <div class="flex items-center text-lg">Terms of Service</div>
+    </template>
+    <template #body>
+      <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+        With less than a month to go before the European Union enacts new
+        consumer privacy laws for its citizens, companies around the world are
+        updating their terms of service agreements to comply.
+      </p>
+      <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+        The European Union’s General Data Protection Regulation (G.D.P.R.) goes
+        into effect on May 25 and is meant to ensure a common set of data rights
+        in the European Union. It requires organizations to notify users as soon
+        as possible of high-risk data breaches that could personally affect
+        them.
+      </p>
+    </template>
+    <template #footer>
+      <div class="flex justify-between">
+        <fwb-button @click="closeModal" color="alternative">
+          Decline
+        </fwb-button>
+        <fwb-button @click="closeModal" color="green"> I accept </fwb-button>
+      </div>
+    </template>
+  </fwb-modal>
 </template>
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { ref } from "vue";
+import { FwbButton, FwbModal } from "flowbite-vue";
+const isShowModal = ref(false);
+
+function closeModal() {
+  isShowModal.value = false;
+}
+function showModal() {
+  isShowModal.value = true;
+}
+</script>
