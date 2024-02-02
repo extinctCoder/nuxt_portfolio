@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@heroicons/vue": "^2.1.1",
     "@nuxt/devtools": "^1.0.8",
     "@nuxtjs/tailwindcss": "^6.11.2",
     "@tailwindcss/aspect-ratio": "^0.4.2",
