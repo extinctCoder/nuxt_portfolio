@@ -1,7 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ["@nuxtjs/tailwindcss", "nuxt-headlessui"],
+  modules: ["@nuxtjs/tailwindcss", "nuxt-headlessui", "@nuxt/image"],
+  // image: {
+  //   // Options
+  // },
   tailwindcss: {
     cssPath: "~/assets/tailwind.css",
   },
