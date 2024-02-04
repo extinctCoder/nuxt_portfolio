@@ -5,7 +5,8 @@ Todo:
   ✔ this is todo done @done(24-02-04 16:20)
   Nested TODO:
     ☐ this is todo working
-    ☐ this is new todo @started(24-02-04 16:25)
+    ✔ this is new todo @started(24-02-04 16:25) @done(24-02-04 16:27) @lasted(2m34s)
     ☐ another tofo
     Another Nested TODO:
       ☐ this is another nested TODO
+  ☐ Now Working on another todo
