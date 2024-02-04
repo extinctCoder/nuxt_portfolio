@@ -1,6 +1,5 @@
 <template>
-  <!-- <div data-theme="light" class="h-screen bg-gray-400"> -->
-  <div class="h-screen">
+  <div data-theme="light" class="h-screen bg-gray-400">
     <SideNav />
   </div>
 </template>
