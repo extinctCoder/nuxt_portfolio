@@ -11,7 +11,9 @@ export default {
     "./node_modules/flowbite/**/*.{js,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      primary: "#FF6363",
+    },
   },
   plugins: [
     require("daisyui"),

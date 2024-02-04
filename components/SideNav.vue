@@ -14,7 +14,6 @@
     <div class="grow bg-green-300"></div>
     <SidebarFooter />
   </div>
-  # FF6363
 </template>
 
 <script lang="ts" setup></script>
