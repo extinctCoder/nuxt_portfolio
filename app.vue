@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen">
+  <div data-theme="light" class="h-screen">
     <SideNav />
   </div>
 </template>
