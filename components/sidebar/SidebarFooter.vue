@@ -1,6 +1,6 @@
 <template>
   <div class="flex items-center justify-center">
-    <ul class="menu menu-horizontal">
+    <ul class="menu menu-horizontal menu-lg">
       <li>
         <a>
           <Icon name="jam:fiverr" />
