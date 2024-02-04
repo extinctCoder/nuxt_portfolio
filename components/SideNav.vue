@@ -3,7 +3,7 @@
     <div class="flex justify-center bg-red-400">
       <div class="avatar">
         <div
-          class="ing w-36 rounded-xl ring-primary ring-offset-2 ring-offset-base-100"
+          class="m-2 w-36 rounded-xl ring ring-primary ring-offset-2 ring-offset-base-100"
         >
           <img src="https://avatars.githubusercontent.com/u/16348041" />
         </div>
