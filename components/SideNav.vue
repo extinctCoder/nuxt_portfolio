@@ -1,13 +1,15 @@
 <template>
   <div class="flex min-h-full w-96 min-w-64 flex-col gap-2 bg-white p-4">
-    <div class="flex justify-center bg-red-400">
-      <div class="">
+    <div class="flex flex-col items-center justify-center bg-red-400">
+      <div class="avatar">
         <div
           class="m-2 w-36 rounded-xl ring ring-primary ring-offset-2 ring-offset-base-100"
         >
           <NuxtImg src="https://avatars.githubusercontent.com/u/16348041" />
         </div>
       </div>
+      <h3 class="heading">Sabbir Ahmed Shourov</h3>
+      <h5 class="heading">Sabbir Ahmed Shourov</h5>
     </div>
     <div class="grow bg-green-300"></div>
     <SidebarFooter />
