@@ -1,5 +1,11 @@
 
 Todo:
   ☐ Working in this project
-  
+  ☐ this is TODO
   ✔ this is todo done @done(24-02-04 16:20)
+  Nested TODO:
+    ☐ this is todo working
+    ☐ this is new todo
+    ☐ another tofo
+    Another Nested TODO:
+      ☐ this si another nested TODO
