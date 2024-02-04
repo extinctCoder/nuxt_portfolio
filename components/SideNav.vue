@@ -3,6 +3,9 @@
     <div class="grow bg-red-400"></div>
     <div class="flex h-24 items-center justify-center bg-green-500">
       <Icon name="jam:fiverr" />
+      <Icon name="jam:twitter" />
+      <Icon name="jam:linkedin" />
+      <Icon name="jam:mail" />
 
       <!-- <ul class="menu menu-horizontal rounded-box bg-base-200">
         <li>
