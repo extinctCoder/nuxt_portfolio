@@ -4,7 +4,14 @@
     <div class="flex h-24 items-center justify-center bg-green-500">
       <ul class="menu menu-horizontal rounded-box bg-base-200">
         <li>
-          <a> </a>
+          <a>
+            <Icon name="jam:fiverr" class="text-white" />
+          </a>
+        </li>
+        <li>
+          <a>
+            <Icon name="jam:fiverr" class="text-white" />
+          </a>
         </li>
       </ul>
     </div>
