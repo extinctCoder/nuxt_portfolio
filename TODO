@@ -16,5 +16,5 @@ Projects:
 NOW:
   ☐ this is another todo
     ☐ nested TODO
-      ☐ this is nested TODO @critical
+      ☐ this is nested TODO @critical @today
     ☐ Another Nested TODO
