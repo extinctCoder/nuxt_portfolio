@@ -19,7 +19,7 @@ export default {
     require("@tailwindcss/forms"),
     require("@tailwindcss/aspect-ratio"),
     require("@tailwindcss/container-queries"),
-    require("flowbite/plugin"),
+    // require("flowbite/plugin"),
   ],
   daisyui: {
     themes: ["light", "dark", "dracula"],
