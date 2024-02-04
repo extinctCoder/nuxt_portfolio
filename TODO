@@ -6,15 +6,16 @@ Todo:
   Nested TODO:
     ☐ this is todo working @48h30m @started(24-02-04 16:29)
     ✔ this is new todo @started(24-02-04 16:25) @done(24-02-04 16:27) @lasted(2m34s)
-    ☐ another tofo
+    ☐ another tofo @9y
     Another Nested TODO:
-      ☐ this is another nested TODO
-      ☐ this is also another TODO
-  ☐ Now Working on another todo
+      ☐ this is another nested TODO @1w
+        ☐ nested todo @35h @started(24-02-04 16:52)
+      ✘ this is also another TODO @90h @cancelled(24-02-04 16:52)
+  ☐ Now Working on another todo @24h
 Projects:
-  ☐ this is new project
+  ☐ this is new project @5y
 NOW:
   ☐ this is another todo
     ☐ nested TODO
-      ☐ this is nested TODO @critical @today
+      ☐ this is nested TODO @critical @today @high @low
     ☐ Another Nested TODO
