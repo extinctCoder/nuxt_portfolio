@@ -1,3 +1,5 @@
+/** @type {import('tailwindcss').Config} */
+
 export default {
   content: [
     "./components/**/*.{js,vue,ts}",
@@ -12,7 +14,7 @@ export default {
     extend: {},
   },
   plugins: [
-    // require("daisyui"),
+    require("daisyui"),
     require("@tailwindcss/typography"),
     require("@tailwindcss/forms"),
     require("@tailwindcss/aspect-ratio"),
