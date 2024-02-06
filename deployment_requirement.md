@@ -47,7 +47,7 @@ Bellow here is the required services.
 ## deployemnt PIPLINE
 
 - 3 Consistant branch will be exist in sorce control (GitHub/GitLab). STAGING, QA, PROD.
-- 3 deployment environment will be setup for CI/CD (STAGING, QA, PROD)
+- 3 deployment environment and pipline will be setup for CI/CD (STAGING, QA, PROD)
 - each deployment should have its unique identifier based on the marge/pull request
 - after each successfull marge/pull request unused environment will be detroyed automatically for STAGING, QA, PROD.
 - for PROD new deployment will trigured based on the latest image with the latest pull request
