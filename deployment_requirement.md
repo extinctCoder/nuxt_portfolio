@@ -17,11 +17,11 @@ Bellow here is the required services.
 | memcached-admin | latest                       |             | YES                         |
 | Elasticsearch   | 8.12.1                       |             | YES                         |
 | Logstash        | 8.11.0                       |             | YES                         |
-| Kibana          | 8.12.0                       |             | YES                         |
+| Knaiba          | 8.12.0                       |             | YES                         |
 | daphne          | 4.0.0                        |             | YES                         |
 | nginx           | 1.23.4                       |             | YES                         |
-| traefik         | 2.11.0-rc2                   | 80, 443     | YES                         |
-| Jenkins         | 2.443                        |             | YES                         |
+| traefik         | 2.11.0-rc2                   | 80, 443     | NO                          |
+| Jenkins         | 2.443                        |             | NO                          |
 
 ## Service Role & connected services
 
@@ -60,22 +60,24 @@ git marge/pull request (STAGING)-> DEPLOY SATAGING -> git marge/pull request (QA
 | url                                                  | stage   | service         |
 | ---------------------------------------------------- | ------- | --------------- |
 | jenkins.studygiveway.com                             | X       | Jenkins         |
-| kibana.studygiveway.com                              | X       | kibana          |
 | studygiveway.com                                     | PROD    | daphne          |
 | s3.studygiveway.com                                  | PROD    | minio           |
 | db.studygiveway.com                                  | PROD    | PG Admin        |
 | redis.studygiveway.com                               | PROD    | RedisInsight    |
 | memchached.studygiveway.com                          | PROD    | memcached-admin |
+| kibana.studygiveway.com                              | PROD    | kibana          |
 | <MARGE/PULL_REQUEST_TAG>.studygiveway.com            | QA      | daphne          |
 | s3-<MARGE/PULL_REQUEST_TAG>.studygiveway.com         | QA      | minio           |
 | db-<MARGE/PULL_REQUEST_TAG>.studygiveway.com         | QA      | PG Admin        |
 | redis-<MARGE/PULL_REQUEST_TAG>studygiveway.com       | QA      | RedisInsight    |
 | memchached-<MARGE/PULL_REQUEST_TAG>.studygiveway.com | QA      | memcached-admin |
+| kibana-<MARGE/PULL_REQUEST_TAG>.studygiveway.com     | QA      | kibana          |
 | <MARGE/PULL_REQUEST_TAG>.studygiveway.com            | STAGING | daphne          |
 | s3-<MARGE/PULL_REQUEST_TAG>.studygiveway.com         | STAGING | minio           |
 | db-<MARGE/PULL_REQUEST_TAG>.studygiveway.com         | STAGING | PG Admin        |
 | redis-<MARGE/PULL_REQUEST_TAG>studygiveway.com       | STAGING | RedisInsight    |
 | memchached-<MARGE/PULL_REQUEST_TAG>.studygiveway.com | STAGING | memcached-admin |
+| kibana-<MARGE/PULL_REQUEST_TAG>.studygiveway.com     | STAGING | kibana          |
 
 ## Deployemnt Note
 
