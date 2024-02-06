@@ -55,6 +55,16 @@ Bellow here is the required services.
 _PIPLINE:_
 git marge/pull request (STAGING)-> DEPLOY SATAGING -> git marge/pull request (QA) -> DEPLOY SATAGING & DESTROY STAGING -> git marge/pull request (PROD) -> DESTROY QA, PROD & DEPLOY PROD (latest)
 
+## Link structure
+
+| url                 | stage | service |
+| ------------------- | ----- | ------- |
+| studygiveway.com    | PROD  | daphne  |
+| s3.studygiveway.com | PROD  | minio   |
+| studygiveway.com    | PROD  | daphne  |
+| studygiveway.com    | PROD  | daphne  |
+| studygiveway.com    | PROD  | daphne  |
+
 ## Deployemnt Note
 
 - Please Use alpine Image for Docker Containers.
@@ -62,4 +72,4 @@ git marge/pull request (STAGING)-> DEPLOY SATAGING -> git marge/pull request (QA
 - add a sample .env.sample for devlopement team.
 - only PORT 80, 443 will be accessable via internent.
 - all services should be Horizontal Scaleable.
--
+- All data should be persistent and stored in set intervel.
