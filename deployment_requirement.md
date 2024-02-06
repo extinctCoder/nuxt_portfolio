@@ -53,7 +53,7 @@ Bellow here is the required services.
 - for PROD new deployment will trigured based on the latest image with the latest pull request
 
 _PIPLINE:_
-git marge/pull request (STAGING)-> DEPLOY SATAGING -> git marge/pull request (QA) -> DEPLOY SATAGING & DESTROY STAGING -> git marge/pull request (PROD) -> DESTROY QA, PROD & DEPLOY PROD (latest)
+git marge/pull request (STAGING)-> _DEPLOY SATAGING_ -> git marge/pull request (QA) -> _DEPLOY SATAGING & DESTROY STAGING_ -> git marge/pull request (PROD) -> _DESTROY QA, PROD & DEPLOY PROD (latest)_
 
 ## Link structure
 
