@@ -61,11 +61,11 @@ git marge/pull request (STAGING)-> DEPLOY SATAGING -> git marge/pull request (QA
 | --------------------------- | ----- | ------------ |
 | jenkins.studygiveway.com    | X     | Jenkins      |
 | kibana.studygiveway.com     | X     | kibana       |
-| studygiveway.com            | PROD  | traefik      |
+| studygiveway.com            | PROD  | daphne       |
 | s3.studygiveway.com         | PROD  | minio        |
 | db.studygiveway.com         | PROD  | PG Admin     |
 | redis.studygiveway.com      | PROD  | RedisInsight |
-| memchached.studygiveway.com | PROD  | daphne       |
+| memchached.studygiveway.com | PROD  | Memchached   |
 
 ## Deployemnt Note
 
