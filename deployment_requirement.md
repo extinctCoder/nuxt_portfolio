@@ -57,20 +57,22 @@ git marge/pull request (STAGING)-> DEPLOY SATAGING -> git marge/pull request (QA
 
 ## Link structure
 
-| url                 | stage | service |
-| ------------------- | ----- | ------- |
-| studygiveway.com    | PROD  | daphne  |
-| s3.studygiveway.com | PROD  | minio   |
-| studygiveway.com    | PROD  | daphne  |
-| studygiveway.com    | PROD  | daphne  |
-| studygiveway.com    | PROD  | daphne  |
+| url                         | stage | service      |
+| --------------------------- | ----- | ------------ |
+| jenkins.studygiveway.com    | X     | Jenkins      |
+| kibana.studygiveway.com     | X     | kibana       |
+| studygiveway.com            | PROD  | traefik      |
+| s3.studygiveway.com         | PROD  | minio        |
+| db.studygiveway.com         | PROD  | PG Admin     |
+| redis.studygiveway.com      | PROD  | RedisInsight |
+| memchached.studygiveway.com | PROD  | daphne       |
 
 ## Deployemnt Note
 
 - Please Use alpine Image for Docker Containers.
-- use .env file for authentication creandential, configuration, PORT LIST etc.
-- add a sample .env.sample for devlopement team.
-- only PORT 80, 443 will be accessable via internent.
-- all services should be Horizontal Scaleable.
+- Use .env file for authentication creandential, configuration, PORT LIST etc.
+- Add a sample .env.sample for devlopement team.
+- Only PORT 80, 443 will be accessable via internent.
+- All services should be Horizontal Scaleable.
 - All data should be persistent and stored in set intervel.
-- internally in containerized enviromennt all the default ports will be open for communication from container to container.
+- Internally in containerized enviromennt all the default ports will be open for communication from container to container.
