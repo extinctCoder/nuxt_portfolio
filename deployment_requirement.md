@@ -66,6 +66,11 @@ git marge/pull request (STAGING)-> DEPLOY SATAGING -> git marge/pull request (QA
 | db.studygiveway.com         | PROD  | PG Admin        |
 | redis.studygiveway.com      | PROD  | RedisInsight    |
 | memchached.studygiveway.com | PROD  | memcached-admin |
+| studygiveway.com            | QA    | daphne          |
+| s3.studygiveway.com         | QA    | minio           |
+| db.studygiveway.com         | QA    | PG Admin        |
+| redis.studygiveway.com      | QA    | RedisInsight    |
+| memchached.studygiveway.com | QA    | memcached-admin |
 
 ## Deployemnt Note
 
