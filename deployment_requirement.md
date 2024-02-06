@@ -49,7 +49,7 @@ Bellow here is the required services.
 - 3 Consistance branch will be exist in sorce control (GitHub/GitLab). STAGING, QA, PROD.
 - 3 deployment environment will be setup for CI/CD (STAGING, QA, PROD)
 
-git marge/pull request (STAGING)-> DEPLOY SATAGING -> git marge/pull request (QA) -> DEPLOY SATAGING
+git marge/pull request (STAGING)-> DEPLOY SATAGING -> git marge/pull request (QA) -> DEPLOY SATAGING -> git marge/pull request (PROD) -> DEPLOY PROD
 
 ## Deployemnt Note
 
