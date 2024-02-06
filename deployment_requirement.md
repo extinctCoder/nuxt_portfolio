@@ -4,24 +4,24 @@
 
 Bellow here is the required services.
 
-| service         | version                      | PUBLIC_PORT |
-| --------------- | ---------------------------- | ----------- |
-| Minio           | RELEASE.2024-02-04T22-36-13Z |             |
-| Postgres DB     | 16.1                         |             |
-| PG Bouncer      | 1.22.0                       |             |
-| Ha Proxy        | 3.0                          |             |
-| PG Admin        | 4.0                          |             |
-| Redis Stack     | 7.2                          |             |
-| RedisInsight    | 1.14                         |             |
-| Memchached      | 1.6.23                       |             |
-| memcached-admin | latest                       |             |
-| Elasticsearch   | 8.12.1                       |             |
-| Logstash        | 8.11.0                       |             |
-| Kibana          | 8.12.0                       |             |
-| daphne          | 4.0.0                        |             |
-| nginx           | 1.23.4                       |             |
-| traefik         | 2.11.0-rc2                   | 80, 443     |
-| Jenkins         | 2.443                        |             |
+| service         | version                      | PUBLIC_PORT | DEPENDS ON DEPLOYMENT STAGE |
+| --------------- | ---------------------------- | ----------- | --------------------------- |
+| Minio           | RELEASE.2024-02-04T22-36-13Z |             | YES                         |
+| Postgres DB     | 16.1                         |             | YES                         |
+| PG Bouncer      | 1.22.0                       |             | YES                         |
+| Ha Proxy        | 3.0                          |             | YES                         |
+| PG Admin        | 4.0                          |             | YES                         |
+| Redis Stack     | 7.2                          |             | YES                         |
+| RedisInsight    | 1.14                         |             | YES                         |
+| Memchached      | 1.6.23                       |             | YES                         |
+| memcached-admin | latest                       |             | YES                         |
+| Elasticsearch   | 8.12.1                       |             | YES                         |
+| Logstash        | 8.11.0                       |             | YES                         |
+| Kibana          | 8.12.0                       |             | YES                         |
+| daphne          | 4.0.0                        |             | YES                         |
+| nginx           | 1.23.4                       |             | YES                         |
+| traefik         | 2.11.0-rc2                   | 80, 443     | YES                         |
+| Jenkins         | 2.443                        |             | YES                         |
 
 ## Service Role & connected services
 
