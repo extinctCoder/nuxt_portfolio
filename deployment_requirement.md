@@ -34,11 +34,11 @@ Bellow here is the required services.
 | PG Admin        | Database helper service   | Ha Proxy , Logstash                                               |
 | Redis Stack     | App Helper Service        | Logstash                                                          |
 | RedisInsight    | Redis Helper sevice       | Redis Stack , Logstash                                            |
-| Memchached      | App Helper Service        | , Logstash                                                        |
+| Memchached      | App Helper Service        | Logstash                                                          |
 | memcached-admin | Memchached helper service | Memchached, Logstash                                              |
-| Elasticsearch   | App Helper Service        | , Logstash                                                        |
-| Logstash        | App Helper Service        | Elasticsearch                                                     |
-| Kibana          | EL Helper service         | Logstash , Logstash                                               |
+| Elasticsearch   | App Helper Service        | Logstash                                                          |
+| Logstash        | App Helper Service        | Elasticsearch, Logstash                                           |
+| Kibana          | EL Helper service         | Logstash, Elasticsearch                                           |
 | daphne          | App Service               | Ha Proxy, Minio, Redis Stack, Memchached, Elasticsearch, Logstash |
 | nginx           | App Helper Service        | daphne , Logstash                                                 |
 | traefik         | App Helper Service        | nginx , Logstash                                                  |
