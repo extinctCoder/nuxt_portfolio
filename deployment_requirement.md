@@ -25,7 +25,24 @@ Bellow here is the required services.
 
 ## Service Role
 
-## Minio
+| Service         | Role                            |
+| --------------- | ------------------------------- |
+| Minio           | Storing Document, images. files |
+| Postgres DB     | Storing Data                    |
+| PG Bouncer      | Database helper service         |
+| Ha Proxy        | Database helper service         |
+| PG Admin        | Database helper service         |
+| Redis Stack     |
+| RedisInsight    | Redis Helper sevice             |
+| Memchached      |
+| memcached-admin |
+| Elasticsearch   |
+| Logstash        |
+| Kibana          |
+| daphne          |
+| nginx           |
+| traefik         |
+| Jenkins         |
 
 - Please Use alpine Image for Docker Containers.
 - use .env file for authentication, configuration etc.
