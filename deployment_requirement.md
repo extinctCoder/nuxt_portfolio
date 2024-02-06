@@ -85,5 +85,5 @@ git marge/pull request (STAGING)-> DEPLOY SATAGING -> git marge/pull request (QA
 - Only PORT 80, 443 will be accessable via internent.
 - All services should be Horizontal Scaleable.
 - All data should be persistent and stored in set intervel.
-- Internally in containerized enviromennt all the default ports will be open for communication from container to container.
+- Internally in containerized enviromennt all the default ports should be open for communication from container to container.
 - This deployment Guidline is build with Agile Development & industry standarad CI/CD Guidline.
