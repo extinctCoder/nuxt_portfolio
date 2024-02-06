@@ -1,4 +1,8 @@
-# Required Services
+# Deployment Requirement
+
+## Required Services
+
+Bellow here is the required services.
 
 | service         | version                      |
 | --------------- | ---------------------------- |
@@ -19,9 +23,10 @@
 | traefik         | 2.11.0-rc2                   |
 | Jenkins         | 2.443                        |
 
+## Service Role
+
+## Minio
+
 - Please Use alpine Image for Docker Containers.
 - use .env file for authentication, configuration etc.
 - add a sample .env.sample for devlopement team.
-
-Service Role:
-Minio
