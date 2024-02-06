@@ -57,15 +57,15 @@ git marge/pull request (STAGING)-> DEPLOY SATAGING -> git marge/pull request (QA
 
 ## Link structure
 
-| url                         | stage | service      |
-| --------------------------- | ----- | ------------ |
-| jenkins.studygiveway.com    | X     | Jenkins      |
-| kibana.studygiveway.com     | X     | kibana       |
-| studygiveway.com            | PROD  | daphne       |
-| s3.studygiveway.com         | PROD  | minio        |
-| db.studygiveway.com         | PROD  | PG Admin     |
-| redis.studygiveway.com      | PROD  | RedisInsight |
-| memchached.studygiveway.com | PROD  | Memchached   |
+| url                         | stage | service         |
+| --------------------------- | ----- | --------------- |
+| jenkins.studygiveway.com    | X     | Jenkins         |
+| kibana.studygiveway.com     | X     | kibana          |
+| studygiveway.com            | PROD  | daphne          |
+| s3.studygiveway.com         | PROD  | minio           |
+| db.studygiveway.com         | PROD  | PG Admin        |
+| redis.studygiveway.com      | PROD  | RedisInsight    |
+| memchached.studygiveway.com | PROD  | memcached-admin |
 
 ## Deployemnt Note
 
@@ -76,3 +76,5 @@ git marge/pull request (STAGING)-> DEPLOY SATAGING -> git marge/pull request (QA
 - All services should be Horizontal Scaleable.
 - All data should be persistent and stored in set intervel.
 - Internally in containerized enviromennt all the default ports will be open for communication from container to container.
+
+## Django
