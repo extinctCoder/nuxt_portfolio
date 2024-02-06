@@ -17,6 +17,7 @@
 | daphne          |
 | nginx           |
 | traefik         |
+| Jenkins         |
 
 1.  -> RELEASE.2024-02-04T22-36-13Z
 2.  -> 16.1
@@ -34,7 +35,7 @@
 14. -> 4.0.0
 15. -> 1.23.4
 16. -> 2.11.0-rc2
-17. Jenkins -> 2.443
+17. -> 2.443
     Note:
 
 - Please Use alpine Image for Docker Containers.
