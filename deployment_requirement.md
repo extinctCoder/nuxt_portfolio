@@ -1,42 +1,23 @@
 # Required Services
 
-| service         | version |
-| --------------- | ------- |
-| Minio           |
-| Postgres DB     |
-| PG Bouncer      |
-| Ha Proxy        |
-| PG Admin        |
-| Redis Stack     |
-| RedisInsight    |
-| Memchached      |
-| memcached-admin |
-| Elasticsearch   |
-| Logstash        |
-| Kibana          |
-| daphne          |
-| nginx           |
-| traefik         |
-| Jenkins         |
-
-1.  -> RELEASE.2024-02-04T22-36-13Z
-2.  -> 16.1
-3.  -> 1.22.0
-4.  -> 3.0
-5.  -> 4.0
-6.  -> 7.2
-7.  -> 1.14
-8.  -> 1.6.23
-9.  -> latest
-10. ELK Stack
-11. -> 8.12.1
-12. -> 8.11.0
-13. -> 8.12.0
-14. -> 4.0.0
-15. -> 1.23.4
-16. -> 2.11.0-rc2
-17. -> 2.443
-    Note:
+| service         | version                      |
+| --------------- | ---------------------------- |
+| Minio           | RELEASE.2024-02-04T22-36-13Z |
+| Postgres DB     | 16.1                         |
+| PG Bouncer      | 1.22.0                       |
+| Ha Proxy        | 3.0                          |
+| PG Admin        | 4.0                          |
+| Redis Stack     | 7.2                          |
+| RedisInsight    | 1.14                         |
+| Memchached      | 1.6.23                       |
+| memcached-admin | latest                       |
+| Elasticsearch   | 8.12.1                       |
+| Logstash        | 8.11.0                       |
+| Kibana          | 8.12.0                       |
+| daphne          | 4.0.0                        |
+| nginx           | 1.23.4                       |
+| traefik         | 2.11.0-rc2                   |
+| Jenkins         | 2.443                        |
 
 - Please Use alpine Image for Docker Containers.
 - use .env file for authentication, configuration etc.
