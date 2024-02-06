@@ -25,24 +25,45 @@ Bellow here is the required services.
 
 ## Service Role
 
-| Service         | Role                            |
-| --------------- | ------------------------------- |
-| Minio           | Storing Document, images. files |
-| Postgres DB     | Storing Data                    |
-| PG Bouncer      | Database helper service         |
-| Ha Proxy        | Database helper service         |
-| PG Admin        | Database helper service         |
-| Redis Stack     |
-| RedisInsight    | Redis Helper sevice             |
-| Memchached      |
-| memcached-admin |
-| Elasticsearch   |
-| Logstash        |
-| Kibana          |
-| daphne          |
-| nginx           |
-| traefik         |
-| Jenkins         |
+| Service         | Role                      |
+| --------------- | ------------------------- |
+| Minio           | App Helper Service        |
+| Postgres DB     | App Helper Service        |
+| PG Bouncer      | Database helper service   |
+| Ha Proxy        | Database helper service   |
+| PG Admin        | Database helper service   |
+| Redis Stack     | App Helper Service        |
+| RedisInsight    | Redis Helper sevice       |
+| Memchached      | App Helper Service        |
+| memcached-admin | Memchached helper service |
+| Elasticsearch   | App Helper Service        |
+| Logstash        | App Helper Service        |
+| Kibana          | EL Helper service         |
+| daphne          | App Service               |
+| nginx           | App Helper Service        |
+| traefik         | App Helper Service        |
+| Jenkins         | CI/CD Helper Service      |
+
+## Connected Services
+
+| Service         | Connected Service         |
+| --------------- | ------------------------- |
+| Minio           | App Helper Service        |
+| Postgres DB     | App Helper Service        |
+| PG Bouncer      | Database helper service   |
+| Ha Proxy        | Database helper service   |
+| PG Admin        | Database helper service   |
+| Redis Stack     | App Helper Service        |
+| RedisInsight    | Redis Helper sevice       |
+| Memchached      | App Helper Service        |
+| memcached-admin | Memchached helper service |
+| Elasticsearch   | App Helper Service        |
+| Logstash        | App Helper Service        |
+| Kibana          | EL Helper service         |
+| daphne          | App Service               |
+| nginx           | App Helper Service        |
+| traefik         | App Helper Service        |
+| Jenkins         | CI/CD Helper Service      |
 
 - Please Use alpine Image for Docker Containers.
 - use .env file for authentication, configuration etc.
