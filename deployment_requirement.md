@@ -87,5 +87,3 @@ git marge/pull request (STAGING)-> DEPLOY SATAGING -> git marge/pull request (QA
 - All data should be persistent and stored in set intervel.
 - Internally in containerized enviromennt all the default ports will be open for communication from container to container.
 - This deployment Guidline is build with Agile Development & industry standarad CI/CD Guidline.
-
-## Django
