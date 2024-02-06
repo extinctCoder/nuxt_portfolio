@@ -52,8 +52,9 @@ Bellow here is the required services.
 - after each successfull marge/pull request unused environment will be detroyed automatically for STAGING, QA, PROD.
 - for PROD new deployment will trigured based on the latest image with the latest pull request
 
+### PIPLINE
+
 ```sh
-_PIPLINE:_
 git marge/pull request (STAGING)-> **DEPLOY SATAGING** -> git marge/pull request (QA) -> **DEPLOY SATAGING & DESTROY STAGING** -> git marge/pull request (PROD) -> **DESTROY QA, PROD & DEPLOY PROD (latest)**
 ```
 
