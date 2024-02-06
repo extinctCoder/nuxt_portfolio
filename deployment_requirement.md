@@ -73,3 +73,4 @@ git marge/pull request (STAGING)-> DEPLOY SATAGING -> git marge/pull request (QA
 - only PORT 80, 443 will be accessable via internent.
 - all services should be Horizontal Scaleable.
 - All data should be persistent and stored in set intervel.
+- internally in containerized enviromennt all the default ports will be open for communication from container to container.
