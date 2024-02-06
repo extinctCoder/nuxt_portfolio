@@ -23,48 +23,29 @@ Bellow here is the required services.
 | traefik         | 2.11.0-rc2                   |
 | Jenkins         | 2.443                        |
 
-## Service Role
+## Service Role & connected services
 
-| Service         | Role                      |
-| --------------- | ------------------------- |
-| Minio           | App Helper Service        |
-| Postgres DB     | App Helper Service        |
-| PG Bouncer      | Database helper service   |
-| Ha Proxy        | Database helper service   |
-| PG Admin        | Database helper service   |
-| Redis Stack     | App Helper Service        |
-| RedisInsight    | Redis Helper sevice       |
-| Memchached      | App Helper Service        |
-| memcached-admin | Memchached helper service |
-| Elasticsearch   | App Helper Service        |
-| Logstash        | App Helper Service        |
-| Kibana          | EL Helper service         |
-| daphne          | App Service               |
-| nginx           | App Helper Service        |
-| traefik         | App Helper Service        |
-| Jenkins         | CI/CD Helper Service      |
+| Service         | Role                      | Connected Service                                                 |
+| --------------- | ------------------------- | ----------------------------------------------------------------- |
+| Minio           | App Helper Service        | Logstash                                                          |
+| Postgres DB     | App Helper Service        | Logstash                                                          |
+| PG Bouncer      | Database helper service   | Postgres DB , Logstash                                            |
+| Ha Proxy        | Database helper service   | PG Bouncer , Logstash                                             |
+| PG Admin        | Database helper service   | Ha Proxy , Logstash                                               |
+| Redis Stack     | App Helper Service        | Logstash                                                          |
+| RedisInsight    | Redis Helper sevice       | Redis Stack , Logstash                                            |
+| Memchached      | App Helper Service        | , Logstash                                                        |
+| memcached-admin | Memchached helper service | Memchached, Logstash                                              |
+| Elasticsearch   | App Helper Service        | , Logstash                                                        |
+| Logstash        | App Helper Service        | Elasticsearch                                                     |
+| Kibana          | EL Helper service         | Logstash , Logstash                                               |
+| daphne          | App Service               | Ha Proxy, Minio, Redis Stack, Memchached, Elasticsearch, Logstash |
+| nginx           | App Helper Service        | daphne , Logstash                                                 |
+| traefik         | App Helper Service        | nginx , Logstash                                                  |
+| Jenkins         | CI/CD Helper Service      | Logstash                                                          |
 
 ## Connected Services
 
-| Service         | Connected Service         |
-| --------------- | ------------------------- |
-| Minio           | App Helper Service        |
-| Postgres DB     | App Helper Service        |
-| PG Bouncer      | Database helper service   |
-| Ha Proxy        | Database helper service   |
-| PG Admin        | Database helper service   |
-| Redis Stack     | App Helper Service        |
-| RedisInsight    | Redis Helper sevice       |
-| Memchached      | App Helper Service        |
-| memcached-admin | Memchached helper service |
-| Elasticsearch   | App Helper Service        |
-| Logstash        | App Helper Service        |
-| Kibana          | EL Helper service         |
-| daphne          | App Service               |
-| nginx           | App Helper Service        |
-| traefik         | App Helper Service        |
-| Jenkins         | CI/CD Helper Service      |
-
 - Please Use alpine Image for Docker Containers.
-- use .env file for authentication, configuration etc.
+- use .env file for authentication creandential, configuration, PORT LIST etc.
 - add a sample .env.sample for devlopement team.
