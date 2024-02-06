@@ -2,8 +2,6 @@
 
 ## Required Services
 
-Bellow here is the required services.
-
 | service         | version                      | PUBLIC_PORT | DEPENDS ON DEPLOYMENT STAGE |
 | --------------- | ---------------------------- | ----------- | --------------------------- |
 | Minio           | RELEASE.2024-02-04T22-36-13Z |             | YES                         |
