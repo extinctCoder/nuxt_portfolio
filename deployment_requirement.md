@@ -46,6 +46,8 @@ Bellow here is the required services.
 
 ## deployemnt PIPLINE
 
+- 3 Consistance branch will be exist in sorce control (GitHub/GitLab). STAGING, QA, PROD
+
 ## Deployemnt Note
 
 - Please Use alpine Image for Docker Containers.
