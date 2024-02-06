@@ -44,8 +44,9 @@ Bellow here is the required services.
 | traefik         | App Helper Service        | nginx , Logstash                                                  |
 | Jenkins         | CI/CD Helper Service      | Logstash                                                          |
 
-## Connected Services
+## Deployemnt Note
 
 - Please Use alpine Image for Docker Containers.
 - use .env file for authentication creandential, configuration, PORT LIST etc.
 - add a sample .env.sample for devlopement team.
+- only PORT 80, 443 will be accessable via internent.
