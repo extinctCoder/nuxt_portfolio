@@ -1,5 +1,5 @@
 <template>
-  <div class="card bg-base-100 shadow-xl lg:card-side">
+  <div class="card border bg-base-100 lg:card-side">
     <figure>
       <img
         src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
@@ -8,7 +8,9 @@
     </figure>
     <div class="card-body">
       <h2 class="card-title">New album is released!</h2>
-      <p>Click the button to listen on Spotiwhy app.</p>
+      <p>
+        <TestBed />
+      </p>
       <div class="card-actions justify-end">
         <button class="btn btn-primary">Listen</button>
       </div>

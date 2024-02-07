@@ -5,7 +5,7 @@
       <Header />
       <div class="container mx-auto mt-4 px-4"><slot /></div>
     </div>
-    <div class="drawer-side">
+    <div class="drawer-side border">
       <label
         for="my-drawer-2"
         aria-label="close sidebar"
