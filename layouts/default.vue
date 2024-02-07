@@ -33,7 +33,7 @@
     <div class="drawer-content">
       <Header />
       <!-- <div class="w-full overflow-y-auto scroll-smooth bg-gray-400"> -->
-      <div class="container mx-auto bg-gray-400 pt-4"><slot /></div>
+      <div class="container mx-auto mt-4 bg-gray-400"><slot /></div>
       <!-- </div> -->
     </div>
     <div class="drawer-side">
