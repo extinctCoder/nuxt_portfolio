@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center gap-2 py-20">
+  <div class="flex flex-col items-center gap-2 py-16">
     <div class="avatar">
       <div
         class="m-2 w-32 rounded-xl ring ring-primary ring-offset-2 ring-offset-base-100"
