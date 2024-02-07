@@ -8,9 +8,9 @@
           <NuxtImg src="https://avatars.githubusercontent.com/u/16348041" />
         </div>
       </div>
-      <div class="pose">
-        <h1>Sabbir Ahmed Shourov</h1>
-        <h5 class="heading">Sabbir Ahmed Shourov</h5>
+      <div class="prose flex flex-col items-center justify-center text-center">
+        <h1>Chirpy</h1>
+        <h3>Sabbir Ahmed Shourov</h3>
       </div>
     </div>
     <div class="grow bg-green-300"></div>
