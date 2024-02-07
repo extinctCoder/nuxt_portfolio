@@ -1,7 +1,7 @@
 <template>
-  <div data-theme="light" class="flex h-screen bg-gray-400">
+  <div data-theme="light" class="flex h-screen overflow-hidden bg-gray-400">
     <SideNav />
-    <slot />
+    <div class="container"><slot /></div>
   </div>
 </template>
 
