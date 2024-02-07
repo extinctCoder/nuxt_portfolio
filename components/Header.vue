@@ -1,32 +1,25 @@
 <template>
-  <div className="navbar bg-gray-300">
-    <div className="flex-none">
-      <button className="btn btn-square btn-ghost">
+  <div class="navbar bg-gray-300">
+    <div class="flex-none">
+      <button class="btn btn-square btn-ghost"></button>
+    </div>
+
+    <label
+      htmlFor="my-drawer-2"
+      class="btn btn-primary drawer-button lg:hidden"
+    >
+      <Icon name="heroicons:home-solid"
+    /></label>
+    <div class="flex-1">
+      <a class="btn btn-ghost text-xl">daisyUI</a>
+    </div>
+    <div class="flex-none">
+      <button class="btn btn-square btn-ghost">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          className="inline-block w-5 h-5 stroke-current"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M4 6h16M4 12h16M4 18h16"
-          ></path>
-        </svg>
-      </button>
-    </div>
-    <div className="flex-1">
-      <a className="btn btn-ghost text-xl">daisyUI</a>
-    </div>
-    <div className="flex-none">
-      <button className="btn btn-square btn-ghost">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          className="inline-block w-5 h-5 stroke-current"
+          class="inline-block h-5 w-5 stroke-current"
         >
           <path
             strokeLinecap="round"

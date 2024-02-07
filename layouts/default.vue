@@ -10,24 +10,19 @@
   </div>
 </template> -->
 <template>
-  <div className="drawer lg:drawer-open">
-    <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-    <div className="drawer-content flex flex-col items-center overflow-hidden">
+  <div class="drawer lg:drawer-open">
+    <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
+    <div class="drawer-content flex flex-col items-center overflow-hidden">
       <Header />
-      <label
-        htmlFor="my-drawer-2"
-        className="btn btn-primary drawer-button lg:hidden"
-        >Open drawer</label
-      >
       <div class="w-full overflow-y-auto scroll-smooth bg-gray-400">
         <div class="container mx-auto"><slot /></div>
       </div>
     </div>
-    <div className="drawer-side">
+    <div class="drawer-side">
       <label
         htmlFor="my-drawer-2"
         aria-label="close sidebar"
-        className="drawer-overlay"
+        class="drawer-overlay"
       ></label>
       <SideNav />
     </div>
