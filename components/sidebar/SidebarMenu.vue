@@ -1,5 +1,5 @@
 <template>
-  <ul className="menu bg-base-200 ">
+  <ul className="menu">
     <li>
       <a>
         <Icon name="heroicons:home-solid" />
