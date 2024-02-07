@@ -30,8 +30,13 @@
   </div> -->
   <div class="drawer lg:drawer-open">
     <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
-    <div class="drawer-content flex flex-col">
-      <Header />
+    <div class="drawer-content">
+      <div
+        class="sticky top-0 z-30 flex h-16 w-full justify-center bg-base-100 bg-opacity-90 text-base-content backdrop-blur transition-shadow duration-100 [transform:translate3d(0,0,0)]"
+      >
+        this is header
+      </div>
+
       <div class="w-full overflow-y-auto scroll-smooth bg-gray-400">
         <div class="container mx-auto"><slot /></div>
       </div>
