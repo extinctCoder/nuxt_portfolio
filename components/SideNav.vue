@@ -9,7 +9,7 @@
         </div>
       </div>
 
-      <NuxtLink href="#">Chirpy</NuxtLink>
+      <NuxtLink href="#" class="">Chirpy</NuxtLink>
       <span>Sabbir Ahmed Shourov</span>
     </div>
     <div class="grow bg-green-300">
