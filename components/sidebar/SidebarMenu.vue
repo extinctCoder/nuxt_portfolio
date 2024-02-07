@@ -1,5 +1,5 @@
 <template>
-  <ul className="menu">
+  <ul className="menu overflow-x-auto">
     <li>
       <a>
         <Icon name="heroicons:home-solid" />
