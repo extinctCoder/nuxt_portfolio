@@ -1,7 +1,6 @@
 <template>
   <div class="navbar bg-gray-300">
     <div class="flex-none">
-      <button class=""></button>
       <label htmlFor="my-drawer-2" class="btn btn-square btn-ghost lg:hidden">
         <Icon name="heroicons:bars-3-solid" />
       </label>
@@ -10,6 +9,20 @@
     <div class="flex-1">
       <a class="btn btn-ghost text-xl">daisyUI</a>
     </div>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="h-5 w-5"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M4 6h16M4 12h16M4 18h7"
+      />
+    </svg>
     <div class="flex-none">
       <button class="btn btn-square btn-ghost">
         <svg
