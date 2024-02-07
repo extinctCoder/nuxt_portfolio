@@ -8,7 +8,7 @@
           <NuxtImg src="https://avatars.githubusercontent.com/u/16348041" />
         </div>
       </div>
-      <h3 class="heading">Sabbir Ahmed Shourov</h3>
+      <h1>Sabbir Ahmed Shourov</h1>
       <h5 class="heading">Sabbir Ahmed Shourov</h5>
     </div>
     <div class="grow bg-green-300"></div>
