@@ -32,6 +32,9 @@
     <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content flex flex-col">
       <Header />
+      <div class="w-full overflow-y-auto scroll-smooth bg-gray-400">
+        <div class="container mx-auto"><slot /></div>
+      </div>
     </div>
     <div class="drawer-side shadow">
       <label
