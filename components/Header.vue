@@ -1,10 +1,7 @@
 <template>
   <div class="navbar bg-base-100">
     <div class="flex-none">
-      <label
-        htmlFor="my-drawer-2"
-        className="btn btn-square btn-ghost drawer-button lg:hidden"
-      >
+      <label htmlFor="my-drawer-2" className="btn btn-square ">
         <Icon name="heroicons:bars-3-solid" class="inline-block h-5 w-5" />
       </label>
       <!-- <button class="btn"></button> -->
