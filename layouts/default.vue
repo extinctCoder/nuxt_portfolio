@@ -1,5 +1,5 @@
 <template>
-  <div data-theme="light" class="h-screen bg-gray-400">
+  <div data-theme="light" class="flex h-screen bg-gray-400">
     <SideNav />
     <slot />
   </div>
