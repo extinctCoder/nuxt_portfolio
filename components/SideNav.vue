@@ -8,8 +8,10 @@
           <NuxtImg src="https://avatars.githubusercontent.com/u/16348041" />
         </div>
       </div>
-      <h1>Sabbir Ahmed Shourov</h1>
-      <h5 class="heading">Sabbir Ahmed Shourov</h5>
+      <div class="pose">
+        <h1>Sabbir Ahmed Shourov</h1>
+        <h5 class="heading">Sabbir Ahmed Shourov</h5>
+      </div>
     </div>
     <div class="grow bg-green-300"></div>
     <SidebarFooter />
