@@ -1,21 +1,27 @@
 <template>
-  <div class="flex min-h-full w-96 min-w-64 flex-col gap-2 bg-white p-4">
-    <div class="flex flex-col items-center justify-center gap-2 p-4">
-      <div class="avatar">
-        <div
-          class="m-2 w-32 rounded-xl ring ring-primary ring-offset-2 ring-offset-base-100"
-        >
-          <NuxtImg src="https://avatars.githubusercontent.com/u/16348041" />
+  <div
+    class="flex min-h-full w-96 min-w-64 flex-col justify-between gap-2 bg-white p-4"
+  >
+    <div class="flex flex-col items-center justify-center gap-8 bg-red-400 p-4">
+      <SidebarIcon />
+    </div>
+    <SidebarMenu />
+    <div className="card bg-base-100 shadow-xl image-full">
+      <figure>
+        <img
+          src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+          alt="Shoes"
+        />
+      </figure>
+      <div className="card-body">
+        <h2 className="card-title">Shoes!</h2>
+        <p>If a dog chews shoes whose shoes does he choose?</p>
+        <div className="card-actions justify-end">
+          <button className="btn btn-primary">Buy Now</button>
         </div>
       </div>
-      <NuxtLink href="/" class="text-2xl font-bold"
-        >Sabbir Ahmed Shourov</NuxtLink
-      >
-      <span class="font-normal italic">Senior Software Engineer, YGBL</span>
     </div>
-    <div class="grow bg-green-300">
-      <SidebarMenu />
-    </div>
+
     <SidebarFooter />
   </div>
 </template>
