@@ -3,8 +3,8 @@
     <div class="flex-none">
       <button class=""></button>
       <label htmlFor="my-drawer-2" class="btn btn-square btn-ghost lg:hidden">
-        <Icon name="heroicons:bars-3-solid"
-      /></label>
+        <Icon name="heroicons:bars-3-solid" />
+      </label>
     </div>
 
     <div class="flex-1">
