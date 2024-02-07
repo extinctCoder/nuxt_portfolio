@@ -1,9 +1,9 @@
 <template>
-  <div data-theme="light" class="flex h-screen overflow-hidden bg-gray-400">
+  <div data-theme="light" class="flex h-screen overflow-hidden">
     <SideNav />
-    <div class="flex flex-col">
+    <div class="flex w-full flex-col">
       <Header />
-      <div class="w-full overflow-y-auto scroll-smooth">
+      <div class="w-full overflow-y-auto scroll-smooth bg-gray-400">
         <div class="container mx-auto"><slot /></div>
       </div>
     </div>
