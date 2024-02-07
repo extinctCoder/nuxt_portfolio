@@ -8,10 +8,9 @@
           <NuxtImg src="https://avatars.githubusercontent.com/u/16348041" />
         </div>
       </div>
-      <div class="prose flex flex-col items-center justify-center text-center">
-        <h1>Chirpy</h1>
-        <h3>Sabbir Ahmed Shourov</h3>
-      </div>
+
+      <NuxtLink href="#">Chirpy</NuxtLink>
+      <span>Sabbir Ahmed Shourov</span>
     </div>
     <div class="grow bg-green-300">
       <SidebarMenu />
