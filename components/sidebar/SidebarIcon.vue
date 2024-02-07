@@ -7,7 +7,9 @@
         <NuxtImg src="https://avatars.githubusercontent.com/u/16348041" />
       </div>
     </div>
-    <NuxtLink href="/" class="text-2xl font-bold">Sabbir</NuxtLink>
+    <NuxtLink href="/" class="text-wrap text-2xl font-bold"
+      >Sabbir Ahmed Shourov</NuxtLink
+    >
     <span class="font-normal italic">Senior Software Engineer, YGBL</span>
   </div>
 </template>
