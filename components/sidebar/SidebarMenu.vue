@@ -18,6 +18,18 @@
         tags
       </a>
     </li>
+    <li>
+      <a>
+        <Icon name="heroicons:archive-box-solid" />
+        archives
+      </a>
+    </li>
+    <li>
+      <a>
+        <Icon name="heroicons:information-circle-solid" />
+        about
+      </a>
+    </li>
   </ul>
 </template>
 
