@@ -6,7 +6,7 @@
       <SidebarIcon />
       <SidebarMenu />
     </div>
-    <SidebarCard />
+    <!-- <SidebarCard /> -->
     <SidebarFooter />
   </div>
 </template>
