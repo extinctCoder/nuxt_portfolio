@@ -1,6 +1,6 @@
 <template>
   hello
-  <!-- <TestBed /> -->
+  <TestBed />
 </template>
 
 <script lang="ts" setup></script>
