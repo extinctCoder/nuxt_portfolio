@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar sticky top-0 bg-white text-base-content">
+  <div class="navbar sticky top-0 z-20 bg-white text-base-content">
     <div class="flex-none lg:hidden">
       <label for="my-drawer-2" class="btn btn-square btn-ghost drawer-button">
         <Icon name="heroicons:bars-3-solid" class="inline-block h-5 w-5" />
