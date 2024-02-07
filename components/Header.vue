@@ -2,11 +2,12 @@
   <div class="navbar bg-base-100">
     <label
       htmlFor="my-drawer-2"
-      className="btn btn-primary drawer-button lg:hidden"
-      >Open drawer</label
+      className="btn btn-square btn-ghost drawer-button lg:hidden"
     >
+      <Icon name="heroicons:bars-3-solid" class="inline-block h-5 w-5" />
+    </label>
     <div class="flex-none">
-      <button class="btn btn-square btn-ghost">
+      <button class="btn">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
