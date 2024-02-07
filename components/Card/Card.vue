@@ -9,7 +9,7 @@
         <button class="btn btn-primary">Listen</button>
       </div>
     </div>
-    <figure>
+    <figure class="w-1/3">
       <img
         src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
         alt="Album"
