@@ -7,16 +7,6 @@
     </li>
     <li>
       <a>
-        <Icon name="jam:fiverr" />
-      </a>
-    </li>
-    <li>
-      <a>
-        <Icon name="jam:fiverr" />
-      </a>
-    </li>
-    <li>
-      <a>
         <Icon name="jam:twitter" />
       </a>
     </li>
