@@ -32,9 +32,9 @@
     <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content">
       <Header />
-      <div class="w-full overflow-y-auto scroll-smooth bg-gray-400">
-        <div class="container mx-auto"><slot /></div>
-      </div>
+      <!-- <div class="w-full overflow-y-auto scroll-smooth bg-gray-400"> -->
+      <div class="container mx-auto bg-gray-400 pt-4"><slot /></div>
+      <!-- </div> -->
     </div>
     <div class="drawer-side">
       <label
