@@ -13,7 +13,9 @@
         <h3>Sabbir Ahmed Shourov</h3>
       </div>
     </div>
-    <div class="grow bg-green-300"></div>
+    <div class="grow bg-green-300">
+      <SidebarMenu />
+    </div>
     <SidebarFooter />
   </div>
 </template>
