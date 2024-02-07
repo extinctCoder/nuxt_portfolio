@@ -33,7 +33,7 @@
     <div class="drawer-content flex flex-col">
       <Header />
     </div>
-    <div class="drawer-side">
+    <div class="drawer-side shadow">
       <label
         for="my-drawer-2"
         aria-label="close sidebar"
