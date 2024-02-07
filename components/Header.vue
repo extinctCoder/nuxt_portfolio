@@ -1,15 +1,12 @@
 <template>
   <div class="navbar bg-gray-300">
     <div class="flex-none">
-      <button class="btn btn-square btn-ghost"></button>
+      <button class=""></button>
+      <label htmlFor="my-drawer-2" class="btn btn-square btn-ghost lg:hidden">
+        <Icon name="heroicons:bars-3-solid"
+      /></label>
     </div>
 
-    <label
-      htmlFor="my-drawer-2"
-      class="btn btn-primary drawer-button lg:hidden"
-    >
-      <Icon name="heroicons:home-solid"
-    /></label>
     <div class="flex-1">
       <a class="btn btn-ghost text-xl">daisyUI</a>
     </div>
