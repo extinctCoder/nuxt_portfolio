@@ -36,7 +36,7 @@
     </figure>
     <div class="card-body">
       <h2 class="card-title">New album is released!</h2>
-      <p>Click the button to listen on Spotiwhy app.</p>
+      <TestBed />
       <div class="card-actions justify-end">
         <button class="btn btn-primary">Listen</button>
       </div>
