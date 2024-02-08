@@ -16,7 +16,8 @@
       />
     </figure>
   </div>
-  <div class="btn flex-none cursor-pointer overflow-hidden rounded border">
+  <div class="cursor-pointer overflow-hidden rounded border p-4">
+    <!-- <div class="flex grow gap-2"> -->
     <div class="flex justify-between">
       <div class="flex gap-4">
         <div class="inline-flex items-center gap-2">
@@ -30,6 +31,7 @@
       </div>
       <Icon name="heroicons:hand-thumb-up-solid" />
     </div>
+    <!-- </div> -->
   </div>
 </template>
 
