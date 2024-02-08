@@ -16,7 +16,9 @@
             <span>Blogging, Demo</span>
           </div>
         </div>
-        <Icon name="heroicons:hand-thumb-up-solid" />
+        <div class="inline-flex items-center gap-2">
+          <Icon name="heroicons:hand-thumb-up-solid" />
+        </div>
       </div>
     </div>
     <img
