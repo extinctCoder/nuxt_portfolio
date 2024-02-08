@@ -18,8 +18,10 @@
   </div> -->
 
   <div class="flex justify-between">
-    <Icon name="heroicons:calendar-solid" />
-    <Icon name="heroicons:folder-open-solid" />
+    <div class="flex gap-2">
+      <Icon name="heroicons:calendar-solid" />
+      <Icon name="heroicons:folder-open-solid" />
+    </div>
     <Icon name="heroicons:hand-thumb-up-solid" />
   </div>
 </template>
