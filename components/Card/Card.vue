@@ -27,7 +27,7 @@
     </figure>
   </div>
 
-  <div class="card border bg-base-100 lg:card-side">
+  <!-- <div class="card border bg-base-100 lg:card-side">
     <div class="card-body">
       <h2 class="card-title">New album is released!</h2>
       <TestBed />
@@ -41,7 +41,7 @@
         alt="Album"
       />
     </figure>
-  </div>
+  </div> -->
 </template>
 
 <script lang="ts" setup></script>
