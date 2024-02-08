@@ -19,7 +19,7 @@
 
   <div class="">
     <Icon name="heroicons:calendar-solid" />
-    <Icon name="heroicons:calendar-solid" />
+    <Icon name="heroicons:folder-open-solid" />
     <Icon name="heroicons:calendar-solid" />
   </div>
 </template>
