@@ -16,6 +16,20 @@
       />
     </figure>
   </div>
+
+  <div class="flex gap-2">
+    <div class="flex flex-col justify-between">
+      <h2 class="card-title">New album is released!</h2>
+      <TestBed />
+    </div>
+    <figure class="w-1/3">
+      <img
+        src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
+        alt="Album"
+      />
+    </figure>
+  </div>
+
   <div class="cursor-pointer overflow-hidden rounded border p-4">
     <!-- <div class="flex grow gap-2"> -->
     <div class="flex justify-between">
