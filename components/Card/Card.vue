@@ -31,7 +31,7 @@
     <NuxtImg
       src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
       alt="Album"
-      class="grayscale filter hover:grayscale-0"
+      class="object-none object-center grayscale filter hover:grayscale-0"
     />
   </div>
 
