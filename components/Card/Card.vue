@@ -21,7 +21,7 @@
     </div>
     <img
       src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
-      class="aspect-video h-auto object-none object-center grayscale filter hover:grayscale-0"
+      class="aspect-square max-w-2xl object-none object-center grayscale filter hover:grayscale-0 lg:aspect-video"
     />
   </div>
 
