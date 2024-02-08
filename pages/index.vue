@@ -1,6 +1,6 @@
 <template>
-  hello
-  <TestBed />
+  <!-- hello
+  <TestBed /> -->
   <div class="flex flex-col gap-4">
     <Card />
     <Card />

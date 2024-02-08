@@ -1,5 +1,5 @@
 <template>
-  <div class="card border bg-base-100 lg:card-side">
+  <!-- <div class="card border bg-base-100 lg:card-side">
     <div class="card-body">
       <h2 class="card-title">New album is released!</h2>
       <p>
@@ -15,7 +15,9 @@
         alt="Album"
       />
     </figure>
-  </div>
+  </div> -->
+
+  <div class=""></div>
 </template>
 
 <script lang="ts" setup></script>
