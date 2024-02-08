@@ -1,5 +1,5 @@
 <template>
-  <div class="drawer lg:drawer-open">
+  <div class="drawer lg:drawer-open" data-theme="light">
     <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content">
       <Header />

@@ -16,7 +16,7 @@
       />
     </figure>
   </div>
-  <div class="cursor-pointer overflow-hidden rounded border p-4">
+  <div class="btn flex-none cursor-pointer overflow-hidden rounded border">
     <div class="flex justify-between">
       <div class="flex gap-4">
         <div class="inline-flex items-center gap-2">
