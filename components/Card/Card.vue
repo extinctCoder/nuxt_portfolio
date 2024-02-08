@@ -19,6 +19,8 @@
 
   <div class="">
     <Icon name="heroicons:calendar-solid" />
+    <Icon name="heroicons:calendar-solid" />
+    <Icon name="heroicons:calendar-solid" />
   </div>
 </template>
 
