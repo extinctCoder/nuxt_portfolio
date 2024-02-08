@@ -17,10 +17,10 @@
     </figure>
   </div> -->
 
-  <div class="">
+  <div class="flex justify-between">
     <Icon name="heroicons:calendar-solid" />
     <Icon name="heroicons:folder-open-solid" />
-    <Icon name="heroicons:calendar-solid" />
+    <Icon name="heroicons:hand-thumb-up-solid" />
   </div>
 </template>
 
