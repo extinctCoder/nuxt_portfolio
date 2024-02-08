@@ -1,6 +1,6 @@
 <template>
   <div class="flex cursor-pointer gap-2 rounded border">
-    <div class="flex h-24 flex-col justify-between gap-2 p-4">
+    <div class="flex h-48 flex-col justify-between gap-2 bg-black p-4">
       <div class="flex flex-col gap-4">
         <h2 class="card-title">New album is released!</h2>
         <TestBed />
