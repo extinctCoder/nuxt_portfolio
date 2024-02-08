@@ -25,7 +25,7 @@
     </div>
     <img
       src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
-      class="aspect-square max-w-2xl object-fill object-center grayscale filter hover:grayscale-0 lg:aspect-video lg:object-none"
+      class="aspect-video w-full object-fill object-center grayscale filter hover:grayscale-0 lg:object-none"
     />
   </div>
 </template>
