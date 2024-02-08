@@ -20,7 +20,7 @@
   <div class="flex h-24 items-center justify-between bg-pink-400">
     <div class="flex h-12 items-center gap-4 bg-green-400">
       <div class="felx h-8 w-96 items-center justify-center gap-2 bg-red-400">
-        <Icon name="heroicons:calendar-solid" />
+        <Icon name="heroicons:calendar-solid" class="bg-stone-400" />
       </div>
       <Icon name="heroicons:folder-open-solid" />
     </div>
