@@ -19,12 +19,12 @@
         <Icon name="heroicons:hand-thumb-up-solid" />
       </div>
     </div>
-    <!-- <figure class="w-1/3 min-w-80 max-w-96">
+    <figure class="w-1/3 min-w-80 max-w-96">
       <NuxtImg
         src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
         alt="Album"
       />
-    </figure> -->
+    </figure>
   </div>
 </template>
 
