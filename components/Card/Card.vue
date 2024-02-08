@@ -18,7 +18,7 @@
   </div> -->
 
   <div class="border-ro flex cursor-pointer gap-2 rounded border">
-    <div class="flex flex-col justify-between p-4">
+    <div class="flex flex-col justify-between gap-2 p-4">
       <div class="flex flex-col gap-4">
         <h2 class="card-title">New album is released!</h2>
         <TestBed />
