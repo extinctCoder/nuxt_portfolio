@@ -18,9 +18,9 @@
   </div> -->
 
   <div class="flex h-24 items-center justify-between bg-pink-400">
-    <div class="flex h-12 gap-4 bg-green-400">
-      <div class="felx h-8 items-center justify-center gap-2">
-        <Icon name="heroicons:calendar-solid" /> <span>31/12/2016</span>
+    <div class="flex h-12 items-center gap-4 bg-green-400">
+      <div class="felx h-8 w-96 items-center justify-center gap-2 bg-red-400">
+        <Icon name="heroicons:calendar-solid" />
       </div>
       <Icon name="heroicons:folder-open-solid" />
     </div>
