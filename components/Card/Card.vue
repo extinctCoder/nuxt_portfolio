@@ -6,7 +6,7 @@
         <TestBed />
       </p>
       <div class="card-actions justify-end">
-        <button class="btn btn-primary">Listen</button>
+        <!-- <button class="btn btn-primary">Listen</button> -->
       </div>
     </div>
     <figure class="w-1/3">
@@ -16,19 +16,20 @@
       />
     </figure>
   </div>
-
-  <div class="flex justify-between">
-    <div class="flex gap-4">
-      <div class="inline-flex items-center gap-2">
-        <Icon name="heroicons:calendar-solid" />
-        <span>31/12/2006</span>
+  <div class="border">
+    <div class="flex justify-between">
+      <div class="flex gap-4">
+        <div class="inline-flex items-center gap-2">
+          <Icon name="heroicons:calendar-solid" />
+          <span>31/12/2006</span>
+        </div>
+        <div class="inline-flex items-center gap-2">
+          <Icon name="heroicons:folder-open-solid" />
+          <span>Blogging, Demo</span>
+        </div>
       </div>
-      <div class="inline-flex items-center gap-2">
-        <Icon name="heroicons:folder-open-solid" />
-        <span>Blogging, Demo</span>
-      </div>
+      <Icon name="heroicons:hand-thumb-up-solid" />
     </div>
-    <Icon name="heroicons:hand-thumb-up-solid" />
   </div>
 </template>
 
