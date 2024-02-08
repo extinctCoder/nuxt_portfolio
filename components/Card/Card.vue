@@ -19,14 +19,20 @@
         <Icon name="heroicons:hand-thumb-up-solid" />
       </div>
     </div> -->
-    <div class="bg-red-400">hi</div>
-    <figure class="h-none">
-      <NuxtImg
-        src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
-        alt="Album"
-        class=""
-      />
-    </figure>
+    <div class="bg-red-400">
+      hi
+      <br />
+      <br />
+      <br />
+      <br />
+      bye
+    </div>
+
+    <NuxtImg
+      src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
+      alt="Album"
+      class="h-64"
+    />
   </div>
 
   <!-- <div class="card border bg-base-100 lg:card-side">
