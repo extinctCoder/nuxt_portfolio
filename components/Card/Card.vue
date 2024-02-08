@@ -1,5 +1,5 @@
 <template>
-  <!-- <div class="card border bg-base-100 lg:card-side">
+  <div class="card border bg-base-100 lg:card-side">
     <div class="card-body">
       <h2 class="card-title">New album is released!</h2>
       <p>
@@ -15,7 +15,7 @@
         alt="Album"
       />
     </figure>
-  </div> -->
+  </div>
 
   <div class="flex justify-between">
     <div class="flex gap-4">
@@ -25,7 +25,7 @@
       </div>
       <div class="inline-flex items-center gap-2">
         <Icon name="heroicons:folder-open-solid" />
-        <span>31/12/2006</span>
+        <span>Blogging, Demo</span>
       </div>
     </div>
     <Icon name="heroicons:hand-thumb-up-solid" />
