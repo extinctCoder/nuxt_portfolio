@@ -3,7 +3,7 @@
     <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content">
       <Header />
-      <div class="container mx-auto mt-4 px-8"><slot /></div>
+      <div class="container mx-auto my-4 px-8"><slot /></div>
     </div>
     <div class="drawer-side border-r">
       <label
