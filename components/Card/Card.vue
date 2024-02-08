@@ -1,12 +1,12 @@
 <template>
-  <div class="card border bg-base-100 lg:card-side">
+  <!-- <div class="card border bg-base-100 lg:card-side">
     <div class="card-body">
       <h2 class="card-title">New album is released!</h2>
       <p>
         <TestBed />
       </p>
       <div class="card-actions justify-end">
-        <!-- <button class="btn btn-primary">Listen</button> -->
+        <button class="btn btn-primary">Listen</button>
       </div>
     </div>
     <figure class="w-1/3">
@@ -15,12 +15,14 @@
         alt="Album"
       />
     </figure>
-  </div>
+  </div> -->
 
-  <div class="flex gap-2">
-    <div class="flex flex-col justify-between">
-      <h2 class="card-title">New album is released!</h2>
-      <TestBed />
+  <div class="border-ro flex gap-2 rounded border">
+    <div class="flex flex-col justify-between p-4">
+      <div class="flex flex-col gap-4">
+        <h2 class="card-title">New album is released!</h2>
+        <TestBed />
+      </div>
     </div>
     <figure class="w-1/3">
       <img
