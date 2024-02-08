@@ -27,13 +27,7 @@
     </figure>
   </div>
 
-  <div class="card bg-base-100 shadow-xl lg:card-side">
-    <figure>
-      <img
-        src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
-        alt="Album"
-      />
-    </figure>
+  <div class="card border bg-base-100 lg:card-side">
     <div class="card-body">
       <h2 class="card-title">New album is released!</h2>
       <TestBed />
@@ -41,6 +35,12 @@
         <button class="btn btn-primary">Listen</button>
       </div>
     </div>
+    <figure>
+      <img
+        src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
+        alt="Album"
+      />
+    </figure>
   </div>
 </template>
 
