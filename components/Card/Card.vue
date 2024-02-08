@@ -1,6 +1,6 @@
 <template>
   <div class="flex cursor-pointer gap-2 rounded border">
-    <div class="flex flex-col justify-between gap-2 bg-black p-4">
+    <!-- <div class="flex flex-col justify-between gap-2 bg-emerald-400 p-4">
       <div class="flex flex-col gap-4">
         <h2 class="card-title">New album is released!</h2>
         <TestBed />
@@ -18,9 +18,9 @@
         </div>
         <Icon name="heroicons:hand-thumb-up-solid" />
       </div>
-    </div>
+    </div> -->
     <div class="bg-red-400">hi</div>
-    <figure class="w-1/3 min-w-80 max-w-96">
+    <figure class="h-none">
       <NuxtImg
         src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
         alt="Album"
