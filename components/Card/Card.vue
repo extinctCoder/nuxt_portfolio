@@ -1,5 +1,5 @@
 <template>
-  <div class="flex h-56 cursor-pointer gap-2 rounded border">
+  <div class="flex cursor-pointer gap-2 rounded border">
     <div class="flex flex-col justify-between gap-2 bg-black p-4">
       <div class="flex flex-col gap-4">
         <h2 class="card-title">New album is released!</h2>
@@ -23,7 +23,7 @@
     <NuxtImg
       src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
       alt="Album"
-      class="aspect-9/16 max-h-full"
+      class="aspect-9/16 max-h-full object-contain"
     />
     <!-- </figure> -->
   </div>
@@ -68,7 +68,7 @@
     <NuxtImg
       src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
       alt="Album"
-      class="h-full"
+      class="h-full object-contain"
     />
     <!-- </figure> -->
   </div>
