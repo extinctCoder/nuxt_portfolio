@@ -19,7 +19,7 @@
 
   <div class="flex justify-between">
     <div class="flex gap-4">
-      <div class="felx content-center items-center justify-center gap-2">
+      <div class="felx justify-center gap-2">
         <Icon name="heroicons:calendar-solid" /> <span>31/12/2016</span>
       </div>
       <Icon name="heroicons:folder-open-solid" />
