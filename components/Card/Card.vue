@@ -6,7 +6,7 @@
         <TestBed />
       </div>
       <div class="flex justify-between">
-        <div class="flex gap-4">
+        <div class="flex flex-wrap gap-4">
           <div class="inline-flex items-center gap-2">
             <Icon name="heroicons:calendar-solid" />
             <span>31/12/2006</span>
