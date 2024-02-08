@@ -17,7 +17,9 @@
     </figure>
   </div> -->
 
-  <div class=""></div>
+  <div class="">
+    <Icon name="heroicons:calendar-solid" />
+  </div>
 </template>
 
 <script lang="ts" setup></script>
