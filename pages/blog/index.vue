@@ -1,18 +1,21 @@
 <template>
-  <div class="flex flex-col gap-4">
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
+  <div class="flex gap-8">
+    <div class="flex flex-col gap-4">
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+    </div>
+    <span>hi</span>
   </div>
 </template>
 
