@@ -30,15 +30,6 @@
       src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
       class="aspect-16/9 object-cover object-center lg:aspect-4/3 lg:max-h-none"
     />
-    <NuxtImg src="/nuxt.png" :placeholder="[50, 25]" />
-    <!-- Automatically generate a placeholder based on the original image -->
-    <nuxt-img src="/nuxt.png" placeholder />
-
-    <!-- Set a width, height for the automatically generated placeholder  -->
-    <nuxt-img src="/nuxt.png" :placeholder="[50, 25]" />
-
-    <!-- Set a width, height, quality & blur for the automatically generated placeholder  -->
-    <nuxt-img src="/nuxt.png" :placeholder="[50, 25, 75, 5]" />
   </div>
 </template>
 
