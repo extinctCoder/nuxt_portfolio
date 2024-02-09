@@ -10,8 +10,9 @@
             <h2 class="menu-title">Recently Updated</h2>
             <ul>
               <li><NuxtLink>Writing a New Post</NuxtLink></li>
-              <li><NuxtLink>Item 2</NuxtLink></li>
-              <li><NuxtLink>Item 3</NuxtLink></li>
+              <li><NuxtLink>Getting Started</NuxtLink></li>
+              <li><NuxtLink>Text and Typography</NuxtLink></li>
+              <li><NuxtLink>Customize the Favicon</NuxtLink></li>
             </ul>
           </li>
         </ul>
