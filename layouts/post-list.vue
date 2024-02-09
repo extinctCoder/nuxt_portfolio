@@ -1,10 +1,13 @@
 <template>
   <div class="flex gap-8">
-    <div class="flex flex-col gap-4 bg-gray-400">
+    <div class="flex grow flex-col gap-4 bg-gray-400">
       <slot />
     </div>
-    <div class="w-10/12 bg-stone-600">
-      <ul class="menu w-56 rounded-box bg-base-200">
+    <div class="w-2/12 bg-stone-400">
+      <br />
+      <br />
+      <br />
+      <ul class="menu rounded-box bg-base-200">
         <li>
           <h2 class="menu-title">Title</h2>
           <ul>
@@ -14,9 +17,9 @@
           </ul>
         </li>
       </ul>
+      -->
     </div>
   </div>
-  <div></div>
 </template>
 
 <script lang="ts" setup></script>
