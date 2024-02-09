@@ -16,6 +16,10 @@
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script setup lang="ts">
+definePageMeta({
+  layout: "post-list",
+});
+</script>
 
 <style></style>
