@@ -1,22 +1,17 @@
 <template>
-  <div class="">
-    <div class="... sticky top-0">A</div>
-    <!-- <div class="flex flex-col gap-4"> -->
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <!-- </div> -->
-  </div>
+  <Card />
+  <Card />
+  <Card />
+  <Card />
+  <Card />
+  <Card />
+  <Card />
+  <Card />
+  <Card />
+  <Card />
+  <Card />
+  <Card />
+  <Card />
 </template>
 
 <script setup lang="ts">
