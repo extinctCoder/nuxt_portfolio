@@ -1,21 +1,4 @@
-<template>
-  this is home page
-  <div class="flex flex-col gap-4">
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-  </div>
-</template>
+<template>this is home page</template>
 
 <script lang="ts" setup></script>
 
