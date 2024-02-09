@@ -12,26 +12,6 @@
     </li>
     <li>
       <a>
-        <Icon name="jam:twitter" />
-      </a>
-    </li>
-    <li>
-      <a>
-        <Icon name="jam:twitter" />
-      </a>
-    </li>
-    <li>
-      <a>
-        <Icon name="jam:twitter" />
-      </a>
-    </li>
-    <li>
-      <a>
-        <Icon name="jam:twitter" />
-      </a>
-    </li>
-    <li>
-      <a>
         <Icon name="jam:linkedin" />
       </a>
     </li>
