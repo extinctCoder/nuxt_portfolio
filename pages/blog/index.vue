@@ -15,7 +15,7 @@
       <Card />
       <Card />
     </div>
-    <span>hi</span>
+    <span class="sticky top-0">hi</span>
   </div>
 </template>
 
