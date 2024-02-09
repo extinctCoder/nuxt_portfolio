@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex cursor-pointer flex-col gap-2 overflow-hidden rounded border lg:flex-row"
+    class="flex cursor-pointer flex-col-reverse gap-2 overflow-hidden rounded border lg:flex-row"
   >
     <div class="flex flex-col justify-between gap-6 p-4">
       <div class="flex flex-col gap-4">
@@ -25,7 +25,7 @@
     </div>
     <img
       src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
-      class="flex-1 object-fill object-center grayscale filter hover:grayscale-0 lg:aspect-video lg:object-none"
+      class="aspect-video flex-1 object-none object-center grayscale filter hover:grayscale-0"
     />
   </div>
 </template>
