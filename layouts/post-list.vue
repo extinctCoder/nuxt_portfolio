@@ -1,10 +1,10 @@
 <template>
   <NuxtLayout name="default">
     <div class="flex gap-8">
-      <div class="flex grow flex-col gap-4">
+      <div class="flex w-10/12 flex-auto flex-col gap-4">
         <slot />
       </div>
-      <div class="hidden w-72 flex-none lg:block">
+      <div class="hidden w-72 flex-auto lg:block">
         <!-- <div class="sticky top-0"> -->
         hello
         <!-- <ul class="menu">
