@@ -1,6 +1,5 @@
 <template>
-  <!-- hello
-  <TestBed /> -->
+  this is home page
   <div class="flex flex-col gap-4">
     <Card />
     <Card />

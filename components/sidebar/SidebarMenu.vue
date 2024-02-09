@@ -1,16 +1,16 @@
 <template>
   <ul class="menu menu-lg">
     <li>
-      <a>
+      <NuxtLink href="/">
         <Icon name="heroicons:home-solid" />
         home
-      </a>
+      </NuxtLink>
     </li>
     <li>
-      <a>
+      <NuxtLink href="/blog">
         <Icon name="heroicons:list-bullet-solid" />
-        categories
-      </a>
+        blog
+      </NuxtLink>
     </li>
     <li>
       <a>
