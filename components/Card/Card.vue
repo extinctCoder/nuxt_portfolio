@@ -3,7 +3,7 @@
     class="flex cursor-pointer flex-col-reverse gap-2 overflow-hidden rounded border lg:flex-row"
   >
     <div class="flex flex-col justify-between gap-6 p-4">
-      <div class="flex flex-col gap-4">
+      <div class="flex flex-col gap-6">
         <h2 class="card-title">New album is released!</h2>
         <TestBed />
       </div>
@@ -28,7 +28,7 @@
     /> -->
     <NuxtImg
       src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
-      class="aspect-16/9 object-cover object-center"
+      class="aspect-16/9 object-cover object-center lg:aspect-4/3"
     />
   </div>
 </template>

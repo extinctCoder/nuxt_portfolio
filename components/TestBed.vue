@@ -9,12 +9,6 @@
     harum impedit consequuntur accusamus deleniti molestiae dignissimos
     necessitatibus voluptate natus aliquam officia tempora ut vel totam aut
     facere, reprehenderit illum.
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    lorem500
   </div>
 </template>
 
