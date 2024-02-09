@@ -25,8 +25,11 @@
     </div>
     <NuxtImg
       src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
-      class="lg:aspect-square aspect-4/3 object-cover object-center grayscale filter hover:grayscale-0"
     />
+    <!-- <NuxtImg
+      src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
+      class="lg:aspect-square aspect-4/3 object-cover object-center grayscale filter hover:grayscale-0"
+    /> -->
   </div>
 </template>
 
