@@ -3,7 +3,7 @@
     <div class="flex grow flex-col gap-4 bg-gray-400">
       <slot />
     </div>
-    <div class="w-2/12 bg-stone-400">
+    <div class="min-w-64 max-w-72 flex-none bg-stone-400">
       <br />
       <br />
       <br />
