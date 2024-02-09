@@ -3,15 +3,15 @@
     <div class="flex grow flex-col gap-4 bg-gray-400">
       <slot />
     </div>
-    <div class="w-72 flex-none bg-stone-400">
+    <div class="w-72 flex-none">
       <div class="sticky top-0">
-        <ul class="menu bg-base-200">
+        <ul class="menu">
           <li>
             <h2 class="menu-title">Recently Updated</h2>
             <ul>
-              <li><a>Item 1</a></li>
-              <li><a>Item 2</a></li>
-              <li><a>Item 3</a></li>
+              <li><NuxtLink>Writing a New Post</NuxtLink></li>
+              <li><NuxtLink>Item 2</NuxtLink></li>
+              <li><NuxtLink>Item 3</NuxtLink></li>
             </ul>
           </li>
         </ul>
