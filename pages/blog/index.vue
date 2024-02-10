@@ -15,9 +15,9 @@
 </template>
 
 <script setup lang="ts">
-// definePageMeta({
-//   layout: "post-list",
-// });
+definePageMeta({
+  layout: "post-list",
+});
 </script>
 
 <style></style>

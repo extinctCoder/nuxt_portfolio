@@ -1,13 +1,13 @@
 <template>
   <ul class="menu menu-lg">
     <li>
-      <NuxtLink href="/">
+      <NuxtLink to="/">
         <Icon name="heroicons:home-solid" />
         home
       </NuxtLink>
     </li>
     <li>
-      <NuxtLink href="/blog">
+      <NuxtLink to="/blog">
         <Icon name="heroicons:list-bullet-solid" />
         blog
       </NuxtLink>
