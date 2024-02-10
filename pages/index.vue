@@ -1,9 +1,5 @@
 <template>this is home page</template>
 
-<script lang="ts" setup>
-definePageMeta({
-  layout: "default",
-});
-</script>
+<script lang="ts" setup></script>
 
 <style></style>
