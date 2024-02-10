@@ -7,7 +7,7 @@
 <script lang="ts" setup>
 useHead({
   title: "Portfolio App",
-  meta: [{ name: "description", content: "My amazing site." }],
+  meta: [{ name: "description", content: "This is my Portfolio." }],
   bodyAttrs: {
     class: "test",
   },
