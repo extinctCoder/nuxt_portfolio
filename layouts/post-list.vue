@@ -17,7 +17,7 @@
               <li><NuxtLink>Text and Typography</NuxtLink></li>
               <li><NuxtLink>Customize the Favicon</NuxtLink></li>
             </ul>
-          </li>
+           </li>
         </ul> -->
         <!-- </div> -->
       </div>
