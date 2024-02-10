@@ -1,15 +1,14 @@
 <template>
-  <div>
-    <NuxtLayout name="default">
-      <NuxtLink to="/">back</NuxtLink>
-      <div class="flex gap-8">
-        <div class="flex w-10/12 flex-auto flex-col gap-4">
-          <slot />
-        </div>
-        <div class="hidden w-72 flex-auto lg:block">
-          <!-- <div class="sticky top-0"> -->
-          hello
-          <!-- <ul class="menu">
+  <!-- <div> -->
+  <NuxtLayout name="default">
+    <div class="flex gap-8">
+      <div class="flex w-10/12 flex-auto flex-col gap-4">
+        <slot />
+      </div>
+      <div class="hidden w-72 flex-auto lg:block">
+        <!-- <div class="sticky top-0"> -->
+        hello
+        <!-- <ul class="menu">
               <li>
                 <h2 class="menu-title">Recently Updated</h2>
                 <ul>
@@ -20,11 +19,11 @@
                 </ul>
               </li>
             </ul> -->
-          <!-- </div> -->
-        </div>
+        <!-- </div> -->
       </div>
-    </NuxtLayout>
-  </div>
+    </div>
+  </NuxtLayout>
+  <!-- </div> -->
 </template>
 
 <script lang="ts" setup></script>
