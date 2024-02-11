@@ -1,6 +1,10 @@
 <template>
   <div v-for="post in posts" :key="post._path">
-    <Card :heading="post.title" :body_text="post.description"></Card>
+    <Card
+      :heading="post.title"
+      :body_text="post.description"
+      :publish_date="post.date"
+    ></Card>
   </div>
   <Card></Card>
   <Card></Card>
