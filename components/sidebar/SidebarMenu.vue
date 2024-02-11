@@ -16,7 +16,13 @@
       :aria-current="item.current ? 'page' : undefined"
       >{{ item.name }}</a
     > -->
-    <a v-for="item in sideMenu" :key="item.name" :href="item.to"></a>
+    <li v-for="nav_item in sideMenu" :key="nav_item.to">
+      <NuxtLink :to="nav_item.to">
+        <Icon name="heroicons:home-solid" />
+        home
+      </NuxtLink>
+    </li>
+
     <li>
       <NuxtLink to="/">
         <Icon name="heroicons:home-solid" />
@@ -51,13 +57,11 @@
 </template>
 
 <script lang="ts" setup>
-import { SideNav } from "#build/components";
-
 const sideMenu = [
-  { name: "Home", to: "/" },
-  { name: "Blog", to: "/blog" },
-  { name: "Projects", to: "/projects" },
-  { name: "Uses", to: "/uses" },
+  { title: "Home", to: "/", icon: "heroicons:home-solid" },
+  { title: "Blog", to: "/blog" },
+  { title: "Projects", to: "/projects" },
+  { title: "Uses", to: "/uses" },
 ];
 </script>
 
