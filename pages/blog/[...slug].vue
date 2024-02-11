@@ -3,6 +3,10 @@
   <ContentDoc />
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+definePageMeta({
+  layout: "post-list",
+});
+</script>
 
 <style></style>
