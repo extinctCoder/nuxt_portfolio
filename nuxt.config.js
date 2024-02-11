@@ -16,9 +16,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "nuxt-icon",
   ],
-  content: {
-    // My custom configuration
-  },
+  content: { baseURL: "/api/_content" },
   // image: {
   //   // Options
   // },
