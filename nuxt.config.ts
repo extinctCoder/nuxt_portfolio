@@ -15,8 +15,11 @@ export default defineNuxtConfig({
     "nuxt-headlessui",
     "@nuxt/image",
     "nuxt-icon",
+    "@nuxt/content",
   ],
-  content: { baseURL: "/api/_content" },
+  content: {
+    // baseURL: "/api/_content"
+  },
   // image: {
   //   // Options
   // },
