@@ -1,8 +1,8 @@
 <template>
   <div
-    class="flex cursor-pointer flex-col-reverse gap-2 overflow-hidden rounded border lg:flex-row"
+    class="flex cursor-pointer flex-col-reverse gap-2 overflow-hidden rounded border lg:flex-row lg:justify-between"
   >
-    <div class="flex flex-col justify-between gap-6 p-4">
+    <div class="flex flex-1 flex-col justify-between gap-6 p-4">
       <div class="flex flex-col gap-6">
         <h2 class="card-title">{{ props.heading }}</h2>
         {{ props.body_text }}
@@ -23,26 +23,26 @@
         </div>
       </div>
     </div>
-    <!-- <NuxtImg
-      src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
-    /> -->
     <NuxtImg
       src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
       class="aspect-16/9 object-cover object-center lg:aspect-4/3"
     />
-    {{ props }}
+    <!-- <NuxtImg
+      src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
+    /> -->
   </div>
 </template>
 
 <script lang="ts" setup>
 interface CardInterface {
-  heading?: string;
+  heading: string;
   body_text?: string;
 }
 
 const props = withDefaults(defineProps<CardInterface>(), {
-  heading: "hello",
-  body_text: "hello world",
+  heading: "Lorem ipsum",
+  body_text:
+    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio enim optio sunt. Ipsa et blanditiis rerum adipisci. Optio eligendi porro autem voluptates, ducimus dolores minus voluptatem omnis culpa mollitia eius!",
 });
 </script>
 
