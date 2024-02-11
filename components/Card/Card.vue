@@ -15,7 +15,7 @@
           </div>
           <div class="inline-flex items-center gap-2">
             <Icon name="heroicons:folder-open-solid" />
-            <span>Blogging, Demo</span>
+            <span>Blogging, Demo {{ tags }}</span>
           </div>
         </div>
         <div class="inline-flex items-center gap-2">
@@ -36,13 +36,15 @@
 <script lang="ts" setup>
 interface CardInterface {
   heading: string;
-  body_text: string;
   publish_date: string;
+  tags: string[];
+  body_text: string;
 }
 
 const props = withDefaults(defineProps<CardInterface>(), {
   heading: "Lorem ipsum",
   publish_date: new Date().toDateString(),
+  tags: () => ["Lorem", "ipsum"],
   body_text:
     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio enim optio sunt. Ipsa et blanditiis rerum adipisci. Optio eligendi porro autem voluptates, ducimus dolores minus voluptatem omnis culpa mollitia eius!",
 });
