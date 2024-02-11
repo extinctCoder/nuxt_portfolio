@@ -61,7 +61,8 @@ const sideMenu = [
   { title: "Home", to: "/", icon: "heroicons:home-solid" },
   { title: "Blog", to: "/blog", icon: "heroicons:list-bullet-solid" },
   { title: "Projects", to: "/projects", icon: "heroicons:tag-solid" },
-  { title: "Uses", to: "/uses" },
+  { title: "Archives", to: "/uses", icon: "heroicons:archive-box-solid" },
+  { title: "About", to: "/uses", icon: "heroicons:information-circle-solid" },
 ];
 </script>
 
