@@ -8,10 +8,10 @@
 useHead({
   title: "Portfolio App",
   meta: [{ name: "description", content: "This is my Portfolio." }],
-  bodyAttrs: {
-    class: "test",
-  },
-  script: [{ innerHTML: "console.log('Hello world')" }],
+  // bodyAttrs: {
+  //   class: "test",
+  // },
+  // script: [{ innerHTML: "console.log('Hello world')" }],
 });
 </script>
 
