@@ -1,6 +1,8 @@
 <template>
   <div>this is catch all : {{ $route.params.slug }}</div>
-  <ContentDoc />
+  <div class="prose">
+    <ContentDoc />
+  </div>
 </template>
 
 <script lang="ts" setup>
