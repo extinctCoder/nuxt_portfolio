@@ -33,6 +33,13 @@
   </ul>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const sideMenu = [
+  { name: "Home", href: "/" },
+  { name: "Blog", href: "/blog" },
+  { name: "Projects", href: "/projects" },
+  { name: "Uses", href: "/uses" },
+];
+</script>
 
 <style></style>
