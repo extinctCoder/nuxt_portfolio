@@ -36,7 +36,7 @@
 
 <script lang="ts" setup>
 interface CardInterface {
-  heading: string;
+  heading?: string;
   body_text?: string;
 }
 
