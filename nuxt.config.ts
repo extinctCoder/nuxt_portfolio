@@ -7,6 +7,9 @@ export default defineNuxtConfig({
       enabled: true,
     },
   },
+  typescript: {
+    shim: false,
+  },
   modules: [
     "@nuxtjs/tailwindcss",
     "nuxt-headlessui",
