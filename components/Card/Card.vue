@@ -24,8 +24,7 @@
         </div>
       </div>
     </div>
-    <NuxtImg :src="`/images/blog/${image}`" />
-    <NuxtImg src="/images/blog/nasa-Q1p7bh3SHj8-unsplash.jpg" />
+    <NuxtImg v-if="image" :src="`/images/blog/${image}`" />
   </NuxtLink>
 </template>
 
@@ -44,7 +43,7 @@ const props = withDefaults(defineProps<CardInterface>(), {
   to: "/",
   publish_date: new Date().toDateString(),
   tags: () => ["Lorem", "ipsum"],
-  image: "none",
+  image: undefined,
   body_text:
     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio enim optio sunt. Ipsa et blanditiis rerum adipisci. Optio eligendi porro autem voluptates, ducimus dolores minus voluptatem omnis culpa mollitia eius!",
 });
