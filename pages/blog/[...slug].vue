@@ -2,11 +2,11 @@
   <div>this is catch all : {{ $route.params.slug }}</div>
   <div class="prose">
     <!-- <ContentDoc /> -->
-    <ContentRenderer :value="data"></ContentRenderer>
+    <ContentRenderer :value="data.body"></ContentRenderer>
     <br />
     <br />
     <br />
-    {{ data }}
+    {{ data.body }}
     <br />
     <br />
   </div>
