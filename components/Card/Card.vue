@@ -28,9 +28,6 @@
       src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
       class="aspect-16/9 object-cover object-center lg:aspect-4/3"
     />
-    <!-- <NuxtImg
-      src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
-    /> -->
   </NuxtLink>
 </template>
 
@@ -40,6 +37,7 @@ interface CardInterface {
   to: string;
   publish_date: string;
   tags: string[];
+  image: string;
   body_text: string;
 }
 
@@ -48,6 +46,7 @@ const props = withDefaults(defineProps<CardInterface>(), {
   to: "/",
   publish_date: new Date().toDateString(),
   tags: () => ["Lorem", "ipsum"],
+  image: "none",
   body_text:
     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio enim optio sunt. Ipsa et blanditiis rerum adipisci. Optio eligendi porro autem voluptates, ducimus dolores minus voluptatem omnis culpa mollitia eius!",
 });
