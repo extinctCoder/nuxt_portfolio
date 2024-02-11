@@ -18,6 +18,12 @@ export default defineNuxtConfig({
     "@nuxt/content",
   ],
   content: {
+    highlight: {
+      theme: {
+        default: "github-light",
+        dark: "github-dark",
+      },
+    },
     // baseURL: "/api/_content"
   },
   // image: {
