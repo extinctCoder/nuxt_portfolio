@@ -13,11 +13,11 @@ const navigation = [
   { title: "Fiverr", href: "/", icon: "jam:fiverr" },
   { title: "Linkedin", href: "/blog", icon: "jam:linkedin" },
   { title: "GitHub", href: "/projects", icon: "jam:github" },
-  { title: "Gitlab", href: "/uses", icon: "heroicons:gitlab" },
+  { title: "Gitlab", href: "/uses", icon: "jam:gitlab" },
   {
     title: "Whatsapp",
     to: "/uses",
-    icon: "heroicons:information-circle-solid",
+    icon: "jam:whatsapp",
   },
 ];
 </script>
