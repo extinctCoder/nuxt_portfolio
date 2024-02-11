@@ -1,4 +1,4 @@
-interface Props {
+export interface CardInterface {
   heading: string;
-  body?: string;
+  body_text?: string;
 }

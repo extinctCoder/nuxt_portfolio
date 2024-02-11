@@ -30,18 +30,16 @@
       src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
       class="aspect-16/9 object-cover object-center lg:aspect-4/3"
     />
+    {{ props }}
   </div>
 </template>
 
 <script lang="ts" setup>
-export interface Props {
-  msg?: string;
-  labels?: string[];
-}
+import type { CardInterface } from "../../interfaces/CardInterface";
 
-const props = withDefaults(defineProps<Props>(), {
-  msg: "hello",
-  labels: () => ["one", "two"],
+const props = withDefaults(defineProps<CardInterface>(), {
+  heading: "hello",
+  body_text: "hello world",
 });
 </script>
 
