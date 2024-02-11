@@ -18,7 +18,7 @@
     > -->
     <li v-for="nav_item in sideMenu" :key="nav_item.to">
       <NuxtLink :to="nav_item.to">
-        <Icon name="heroicons:home-solid" />
+        <Icon name="{{nav_item.title  }}" />
         home
       </NuxtLink>
     </li>
