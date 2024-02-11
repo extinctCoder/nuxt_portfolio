@@ -24,7 +24,7 @@
         </div>
       </div>
     </div>
-    <NuxtImg src="`images/blog/${post.image}`" />
+    <NuxtImg :src="`/images/blog/${image}`" />
   </NuxtLink>
 </template>
 
