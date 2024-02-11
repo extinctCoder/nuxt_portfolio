@@ -10,7 +10,7 @@ useHead({
 
   meta: [{ name: "description", content: "This is my Portfolio." }],
   htmlAttrs: {
-    lang: "en",
+    lang: "en-US",
   },
   // bodyAttrs: {
   //   class: "test",
