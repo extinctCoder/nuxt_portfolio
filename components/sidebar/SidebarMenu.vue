@@ -1,8 +1,8 @@
 <template>
   <ul class="menu menu-lg">
-    {{
+    <!-- {{
       sideMenu
-    }}
+    }} -->
     <!-- <a
       v-for="item in navigation"
       :key="item.name"
@@ -16,7 +16,7 @@
       :aria-current="item.current ? 'page' : undefined"
       >{{ item.name }}</a
     > -->
-    <li v-for="nav_item in SideNav" :key="nav_item.to">
+    <li v-for="nav_item in sideMenu" :key="nav_item.to">
       <NuxtLink to="/">
         <Icon name="heroicons:home-solid" />
         {{ nav_item.name }}
