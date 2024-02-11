@@ -1,18 +1,8 @@
 <template>
   <ul class="menu menu-horizontal menu-lg items-center justify-around">
-    <li>
-      <a>
-        <Icon name="jam:fiverr" />
-      </a>
-    </li>
-    <li>
-      <a>
-        <Icon name="jam:twitter" />
-      </a>
-    </li>
-    <li>
-      <a>
-        <Icon name="jam:linkedin" />
+    <li v-for="nav_item in navigation" :key="nav_item.href">
+      <a :href="nav_item.href">
+        <Icon :name="nav_item.icon" />
       </a>
     </li>
   </ul>
@@ -20,11 +10,15 @@
 
 <script lang="ts" setup>
 const navigation = [
-  { title: "Home", to: "/", icon: "heroicons:home-solid" },
-  { title: "Blog", to: "/blog", icon: "heroicons:list-bullet-solid" },
-  { title: "Projects", to: "/projects", icon: "heroicons:tag-solid" },
-  { title: "Archives", to: "/uses", icon: "heroicons:archive-box-solid" },
-  { title: "About", to: "/uses", icon: "heroicons:information-circle-solid" },
+  { title: "Fiverr", href: "/", icon: "jam:fiverr" },
+  { title: "Linkedin", href: "/blog", icon: "jam:linkedin" },
+  { title: "GitHub", href: "/projects", icon: "jam:github" },
+  { title: "Gitlab", href: "/uses", icon: "heroicons:gitlab" },
+  {
+    title: "Whatsapp",
+    to: "/uses",
+    icon: "heroicons:information-circle-solid",
+  },
 ];
 </script>
 
