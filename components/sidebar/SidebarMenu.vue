@@ -1,5 +1,27 @@
 <template>
   <ul class="menu menu-lg">
+    {{
+      sideMenu
+    }}
+    <!-- <a
+      v-for="item in navigation"
+      :key="item.name"
+      :href="item.href"
+      :class="[
+        item.current
+          ? 'bg-gray-900 text-white'
+          : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+        'rounded-md px-3 py-2 text-sm font-medium',
+      ]"
+      :aria-current="item.current ? 'page' : undefined"
+      >{{ item.name }}</a
+    > -->
+    <li v-for="nav_item in SideNav" :key="nav_item.to">
+      <NuxtLink to="/">
+        <Icon name="heroicons:home-solid" />
+        {{ nav_item.name }}
+      </NuxtLink>
+    </li>
     <li>
       <NuxtLink to="/">
         <Icon name="heroicons:home-solid" />
@@ -34,11 +56,13 @@
 </template>
 
 <script lang="ts" setup>
+import { SideNav } from "#build/components";
+
 const sideMenu = [
-  { name: "Home", href: "/" },
-  { name: "Blog", href: "/blog" },
-  { name: "Projects", href: "/projects" },
-  { name: "Uses", href: "/uses" },
+  { name: "Home", to: "/" },
+  { name: "Blog", to: "/blog" },
+  { name: "Projects", to: "/projects" },
+  { name: "Uses", to: "/uses" },
 ];
 </script>
 
