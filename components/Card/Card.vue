@@ -11,7 +11,7 @@
         <div class="flex flex-wrap gap-4">
           <div class="inline-flex items-center gap-2">
             <Icon name="heroicons:calendar-solid" />
-            <span>{{ publish_date }}</span>
+            <span>{{ new Date(publish_date).toDateString() }}</span>
           </div>
           <div class="inline-flex items-center gap-2">
             <Icon name="heroicons:folder-open-solid" />

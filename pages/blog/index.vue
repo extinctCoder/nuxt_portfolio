@@ -3,7 +3,7 @@
     <Card
       :heading="post.title"
       :body_text="post.description"
-      :publish_date="post.date.toDateString()"
+      :publish_date="post.date"
     ></Card>
   </div>
   <Card></Card>
