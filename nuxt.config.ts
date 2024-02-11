@@ -19,10 +19,7 @@ export default defineNuxtConfig({
   ],
   content: {
     highlight: {
-      theme: {
-        default: "dracula",
-        dark: "github-dark",
-      },
+      theme: "dracula",
     },
     // baseURL: "/api/_content"
   },
