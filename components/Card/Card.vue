@@ -36,7 +36,7 @@
 <script lang="ts" setup>
 interface CardInterface {
   heading: string;
-  body_text?: string;
+  body_text: string;
 }
 
 const props = withDefaults(defineProps<CardInterface>(), {
