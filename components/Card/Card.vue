@@ -4,7 +4,7 @@
   >
     <div class="flex flex-col justify-between gap-6 p-4">
       <div class="flex flex-col gap-6">
-        <h2 class="card-title">New album is released!</h2>
+        <h2 class="card-title">{{ props.heading }}</h2>
         <TestBed />
       </div>
       <div class="flex justify-between">
@@ -35,7 +35,11 @@
 </template>
 
 <script lang="ts" setup>
-import type { CardInterface } from "../../interfaces/CardInterface";
+// import type { CardInterface } from "../../interfaces/CardInterface";
+export interface CardInterface {
+  heading: string;
+  body_text?: string;
+}
 
 const props = withDefaults(defineProps<CardInterface>(), {
   heading: "hello",

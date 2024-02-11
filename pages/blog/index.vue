@@ -1,9 +1,7 @@
 <template>
   <div v-for="post in posts" :key="post._path">
-    {{ post.title }}
+    <Card :title="post.title" :body_text="post.description"></Card>
   </div>
-  <Card />
-  {{ posts }}
 </template>
 
 <script setup lang="ts">
