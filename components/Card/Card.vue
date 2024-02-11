@@ -5,7 +5,7 @@
     <div class="flex flex-col justify-between gap-6 p-4">
       <div class="flex flex-col gap-6">
         <h2 class="card-title">{{ props.heading }}</h2>
-        <TestBed />
+        {{ props.body_text }}
       </div>
       <div class="flex justify-between">
         <div class="flex flex-wrap gap-4">
@@ -35,8 +35,7 @@
 </template>
 
 <script lang="ts" setup>
-// import type { CardInterface } from "../../interfaces/CardInterface";
-export interface CardInterface {
+interface CardInterface {
   heading: string;
   body_text?: string;
 }
