@@ -2,7 +2,7 @@
   <div>this is catch all : {{ $route.params.slug }}</div>
   <div class="prose">
     <!-- <ContentDoc /> -->
-    <ContentRenderer :value="data"></ContentRenderer>
+    <ContentRenderer :value="post"></ContentRenderer>
     <br />
     <br />
     <br />
@@ -17,7 +17,7 @@ definePageMeta({
   layout: "post-list",
 });
 const { path } = useRoute();
-const { data } = await useAsyncData(path, () =>
+const { data: post } = await useAsyncData(path, () =>
   queryContent().where({ _path: path }).findOne(),
 );
 </script>
