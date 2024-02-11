@@ -12,7 +12,7 @@ export default {
   ],
   theme: {
     extend: {
-      primary: "#FF6363",
+      // primary: "#FF6363",
       aspectRatio: {
         "4/3": "4 / 3",
         "16/9": "16 / 9",
