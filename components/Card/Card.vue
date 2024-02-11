@@ -15,7 +15,7 @@
           </div>
           <div class="inline-flex items-center gap-2">
             <Icon name="heroicons:folder-open-solid" />
-            <span>Blogging, Demo {{ tags }}</span>
+            <span>{{ tags.join(", ") }}</span>
           </div>
         </div>
         <div class="inline-flex items-center gap-2">
