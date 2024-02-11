@@ -59,8 +59,8 @@
 <script lang="ts" setup>
 const sideMenu = [
   { title: "Home", to: "/", icon: "heroicons:home-solid" },
-  { title: "Blog", to: "/blog" },
-  { title: "Projects", to: "/projects" },
+  { title: "Blog", to: "/blog", icon: "heroicons:list-bullet-solid" },
+  { title: "Projects", to: "/projects", icon: "heroicons:tag-solid" },
   { title: "Uses", to: "/uses" },
 ];
 </script>
