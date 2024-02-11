@@ -16,12 +16,7 @@
       :aria-current="item.current ? 'page' : undefined"
       >{{ item.name }}</a
     > -->
-    <li v-for="nav_item in sideMenu" :key="nav_item.to">
-      <NuxtLink to="/">
-        <Icon name="heroicons:home-solid" />
-        {{ nav_item.name }}
-      </NuxtLink>
-    </li>
+    <a v-for="item in sideMenu" :key="item.name" :href="item.to"></a>
     <li>
       <NuxtLink to="/">
         <Icon name="heroicons:home-solid" />
