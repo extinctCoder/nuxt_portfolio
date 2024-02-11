@@ -9,11 +9,11 @@
       </div>
       <div class="flex justify-between">
         <div class="flex flex-wrap gap-4">
-          <div class="inline-flex items-center gap-2">
+          <div v-if="publish_date" class="inline-flex items-center gap-2">
             <Icon name="heroicons:calendar-solid" />
             <span>{{ new Date(publish_date).toDateString() }}</span>
           </div>
-          <div class="inline-flex items-center gap-2">
+          <div v-if="tags" class="inline-flex items-center gap-2">
             <Icon name="heroicons:folder-open-solid" />
             <span>{{ tags.join(", ") }}</span>
           </div>

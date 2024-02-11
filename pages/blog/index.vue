@@ -4,6 +4,7 @@
       :heading="post.title"
       :body_text="post.description"
       :publish_date="post.date"
+      :tags="post.tags"
     ></Card>
   </div>
   <Card></Card>
