@@ -1,5 +1,6 @@
 <template>
-  <div
+  <NuxtLink
+    :to="to"
     class="flex cursor-pointer flex-col-reverse gap-2 overflow-hidden rounded border lg:flex-row lg:justify-between"
   >
     <div class="flex flex-1 flex-col justify-between gap-6 p-4">
@@ -30,12 +31,13 @@
     <!-- <NuxtImg
       src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
     /> -->
-  </div>
+  </NuxtLink>
 </template>
 
 <script lang="ts" setup>
 interface CardInterface {
   heading: string;
+  to: string;
   publish_date: string;
   tags: string[];
   body_text: string;
@@ -43,6 +45,7 @@ interface CardInterface {
 
 const props = withDefaults(defineProps<CardInterface>(), {
   heading: "Lorem ipsum",
+  to: "/",
   publish_date: new Date().toDateString(),
   tags: () => ["Lorem", "ipsum"],
   body_text:
