@@ -1,5 +1,5 @@
 <template>
-  <div>this is catch all</div>
+  <div>this is catch all : {{ $route.params.slug }}</div>
   <ContentDoc />
 </template>
 
