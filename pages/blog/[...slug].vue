@@ -1,14 +1,25 @@
 <template>
   <div>this is catch all : {{ $route.params.slug }}</div>
   <div class="prose">
-    <ContentDoc />
+    <!-- <ContentDoc /> -->
+    <ContentRenderer :value="data"></ContentRenderer>
+    <br />
+    <br />
+    <br />
+    {{ data }}
+    <br />
+    <br />
   </div>
 </template>
 
-<script lang="ts" setup>
+<script setup>
 definePageMeta({
   layout: "post-list",
 });
+const { path } = useRoute();
+const { data } = await useAsyncData(path, () =>
+  queryContent().where({ _path: path }).findOne(),
+);
 </script>
 
 <style></style>

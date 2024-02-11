@@ -21,7 +21,7 @@ export default defineNuxtConfig({
     highlight: {
       theme: "dracula",
     },
-    // baseURL: "/api/_content"
+    // baseURL: "/api/_content",
   },
   // image: {
   //   // Options
