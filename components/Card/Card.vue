@@ -25,6 +25,7 @@
       </div>
     </div>
     <NuxtImg v-if="image" :src="`/images/blog/${image}`" />
+    <NuxtImg src="/favicon.ico" />
   </NuxtLink>
 </template>
 
