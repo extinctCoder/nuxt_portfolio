@@ -24,7 +24,7 @@ export default defineNuxtConfig({
     // baseURL: "/api/_content",
   },
   image: {
-    provider: "static",
+    provider: "local",
     format: ["webp"],
   },
   tailwindcss: {
