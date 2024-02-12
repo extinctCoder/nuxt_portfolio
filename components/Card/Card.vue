@@ -26,6 +26,7 @@
     </div>
     <img v-if="image" :src="`/images/blog/${image}`" />
   </NuxtLink>
+  <NuxtImg src="1.jpg" />
 </template>
 
 <script lang="ts" setup>
