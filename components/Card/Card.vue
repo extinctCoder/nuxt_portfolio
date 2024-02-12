@@ -32,11 +32,11 @@
 
 <script lang="ts" setup>
 interface CardInterface {
-  heading: string;
-  to: string;
-  publish_date: string;
-  tags: string[];
-  image: string;
+  heading?: string;
+  to?: string;
+  publish_date?: string;
+  tags?: string[];
+  image?: string;
   body_text?: string;
 }
 
