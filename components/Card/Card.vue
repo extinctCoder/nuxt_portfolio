@@ -31,6 +31,16 @@
       src="/images/blog/unsplash.jpg"
       :modifiers="{ grayscale: true, tint: '#00DC82' }"
     /> -->
+    <!-- <img
+      width="1920"
+      height="1280"
+      src="/images/blog/clement-helardot-95YRwf6CNw8-unsplash.jpg"
+    /> -->
+    <NuxtImg
+      width="1920"
+      height="1280"
+      src="/images/blog/clement-helardot-95YRwf6CNw8-unsplash.jpg"
+    />
     <NuxtPicture
       width="1920"
       height="1280"

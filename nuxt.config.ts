@@ -25,11 +25,11 @@ export default defineNuxtConfig({
   },
   image: {
     inject: true,
-    provider: "ipxStatic",
-    format: ["webp"],
-    ipxStatic: {
-      baseURL: "",
-    },
+    // provider: "ipxStatic",
+    // format: ["webp"],
+    // ipxStatic: {
+    //   baseURL: "",
+    // },
   },
   tailwindcss: {
     cssPath: "~/assets/tailwind.css",
