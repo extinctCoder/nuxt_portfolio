@@ -26,6 +26,8 @@
     </div>
     <NuxtImg v-if="image" :src="`/images/blog/${image}`" />
   </NuxtLink>
+
+  <NuxtImg src="/images/blog/nasa-Q1p7bh3SHj8-unsplash.jpg" />
 </template>
 
 <script lang="ts" setup>
