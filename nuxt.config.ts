@@ -23,10 +23,10 @@ export default defineNuxtConfig({
     },
     // baseURL: "/api/_content",
   },
-  image: {
-    // provider: "local",
-    format: ["webp"],
-  },
+  // image: {
+  // provider: "local",
+  // format: ["webp"],
+  // },
   tailwindcss: {
     cssPath: "~/assets/tailwind.css",
   },
