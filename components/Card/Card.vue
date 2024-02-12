@@ -24,7 +24,11 @@
         </div>
       </div>
     </div>
-    <NuxtImg v-if="image" :src="`/images/blog/${image}`" />
+    <!-- <NuxtImg v-if="image" :src="`/images/blog/${image}`" /> -->
+    <NuxtImg
+      v-if="image"
+      src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg"
+    />
   </NuxtLink>
 </template>
 
