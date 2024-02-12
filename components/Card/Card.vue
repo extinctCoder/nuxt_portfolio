@@ -27,6 +27,7 @@
     <!-- <NuxtImg v-if="image" :src="`/images/blog/${image}`" /> -->
     <NuxtImg
       v-if="image"
+      class="lg:aspect-4/3 lg:max-w-72"
       src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg"
     />
   </NuxtLink>
