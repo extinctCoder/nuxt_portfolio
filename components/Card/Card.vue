@@ -24,12 +24,13 @@
         </div>
       </div>
     </div>
+    <img v-if="image" :src="`/images/blog/${image}`" />
   </NuxtLink>
 </template>
 
 <script lang="ts" setup>
 interface CardInterface {
-  heading?: string;
+  heading: string;
   to?: string;
   publish_date?: string;
   tags?: string[];
