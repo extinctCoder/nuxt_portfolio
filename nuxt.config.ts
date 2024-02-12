@@ -25,8 +25,8 @@ export default defineNuxtConfig({
   },
   image: {
     inject: true,
-    // provider: "local",
-    // format: ["webp"],
+    provider: "ipx",
+    format: ["webp"],
   },
   tailwindcss: {
     cssPath: "~/assets/tailwind.css",
