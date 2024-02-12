@@ -35,7 +35,7 @@ interface CardInterface {
   publish_date: string;
   tags: string[];
   image: string;
-  body_text: string;
+  body_text?: string;
 }
 
 const props = withDefaults(defineProps<CardInterface>(), {
