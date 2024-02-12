@@ -27,9 +27,8 @@ export default defineNuxtConfig({
     inject: true,
     provider: "ipx",
     format: ["webp"],
-
     ipx: {
-      baseURL: "http://nuxt-demo.twic.pics",
+      baseURL: "http://localhost:3000",
     },
   },
   tailwindcss: {
