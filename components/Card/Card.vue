@@ -24,7 +24,7 @@
         </div>
       </div>
     </div>
-    <img v-if="image" :src="`/images/blog/${image}`" />
+    <NuxtImg v-if="image" :src="`/images/blog/${image}`" />
   </NuxtLink>
 </template>
 
