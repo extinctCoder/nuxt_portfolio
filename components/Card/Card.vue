@@ -24,10 +24,7 @@
         </div>
       </div>
     </div>
-    <!-- <img v-if="image" :src="`/images/blog/${image}`" /> -->
   </NuxtLink>
-  <NuxtImg src="/1.jpg" />
-  <NuxtPicture format="avif,webp" src="/1.jpg" />
 </template>
 
 <script lang="ts" setup>
