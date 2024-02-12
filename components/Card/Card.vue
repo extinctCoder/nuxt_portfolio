@@ -36,16 +36,7 @@
       height="1280"
       src="/images/blog/clement-helardot-95YRwf6CNw8-unsplash.jpg"
     /> -->
-    <NuxtImg
-      width="1920"
-      height="1280"
-      src="/images/blog/clement-helardot-95YRwf6CNw8-unsplash.jpg"
-    />
-    <NuxtPicture
-      width="1920"
-      height="1280"
-      src="/images/blog/clement-helardot-95YRwf6CNw8-unsplash.jpg"
-    />
+
     <!-- <NuxtImg
       v-if="image"
       class="aspect-16/9 max-h-48 object-cover object-center lg:aspect-4/3 lg:max-w-72"

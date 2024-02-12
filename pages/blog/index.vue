@@ -1,5 +1,15 @@
 <template>
-  <div v-for="post in posts" :key="post._path">
+  <NuxtImg
+    width="1920"
+    height="1280"
+    src="/images/blog/clement-helardot-95YRwf6CNw8-unsplash.jpg"
+  />
+  <NuxtPicture
+    width="1920"
+    height="1280"
+    src="/images/blog/clement-helardot-95YRwf6CNw8-unsplash.jpg"
+  />
+  <!-- <div v-for="post in posts" :key="post._path">
     <Card
       :to="post._path"
       :heading="post.title"
@@ -11,7 +21,7 @@
   </div>
   <Card></Card>
   <Card></Card>
-  <Card></Card>
+  <Card></Card> -->
 </template>
 
 <script setup lang="ts">
