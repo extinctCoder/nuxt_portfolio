@@ -28,6 +28,10 @@
     <NuxtImg src="/public/images/blog/unsplash.jpg" height="300" />
     <NuxtImg src="/images/blog/unsplash.jpg" height="300" />
     <NuxtImg
+      src="/images/blog/unsplash.jpg"
+      :modifiers="{ grayscale: true, tint: '#00DC82' }"
+    />
+    <NuxtImg
       v-if="image"
       class="aspect-16/9 max-h-48 object-cover object-center lg:aspect-4/3 lg:max-w-72"
       src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg"
