@@ -25,7 +25,7 @@
       </div>
     </div>
     <NuxtImg v-if="image" :src="`/images/blog/${image}`" height="300" />
-    <NuxtImg v-if="image" src="public/images/blog/unsplash.jpg" height="300" />
+    <NuxtImg v-if="image" src="/public/images/blog/unsplash.jpg" height="300" />
     <NuxtImg v-if="image" src="/images/blog/unsplash.jpg" height="300" />
     <NuxtImg
       v-if="image"
