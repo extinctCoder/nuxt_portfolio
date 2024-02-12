@@ -26,7 +26,7 @@
     </div>
     <NuxtImg v-if="image" :src="`/images/blog/${image}`" height="300" />
     <NuxtImg src="/public/images/blog/unsplash.jpg" height="300" />
-    <NuxtImg src="/images/blog/unsplash.jpg" height="300" />
+    <NuxtImg src="/images/blog/unsplash.jpg" />
     <NuxtImg
       src="/images/blog/unsplash.jpg"
       :modifiers="{ grayscale: true, tint: '#00DC82' }"

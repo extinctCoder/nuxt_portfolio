@@ -25,10 +25,10 @@ export default defineNuxtConfig({
   },
   image: {
     inject: true,
-    provider: "ipx",
+    provider: "ipxStatic",
     format: ["webp"],
-    ipx: {
-      baseURL: "http://localhost:3000",
+    ipxStatic: {
+      baseURL: "",
     },
   },
   tailwindcss: {
