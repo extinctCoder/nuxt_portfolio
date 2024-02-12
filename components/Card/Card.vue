@@ -24,7 +24,7 @@
         </div>
       </div>
     </div>
-    <!-- <NuxtImg v-if="image" :src="`/images/blog/${image}`" /> -->
+    <NuxtImg v-if="image" :src="`/images/blog/${image}`" />
     <NuxtImg
       v-if="image"
       class="aspect-16/9 max-h-48 object-cover object-center lg:aspect-4/3 lg:max-w-72"
