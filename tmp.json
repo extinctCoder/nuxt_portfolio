@@ -1,0 +1,436 @@
+{
+  "_path": "/blog/hello-world",
+  "_dir": "blog",
+  "_draft": false,
+  "_partial": false,
+  "_locale": "",
+  "title": "Hello, World!",
+  "description": "This is my very first blog post and I'm so excited to share it with you!",
+  "date": "2023-05-23T00:00:00.000Z",
+  "cover": "nasa-Q1p7bh3SHj8-unsplash.jpg",
+  "tags": ["blog"],
+  "body": {
+    "type": "root",
+    "children": [
+      {
+        "type": "element",
+        "tag": "h1",
+        "props": { "id": "hello-world" },
+        "children": [{ "type": "text", "value": "Hello, World 👋🏻" }]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "props": {},
+        "children": [{ "type": "text", "value": "This is a paragraph." }]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "props": {},
+        "children": [{ "type": "text", "value": "This is another paragraph." }]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "props": {},
+        "children": [
+          {
+            "type": "element",
+            "tag": "img",
+            "props": {
+              "alt": "Earth from Space",
+              "src": "/images/blog/nasa-Q1p7bh3SHj8-unsplash.jpg"
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "h2",
+        "props": { "id": "this-is-a-heading-2" },
+        "children": [{ "type": "text", "value": "This is a heading 2" }]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "props": {},
+        "children": [{ "type": "text", "value": "You can use lists" }]
+      },
+      {
+        "type": "element",
+        "tag": "ul",
+        "props": {},
+        "children": [
+          {
+            "type": "element",
+            "tag": "li",
+            "props": {},
+            "children": [{ "type": "text", "value": "list item 1" }]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "props": {},
+            "children": [{ "type": "text", "value": "list item 2" }]
+          },
+          {
+            "type": "element",
+            "tag": "li",
+            "props": {},
+            "children": [{ "type": "text", "value": "list item 3" }]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "props": {},
+        "children": [{ "type": "text", "value": "You can use code blocks" }]
+      },
+      {
+        "type": "element",
+        "tag": "pre",
+        "props": {
+          "className": "language-js shiki shiki-themes dracula",
+          "code": "const hello = \"world\";\nconsole.log(hello);\n",
+          "language": "js",
+          "meta": "",
+          "style": ""
+        },
+        "children": [
+          {
+            "type": "element",
+            "tag": "code",
+            "props": { "__ignoreMap": "" },
+            "children": [
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 1 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": "const" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": " hello " }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": "=" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#E9F284" },
+                    "children": [{ "type": "text", "value": " \"" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F1FA8C" },
+                    "children": [{ "type": "text", "value": "world" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#E9F284" },
+                    "children": [{ "type": "text", "value": "\"" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": ";\n" }]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 2 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": "console." }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#50FA7B" },
+                    "children": [{ "type": "text", "value": "log" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": "(hello);\n" }]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "props": {},
+        "children": [{ "type": "text", "value": "You can use blockquotes" }]
+      },
+      {
+        "type": "element",
+        "tag": "blockquote",
+        "props": {},
+        "children": [
+          {
+            "type": "element",
+            "tag": "p",
+            "props": {},
+            "children": [{ "type": "text", "value": "This is a blockquote" }]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "props": {},
+        "children": [{ "type": "text", "value": "You can use links" }]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "props": {},
+        "children": [
+          {
+            "type": "element",
+            "tag": "a",
+            "props": { "href": "https://www.google.com", "rel": ["nofollow"] },
+            "children": [{ "type": "text", "value": "This is a link" }]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "props": {},
+        "children": [{ "type": "text", "value": "You can use tables" }]
+      },
+      {
+        "type": "text",
+        "value": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+      },
+      {
+        "type": "element",
+        "tag": "table",
+        "props": {},
+        "children": [
+          {
+            "type": "element",
+            "tag": "thead",
+            "props": {},
+            "children": [
+              {
+                "type": "element",
+                "tag": "tr",
+                "props": {},
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "th",
+                    "props": {},
+                    "children": [{ "type": "text", "value": "Column 1" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "th",
+                    "props": {},
+                    "children": [{ "type": "text", "value": "Column 2" }]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "element",
+            "tag": "tbody",
+            "props": {},
+            "children": [
+              {
+                "type": "element",
+                "tag": "tr",
+                "props": {},
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "td",
+                    "props": {},
+                    "children": [{ "type": "text", "value": "Row 1" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "td",
+                    "props": {},
+                    "children": [{ "type": "text", "value": "Row 1" }]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "tr",
+                "props": {},
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "td",
+                    "props": {},
+                    "children": [{ "type": "text", "value": "Row 2" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "td",
+                    "props": {},
+                    "children": [{ "type": "text", "value": "Row 2" }]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "tr",
+                "props": {},
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "td",
+                    "props": {},
+                    "children": [{ "type": "text", "value": "Row 3" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "td",
+                    "props": {},
+                    "children": [{ "type": "text", "value": "Row 3" }]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "props": {},
+        "children": [
+          { "type": "text", "value": "You can use horizontal rules" }
+        ]
+      },
+      { "type": "element", "tag": "hr", "props": {}, "children": [] },
+      {
+        "type": "element",
+        "tag": "p",
+        "props": {},
+        "children": [{ "type": "text", "value": "You can use emphasis" }]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "props": {},
+        "children": [
+          {
+            "type": "element",
+            "tag": "strong",
+            "props": {},
+            "children": [{ "type": "text", "value": "This is bold" }]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "props": {},
+        "children": [
+          {
+            "type": "element",
+            "tag": "em",
+            "props": {},
+            "children": [{ "type": "text", "value": "This is italic" }]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "props": {},
+        "children": [{ "type": "text", "value": "You can use inline code" }]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "props": {},
+        "children": [
+          {
+            "type": "element",
+            "tag": "code",
+            "props": { "className": [] },
+            "children": [{ "type": "text", "value": "const hello = 'world';" }]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "callout",
+        "props": { "title": "Hello World Callout" },
+        "children": [
+          {
+            "type": "element",
+            "tag": "p",
+            "props": {},
+            "children": [
+              { "type": "text", "value": "This is a quick tip about markdown" }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "style",
+        "props": {},
+        "children": [
+          {
+            "type": "text",
+            "value": "html .default .shiki span {color: var(--shiki-default);background: var(--shiki-default-bg);font-style: var(--shiki-default-font-style);font-weight: var(--shiki-default-font-weight);text-decoration: var(--shiki-default-text-decoration);}html .shiki span {color: var(--shiki-default);background: var(--shiki-default-bg);font-style: var(--shiki-default-font-style);font-weight: var(--shiki-default-font-weight);text-decoration: var(--shiki-default-text-decoration);}"
+          }
+        ]
+      }
+    ],
+    "toc": {
+      "title": "",
+      "searchDepth": 2,
+      "depth": 2,
+      "links": [
+        {
+          "id": "this-is-a-heading-2",
+          "depth": 2,
+          "text": "This is a heading 2"
+        }
+      ]
+    }
+  },
+  "_type": "markdown",
+  "_id": "content:blog:hello-world.md",
+  "_source": "content",
+  "_file": "blog/hello-world.md",
+  "_extension": "md"
+}
