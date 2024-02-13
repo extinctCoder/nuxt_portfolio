@@ -5,7 +5,7 @@
   >
     <div class="flex flex-1 flex-col justify-between gap-6 p-4">
       <div class="flex flex-col gap-6">
-        <h2 class="card-title">{{ heading }}</h2>
+        <h2 class="prose">{{ heading }}</h2>
         {{ body_text }}
       </div>
       <div class="flex justify-between">
