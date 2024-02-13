@@ -16,7 +16,7 @@ export default {
       typography: {
         DEFAULT: {
           css: {
-            maxWidth: "100ch",
+            maxWidth: "100%",
           },
         },
       },
