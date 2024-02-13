@@ -12,7 +12,7 @@
 
     <div v-for="link in post.body.toc.links" class="flex gap-2">
       <p></p>
-      <a :href="`#${link.id}`" class="border bg-red-300">{{ link }}</a>
+      <a :hreflang="`#${link.id}`" class="border bg-red-300">{{ link }}</a>
     </div>
   </div>
 </template>
