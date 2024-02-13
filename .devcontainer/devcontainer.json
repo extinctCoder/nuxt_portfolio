@@ -2,7 +2,7 @@
   "name": "Nuxt Portfolio",
   "dockerFile": "Dockerfile",
   "forwardPorts": [3000],
-  "postCreateCommand": "yarn install",
+  "postCreateCommand": "yarn install && yarn add sharp --ignore-engines",
   "runArgs": ["--env-file", ".devcontainer/devcontainer.env"],
   "customizations": {
     "vscode": {
