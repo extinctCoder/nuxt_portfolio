@@ -11,8 +11,12 @@
     {{ post.body.toc.links }}
 
     <div v-for="link in post.body.toc.links" class="flex gap-2">
-      <p></p>
-      <a :hreflang="`#${link.id}`" class="border bg-red-300">{{ link }}</a>
+      <p>{{ link }}</p>
+      <a :hreflang="`#${link.id}`" class="border bg-red-300">{{ link.text }}</a>
+      <div v-if="link.children">
+        {{ link.children }}
+      </div>
+      if
     </div>
   </div>
 </template>
