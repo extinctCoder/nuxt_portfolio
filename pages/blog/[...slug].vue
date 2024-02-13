@@ -2,6 +2,11 @@
   <div class="prose mx-auto max-w-none">
     <ContentRenderer :value="post"></ContentRenderer>
     {{ post.body.toc }}
+    <br />
+    <br />
+    <br />
+    title: {{ post.body.toc.title }}
+    links:
   </div>
 </template>
 
