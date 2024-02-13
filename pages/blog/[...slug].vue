@@ -1,6 +1,5 @@
 <template>
-  <div class="prose mx-auto w-full max-w-prose bg-red-400">
-    <!-- <ContentDoc /> -->
+  <div class="prose mx-auto max-w-none">
     <ContentRenderer :value="post"></ContentRenderer>
   </div>
 </template>
