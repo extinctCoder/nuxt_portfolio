@@ -1,21 +1,2 @@
 
 Todo:
-  ☐ Working in this project @20h
-  ☐ this is TODO @25h 
-  ✔ this is todo done @done(24-02-04 16:20)
-  Nested TODO:
-    ☐ this is todo working @48h30m @started(24-02-04 16:29)
-    ✔ this is new todo @started(24-02-04 16:25) @done(24-02-04 16:27) @lasted(2m34s)
-    ☐ another tofo @9y
-    Another Nested TODO:
-      ☐ this is another nested TODO @1w
-        ☐ nested todo @35h @started(24-02-04 16:52)
-      ✘ this is also another TODO @90h @cancelled(24-02-04 16:52)
-  ☐ Now Working on another todo @24h
-Projects:
-  ☐ this is new project @5y
-NOW:
-  ☐ this is another todo
-    ☐ nested TODO
-      ☐ this is nested TODO @critical @today @high @low
-    ☐ Another Nested TODO
