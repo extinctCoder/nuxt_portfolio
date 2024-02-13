@@ -27,7 +27,7 @@
     <NuxtImg
       v-if="image"
       :src="`/images/blog/${image}`"
-      class="aspect-21/9 object-cover object-center lg:aspect-4/3 lg:max-w-64"
+      class="aspect-21/9 max-h-64 object-cover object-center lg:aspect-4/3 lg:max-w-64"
     />
   </NuxtLink>
 </template>
