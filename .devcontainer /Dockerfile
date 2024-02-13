@@ -16,3 +16,11 @@ RUN apt-get install -y sudo \
 
 # Installing git and process tools
 RUN apt-get install -y git procps
+
+# REMOVEing outdated yarn from /opt and installing via apt package
+RUN rm -rf /opt/yarn-* /usr/local/bin/{yarn,yarnpkg} \
+    && apt-get install -y curl apt-transport-https lsb-release \
+    && curl -sS https://dl.yarnpkg.com/$(lsb_release -is | tr '[:upper:]' '[:lower:]')/pubkey.gpg | apt-key add - 2>/dev/null \
+    && echo "deb https://dl.yarnpkg.com/$(lsb_release -is | tr '[:upper:]' '[:lower:]')/ stable main" | tee /etc/apt/sources.list.d/yarn.list \
+    && apt-get update \
+    && apt-get -y install --no-install-recommends yarn
