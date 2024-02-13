@@ -13,6 +13,13 @@ export default {
   theme: {
     extend: {
       // primary: "#FF6363",
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: "100ch",
+          },
+        },
+      },
       aspectRatio: {
         "4/3": "4 / 3",
         "16/9": "16 / 9",

@@ -1,14 +1,7 @@
 <template>
-  <div>this is catch all : {{ $route.params.slug }}</div>
-  <div class="prose">
+  <div class="prose mx-auto bg-red-400">
     <!-- <ContentDoc /> -->
     <ContentRenderer :value="post"></ContentRenderer>
-    <br />
-    <br />
-    <br />
-    {{ data }}
-    <br />
-    <br />
   </div>
 </template>
 
