@@ -2,5 +2,9 @@
   "name": "Nuxt Portfolio",
   "dockerFile": "Dockerfile",
   "appPort": 3000,
-  "extensions": []
+  "customizations": {
+    "vscode": {
+      "extensions": []
+    }
+  }
 }
