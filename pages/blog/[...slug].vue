@@ -13,8 +13,18 @@
     <div v-for="link in post.body.toc.links" class="flex flex-col gap-2">
       <!-- <p>{{ link }}</p> -->
       <a :hreflang="`#${link.id}`" class="border bg-red-300">{{ link.text }}</a>
-      <div v-if="link.children" class="m-2 border bg-violet-400">
-        {{ link.children }}
+      <div
+        v-if="link.children"
+        class="m-2 border bg-violet-400"
+        v-for="child_link in link.children"
+      >
+        <!-- {{ link.children }} -->
+
+        <a
+          :hreflang="`#${child_link.id}`"
+          class="flex flex-col border bg-green-300"
+          >{{ child_link.text }}</a
+        >
       </div>
     </div>
   </div>
