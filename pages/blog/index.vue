@@ -9,6 +9,7 @@
       :tags="post.tags"
     ></Card>
   </div>
+  <NuxtImg width="1920" height="1280" src="/images/blog/unsplash.jpg" />
   <Card></Card>
   <Card></Card>
   <Card></Card>
