@@ -24,3 +24,6 @@ RUN rm -rf /opt/yarn-* /usr/local/bin/{yarn,yarnpkg} \
     && echo "deb https://dl.yarnpkg.com/$(lsb_release -is | tr '[:upper:]' '[:lower:]')/ stable main" | tee /etc/apt/sources.list.d/yarn.list \
     && apt-get update \
     && apt-get -y install --no-install-recommends yarn
+
+# COPY default endpoint specific user settings overrides into container to specify Formatter
+COPY --chown=node:node settings.vscode.json $HOME/.vscode-remote/data/Machine/settings.json
