@@ -14,7 +14,7 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "nuxt-headlessui",
     "@nuxt/image",
-    "nuxt-icon",
+    // "nuxt-icon",
     "@nuxt/content",
   ],
   content: {
