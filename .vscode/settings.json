@@ -8,15 +8,21 @@
     "eamodio",
     "errorlens",
     "esbenp",
+    "Expt",
+    "fabiospampinato",
     "gitdoc",
     "iconify",
+    "intellicode",
     "mikestead",
     "naumovs",
     "Nuxt",
     "nuxtr",
     "patbenatar",
+    "pflannery",
     "steoates",
     "tailwindcss",
-    "usernamehw"
+    "usernamehw",
+    "versionlens",
+    "vscodeintellicode"
   ]
 }

@@ -24,6 +24,12 @@
         // "bradlc.vscode-tailwindcss",
         // "Vue.vscode-typescript-vue-plugin",
         // "Vue.volar"
+        "patbenatar.advanced-new-file",
+        "steoates.autoimport",
+        "streetsidesoftware.code-spell-checker","naumovs.color-highlight","vsls-contrib.gitdoc","eamodio.gitlens","antfu.goto-alias",
+        "antfu.iconify", "wix.vscode-import-cost", "VisualStudioExptTeam.vscodeintellicode", "VisualStudioExptTeam.intellicode-api-usage-examples", "DavidAnson.vscode-markdownlint", "Nuxtr.nuxtr-vscode", "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss" , "fabiospampinato.vscode-todo-plus","Vue.vscode-typescript-vue-plugin","pflannery.vscode-versionlens","Vue.volar"
+
       ]
     }
   },
