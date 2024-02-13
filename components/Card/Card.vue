@@ -30,50 +30,6 @@
       class="aspect-21/9 max-h-64 object-cover object-center lg:aspect-4/3 lg:max-w-64"
     />
   </NuxtLink>
-  <div class="card image-full bg-base-100 lg:card-side">
-    <figure>
-      <NuxtImg
-        v-if="image"
-        :src="`/images/blog/${image}`"
-        class="aspect-21/9 object-cover object-center lg:aspect-4/3 lg:max-w-64"
-      />
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title">{{ heading }}</h2>
-      <p>{{ body_text }}</p>
-      <div class="card-actions items-center justify-between">
-        <div class="flex flex-wrap gap-8">
-          <div v-if="publish_date" class="inline-flex items-center gap-2">
-            <Icon name="heroicons:calendar-solid" />
-            <span>{{ new Date(publish_date).toDateString() }}</span>
-          </div>
-          <div v-if="tags" class="inline-flex items-center gap-2">
-            <Icon name="heroicons:folder-open-solid" />
-            <span>{{ tags.join(", ") }}</span>
-          </div>
-        </div>
-        <div class="inline-flex items-center gap-2">
-          <Icon name="heroicons:hand-thumb-up-solid" />
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="card card-side bg-base-100 shadow-xl">
-    <figure>
-      <img
-        src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
-        alt="Movie"
-      />
-    </figure>
-    <div class="card-body">
-      <h2 class="card-title">New movie is released!</h2>
-      <p>Click the button to watch on Jetflix app.</p>
-      <div class="card-actions justify-end">
-        <button class="btn btn-primary">Watch</button>
-      </div>
-    </div>
-  </div>
 </template>
 
 <script lang="ts" setup>
