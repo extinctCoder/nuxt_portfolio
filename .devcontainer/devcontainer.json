@@ -25,7 +25,8 @@
         "fabiospampinato.vscode-todo-plus",
         "Vue.vscode-typescript-vue-plugin",
         "pflannery.vscode-versionlens",
-        "Vue.volar"
+        "Vue.volar",
+        "dbaeumer.vscode-eslint"
       ]
     }
   }
