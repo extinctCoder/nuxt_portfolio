@@ -30,7 +30,7 @@
       class="aspect-21/9 max-h-64 object-cover object-center lg:aspect-4/3 lg:max-w-64"
     />
   </NuxtLink>
-  <div class="card image-full w-96 bg-base-100 shadow-xl">
+  <div class="card image-full rounded-none bg-base-100">
     <figure>
       <NuxtImg
         v-if="image"
