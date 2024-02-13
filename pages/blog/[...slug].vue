@@ -1,7 +1,7 @@
 <template>
   <div class="prose mx-auto max-w-none">
     <ContentRenderer :value="post"></ContentRenderer>
-    {{ post }}
+    {{ post.body.toc }}
   </div>
 </template>
 
