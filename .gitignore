@@ -21,5 +21,6 @@ logs
 # Local env files
 .env
 .env.*
+*.env
 !.env.example
 yarn.lock

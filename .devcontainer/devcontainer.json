@@ -1,29 +1,12 @@
 {
   "name": "Nuxt Portfolio",
   "dockerFile": "Dockerfile",
+  "forwardPorts": [3000],
+  "postCreateCommand": "yarn install",
+  "runArgs": ["--env-file", ".devcontainer/devcontainer.env"],
   "customizations": {
     "vscode": {
       "extensions": [
-        // "patbenatar.advanced-new-file",
-        // "steoates.autoimport",
-        // "aaron-bond.better-comments",
-        // "alefragnani.Bookmarks",
-        // "streetsidesoftware.code-spell-checker",
-        // "naumovs.color-highlight",
-        // "mikestead.dotenv",
-        // "usernamehw.errorlens",
-        // "vsls-contrib.gitdoc",
-        // "eamodio.gitlens",
-        // "antfu.goto-alias",
-        // "antfu.iconify",
-        // "wix.vscode-import-cost",
-        // "DavidAnson.vscode-markdownlint",
-        // "Nuxt.mdc",
-        // "Nuxtr.nuxtr-vscode",
-        // "esbenp.prettier-vscode",
-        // "bradlc.vscode-tailwindcss",
-        // "Vue.vscode-typescript-vue-plugin",
-        // "Vue.volar"
         "patbenatar.advanced-new-file",
         "steoates.autoimport",
         "streetsidesoftware.code-spell-checker",
@@ -45,7 +28,5 @@
         "Vue.volar"
       ]
     }
-  },
-  "forwardPorts": [3000],
-  "postCreateCommand": "yarn install"
+  }
 }
