@@ -9,7 +9,7 @@ RUN apt-get update \
 ARG USERNAME=node
 ENV HOME /home/$USERNAME
 
-# [Optional] Add sudo support
+# Optional SUDO permission for user
 RUN apt-get install -y sudo \
     && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME && \
     chmod 0440 /etc/sudoers.d/$USERNAME
