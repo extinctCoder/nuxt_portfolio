@@ -5,8 +5,10 @@
   >
     <div class="flex flex-1 flex-col justify-between gap-6 p-4">
       <div class="flex flex-col gap-6">
-        <h2 class="prose">{{ heading }}</h2>
-        {{ body_text }}
+        <div class="prose">
+          <h3>{{ heading }}</h3>
+          <p>{{ body_text }}</p>
+        </div>
       </div>
       <div class="flex justify-between">
         <div class="flex flex-wrap gap-8">
