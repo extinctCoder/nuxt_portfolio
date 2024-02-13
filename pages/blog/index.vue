@@ -9,9 +9,6 @@
       :tags="post.tags"
     ></Card>
   </div>
-  <Card></Card>
-  <Card></Card>
-  <Card></Card>
 </template>
 
 <script setup lang="ts">
