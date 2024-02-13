@@ -13,7 +13,10 @@
         "mikestead.dotenv",
         "usernamehw.errorlens",
         "vsls-contrib.gitdoc",
-        "eamodio.gitlens"
+        "eamodio.gitlens",
+        "antfu.goto-alias",
+        "antfu.iconify",
+        "wix.vscode-import-cost"
       ]
     }
   },
