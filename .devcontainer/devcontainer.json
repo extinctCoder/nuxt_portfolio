@@ -5,7 +5,15 @@
     "vscode": {
       "extensions": [
         "patbenatar.advanced-new-file",
-        "aaron-bond.better-comments"
+        "steoates.autoimport",
+        "aaron-bond.better-comments",
+        "alefragnani.Bookmarks",
+        "streetsidesoftware.code-spell-checker",
+        "naumovs.color-highlight",
+        "mikestead.dotenv",
+        "usernamehw.errorlens",
+        "vsls-contrib.gitdoc",
+        "eamodio.gitlens"
       ]
     }
   },
