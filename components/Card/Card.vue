@@ -5,7 +5,7 @@
   >
     <div class="flex flex-1 flex-col justify-between gap-6 p-4">
       <div class="flex flex-col gap-6">
-        <div class="prose">
+        <div class="">
           <h3>{{ heading }}</h3>
           <p class="w-full">{{ body_text }}</p>
         </div>
