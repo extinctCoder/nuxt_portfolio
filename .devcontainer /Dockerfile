@@ -25,5 +25,15 @@ RUN rm -rf /opt/yarn-* /usr/local/bin/{yarn,yarnpkg} \
     && apt-get update \
     && apt-get -y install --no-install-recommends yarn
 
-# COPY default endpoint specific user settings overrides into container to specify Formatter
+# COPYing default endpoint specific user settings overrides into container to specify Formatter
 COPY --chown=node:node settings.vscode.json $HOME/.vscode-remote/data/Machine/settings.json
+
+# processing LINUX housekeping
+RUN apt-get autoremove -y \
+    && apt-get clean -y \
+    && rm -rf /var/lib/apt/lists/*
+ENV DEBIAN_FRONTEND=dialog
+
+ENV HOST 0.0.0.0
+# Optional Seting the default user
+USER $USERNAME
