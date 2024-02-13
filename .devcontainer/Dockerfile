@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:20.11.0
 
 # APT Configuration
 ENV DEBIAN_FRONTEND=noninteractive
