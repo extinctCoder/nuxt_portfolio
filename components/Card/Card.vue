@@ -4,11 +4,12 @@
     class="flex cursor-pointer flex-col-reverse gap-2 overflow-hidden rounded border lg:flex-row lg:justify-between"
   >
     <div class="flex flex-1 flex-col justify-between gap-6 p-4">
-      <div class="prose">
-        <h3>{{ heading }}</h3>
-        <p>{{ body_text }}</p>
+      <div class="flex flex-col gap-6">
+        <div class="prose">
+          <h3>{{ heading }}</h3>
+          <p class="w-full">{{ body_text }}</p>
+        </div>
       </div>
-
       <div class="flex justify-between">
         <div class="flex flex-wrap gap-8">
           <div v-if="publish_date" class="inline-flex items-center gap-2">
