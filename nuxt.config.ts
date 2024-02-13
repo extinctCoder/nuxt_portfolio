@@ -11,10 +11,10 @@ export default defineNuxtConfig({
     shim: false,
   },
   modules: [
+    "@nuxt/image",
     "@nuxtjs/tailwindcss",
     "nuxt-headlessui",
-    "@nuxt/image",
-    // "nuxt-icon",
+    "nuxt-icon",
     "@nuxt/content",
   ],
   content: {
