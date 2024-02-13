@@ -1,5 +1,5 @@
 <template>
-  <div class="prose mx-auto bg-red-400">
+  <div class="prose mx-auto w-full max-w-prose bg-red-400">
     <!-- <ContentDoc /> -->
     <ContentRenderer :value="post"></ContentRenderer>
   </div>
