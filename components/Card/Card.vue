@@ -41,8 +41,20 @@
     <div class="card-body">
       <h2 class="card-title">{{ heading }}</h2>
       <p>{{ body_text }}</p>
-      <div class="card-actions justify-end">
-        <button class="btn btn-primary">Buy Now</button>
+      <div class="card-actions items-center justify-between">
+        <div class="flex flex-wrap gap-8">
+          <div v-if="publish_date" class="inline-flex items-center gap-2">
+            <Icon name="heroicons:calendar-solid" />
+            <span>{{ new Date(publish_date).toDateString() }}</span>
+          </div>
+          <div v-if="tags" class="inline-flex items-center gap-2">
+            <Icon name="heroicons:folder-open-solid" />
+            <span>{{ tags.join(", ") }}</span>
+          </div>
+        </div>
+        <div class="inline-flex items-center gap-2">
+          <Icon name="heroicons:hand-thumb-up-solid" />
+        </div>
       </div>
     </div>
   </div>
