@@ -1,34 +1,29 @@
 {
-  "_path": "/blog/hello-world",
+  "_path": "/blog/mongo-db",
   "_dir": "blog",
   "_draft": false,
   "_partial": false,
   "_locale": "",
-  "title": "Hello, World!",
-  "description": "This is my very first blog post and I'm so excited to share it with you!",
-  "date": "2023-05-23T00:00:00.000Z",
-  "cover": "nasa-Q1p7bh3SHj8-unsplash.jpg",
-  "tags": ["blog"],
+  "title": "Integrating MongoDB and Mongoose with Nuxt 3",
+  "description": "Building dynamic web applications often requires seamless integration with a robust database solution. When it comes to creating powerful server-side applications, MongoDB has emerged as a popular choice among developers due to its flexibility and scalability. Combined with the Vue.js framework, Nuxt.js provides a solid foundation for building fast, server-rendered applications. However, incorporating MongoDB and its object modeling tool, Mongoose, into a Nuxt project might seem like a daunting task for those new to the stack.",
+  "date": "2023-10-06T00:00:00.000Z",
+  "draft": false,
+  "tags": ["nuxt", "nuxt3", "mongodb", "mongoose"],
+  "thumbnail": "/img/mongodb.webp",
+  "slug": "mongo-db",
   "body": {
     "type": "root",
     "children": [
       {
         "type": "element",
-        "tag": "h1",
-        "props": { "id": "hello-world" },
-        "children": [{ "type": "text", "value": "Hello, World 👋🏻" }]
-      },
-      {
-        "type": "element",
         "tag": "p",
         "props": {},
-        "children": [{ "type": "text", "value": "This is a paragraph." }]
-      },
-      {
-        "type": "element",
-        "tag": "p",
-        "props": {},
-        "children": [{ "type": "text", "value": "This is another paragraph." }]
+        "children": [
+          {
+            "type": "text",
+            "value": "Building dynamic web applications often requires seamless integration with a robust database solution. When it comes to creating powerful server-side applications, MongoDB has emerged as a popular choice among developers due to its flexibility and scalability. Combined with the Vue.js framework, Nuxt.js provides a solid foundation for building fast, server-rendered applications. However, incorporating MongoDB and its object modeling tool, Mongoose, into a Nuxt project might seem like a daunting task for those new to the stack."
+          }
+        ]
       },
       {
         "type": "element",
@@ -36,50 +31,88 @@
         "props": {},
         "children": [
           {
-            "type": "element",
-            "tag": "img",
-            "props": {
-              "alt": "Earth from Space",
-              "src": "/images/blog/nasa-Q1p7bh3SHj8-unsplash.jpg"
-            },
-            "children": []
+            "type": "text",
+            "value": "In this blog post, we'll explore two simple yet effective methods to add MongoDB and Mongoose to your Nuxt 3 project. Whether you're a seasoned developer or just starting your journey in full-stack web development, this guide will help you leverage the capabilities of MongoDB and Mongoose within the Nuxt ecosystem."
           }
         ]
       },
       {
         "type": "element",
         "tag": "h2",
-        "props": { "id": "this-is-a-heading-2" },
-        "children": [{ "type": "text", "value": "This is a heading 2" }]
+        "props": { "id": "prerequisites" },
+        "children": [{ "type": "text", "value": "Prerequisites" }]
       },
       {
         "type": "element",
         "tag": "p",
         "props": {},
-        "children": [{ "type": "text", "value": "You can use lists" }]
+        "children": [
+          {
+            "type": "text",
+            "value": "Before we get started, make sure you have a working nuxt 3 project. If you don't have one already, you can create a new project using the following command:"
+          }
+        ]
       },
       {
         "type": "element",
-        "tag": "ul",
-        "props": {},
+        "tag": "pre",
+        "props": {
+          "className": "language-bash shiki shiki-themes dracula",
+          "code": "npx nuxi init <project-name>\n",
+          "language": "bash",
+          "meta": "",
+          "style": ""
+        },
         "children": [
           {
             "type": "element",
-            "tag": "li",
-            "props": {},
-            "children": [{ "type": "text", "value": "list item 1" }]
-          },
-          {
-            "type": "element",
-            "tag": "li",
-            "props": {},
-            "children": [{ "type": "text", "value": "list item 2" }]
-          },
-          {
-            "type": "element",
-            "tag": "li",
-            "props": {},
-            "children": [{ "type": "text", "value": "list item 3" }]
+            "tag": "code",
+            "props": { "__ignoreMap": "" },
+            "children": [
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 1 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#50FA7B" },
+                    "children": [{ "type": "text", "value": "npx" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F1FA8C" },
+                    "children": [{ "type": "text", "value": " nuxi init " }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": "<" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F1FA8C" },
+                    "children": [{ "type": "text", "value": "project-nam" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": "e" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": ">\n" }]
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -87,15 +120,258 @@
         "type": "element",
         "tag": "p",
         "props": {},
-        "children": [{ "type": "text", "value": "You can use code blocks" }]
+        "children": [
+          {
+            "type": "text",
+            "value": "Once the project is created, navigate to the project directory and install the dependencies:"
+          }
+        ]
       },
       {
         "type": "element",
         "tag": "pre",
         "props": {
-          "className": "language-js shiki shiki-themes dracula",
-          "code": "const hello = \"world\";\nconsole.log(hello);\n",
-          "language": "js",
+          "className": "language-bash shiki shiki-themes dracula",
+          "code": "cd <project-name>\nnpm install // or yarn install\n",
+          "language": "bash",
+          "meta": "",
+          "style": ""
+        },
+        "children": [
+          {
+            "type": "element",
+            "tag": "code",
+            "props": { "__ignoreMap": "" },
+            "children": [
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 1 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#8BE9FD" },
+                    "children": [{ "type": "text", "value": "cd" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": " <" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F1FA8C" },
+                    "children": [{ "type": "text", "value": "project-nam" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": "e" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": ">\n" }]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 2 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#50FA7B" },
+                    "children": [{ "type": "text", "value": "npm" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F1FA8C" },
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": " install // or yarn install\n"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "props": {},
+        "children": [
+          {
+            "type": "text",
+            "value": "Now that we have a working nuxt 3 project, let's explore the two methods of adding MongoDB and Mongoose to our project."
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "h2",
+        "props": { "id": "method-1-using-the-nuxt-server-utils-module" },
+        "children": [
+          {
+            "type": "text",
+            "value": "Method 1: Using the nuxt-server-utils module"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "props": {},
+        "children": [
+          {
+            "type": "text",
+            "value": "This is the easiest way to add MongoDB and Mongoose to your Nuxt 3 project. The "
+          },
+          {
+            "type": "element",
+            "tag": "a",
+            "props": {
+              "href": "https://nuxt-server-utils.jahid.dev",
+              "rel": ["nofollow"]
+            },
+            "children": [{ "type": "text", "value": "nuxt-server-utils" }]
+          },
+          {
+            "type": "text",
+            "value": " module provides a set of utilities that allow you to interact with your MongoDB database from within your Nuxt 3 application. It also provides a simple API for creating and managing your MongoDB collections."
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "props": {},
+        "children": [
+          {
+            "type": "text",
+            "value": "To get started, install the nuxt-server-utils module using the following command:"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "pre",
+        "props": {
+          "className": "language-bash shiki shiki-themes dracula",
+          "code": "npm install nuxt-server-utils mongoose\n",
+          "filename": "npm",
+          "language": "bash",
+          "meta": "",
+          "style": ""
+        },
+        "children": [
+          {
+            "type": "element",
+            "tag": "code",
+            "props": { "__ignoreMap": "" },
+            "children": [
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 1 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#50FA7B" },
+                    "children": [{ "type": "text", "value": "npm" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F1FA8C" },
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": " install nuxt-server-utils mongoose\n"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "props": {},
+        "children": [
+          {
+            "type": "text",
+            "value": "Next, Add the nuxt-server-utils module to the "
+          },
+          {
+            "type": "element",
+            "tag": "code",
+            "props": { "className": [] },
+            "children": [{ "type": "text", "value": "modules" }]
+          },
+          { "type": "text", "value": " section of your " },
+          {
+            "type": "element",
+            "tag": "code",
+            "props": { "className": [] },
+            "children": [{ "type": "text", "value": "nuxt.config.ts" }]
+          },
+          { "type": "text", "value": " file:" }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "props": {},
+        "children": [
+          { "type": "text", "value": "Add " },
+          {
+            "type": "element",
+            "tag": "code",
+            "props": { "className": [] },
+            "children": [{ "type": "text", "value": "nuxt-server-utils" }]
+          },
+          { "type": "text", "value": " to the " },
+          {
+            "type": "element",
+            "tag": "code",
+            "props": { "className": [] },
+            "children": [{ "type": "text", "value": "modules" }]
+          },
+          { "type": "text", "value": " section of " },
+          {
+            "type": "element",
+            "tag": "code",
+            "props": { "className": [] },
+            "children": [{ "type": "text", "value": "nuxt.config.ts" }]
+          },
+          { "type": "text", "value": ":" }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "pre",
+        "props": {
+          "className": "language-ts shiki shiki-themes dracula",
+          "code": "export default defineNuxtConfig({\n // ...\n modules: [\"nuxt-server-utils\"],\n});\n",
+          "filename": "nuxt.config.ts",
+          "language": "ts",
           "meta": "",
           "style": ""
         },
@@ -114,19 +390,269 @@
                     "type": "element",
                     "tag": "span",
                     "props": { "style": "--shiki-default:#FF79C6" },
-                    "children": [{ "type": "text", "value": "const" }]
-                  },
-                  {
-                    "type": "element",
-                    "tag": "span",
-                    "props": { "style": "--shiki-default:#F8F8F2" },
-                    "children": [{ "type": "text", "value": " hello " }]
+                    "children": [{ "type": "text", "value": "export" }]
                   },
                   {
                     "type": "element",
                     "tag": "span",
                     "props": { "style": "--shiki-default:#FF79C6" },
-                    "children": [{ "type": "text", "value": "=" }]
+                    "children": [{ "type": "text", "value": " default" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#50FA7B" },
+                    "children": [
+                      { "type": "text", "value": " defineNuxtConfig" }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": "({\n" }]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 2 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#6272A4" },
+                    "children": [{ "type": "text", "value": " // ...\n" }]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 3 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": " modules" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": ":" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": " [" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#E9F284" },
+                    "children": [{ "type": "text", "value": "\"" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F1FA8C" },
+                    "children": [
+                      { "type": "text", "value": "nuxt-server-utils" }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#E9F284" },
+                    "children": [{ "type": "text", "value": "\"" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": "],\n" }]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 4 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": "});\n" }]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "props": {},
+        "children": [
+          {
+            "type": "text",
+            "value": "Finally, add the MongoDB connection string to the "
+          },
+          {
+            "type": "element",
+            "tag": "code",
+            "props": { "className": [] },
+            "children": [{ "type": "text", "value": ".env" }]
+          },
+          { "type": "text", "value": " file of your nuxt app:" }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "pre",
+        "props": {
+          "className": "language-bash shiki shiki-themes dracula",
+          "code": "MONGODB_URI=<your-mongodb-connection-string>\n",
+          "filename": ".env",
+          "language": "bash",
+          "meta": "",
+          "style": ""
+        },
+        "children": [
+          {
+            "type": "element",
+            "tag": "code",
+            "props": { "__ignoreMap": "" },
+            "children": [
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 1 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#BD93F9" },
+                    "children": [{ "type": "text", "value": "MONGODB_URI" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": "=<" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F1FA8C" },
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "your-mongodb-connection-strin"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": "g" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": ">\n" }]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "props": {},
+        "children": [
+          {
+            "type": "text",
+            "value": "That's it! Now you can use mongoose in your Nuxt 3 server routes like how it is normally used in Express.\nFor example, let's create a simple server route that returns all the documents from a MongoDB collection:"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "props": {},
+        "children": [
+          {
+            "type": "element",
+            "tag": "strong",
+            "props": {},
+            "children": [
+              { "type": "text", "value": "Defining the Mongoose model" }
+            ]
+          },
+          { "type": "text", "value": " in " },
+          {
+            "type": "element",
+            "tag": "code",
+            "props": { "className": [] },
+            "children": [
+              { "type": "text", "value": "server/models/user.model.ts" }
+            ]
+          },
+          { "type": "text", "value": ":" }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "pre",
+        "props": {
+          "className": "language-ts shiki shiki-themes dracula",
+          "code": "import { Schema, model } from \"mongoose\";\n\nconst UserSchema = new Schema({\n name: String,\n email: String,\n});\n\nexport const User = model(\"User\", UserSchema);\n",
+          "filename": "server/models/User.ts",
+          "language": "ts",
+          "meta": "",
+          "style": ""
+        },
+        "children": [
+          {
+            "type": "element",
+            "tag": "code",
+            "props": { "__ignoreMap": "" },
+            "children": [
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 1 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": "import" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [
+                      { "type": "text", "value": " { Schema, model } " }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": "from" }]
                   },
                   {
                     "type": "element",
@@ -138,7 +664,7 @@
                     "type": "element",
                     "tag": "span",
                     "props": { "style": "--shiki-default:#F1FA8C" },
-                    "children": [{ "type": "text", "value": "world" }]
+                    "children": [{ "type": "text", "value": "mongoose" }]
                   },
                   {
                     "type": "element",
@@ -162,8 +688,1008 @@
                   {
                     "type": "element",
                     "tag": "span",
+                    "props": { "emptyLinePlaceholder": true },
+                    "children": [{ "type": "text", "value": "\n" }]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 3 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": "const" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
                     "props": { "style": "--shiki-default:#F8F8F2" },
-                    "children": [{ "type": "text", "value": "console." }]
+                    "children": [{ "type": "text", "value": " UserSchema " }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": "=" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": {
+                      "style": "--shiki-default:#FF79C6;--shiki-default-font-weight:bold"
+                    },
+                    "children": [{ "type": "text", "value": " new" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#50FA7B" },
+                    "children": [{ "type": "text", "value": " Schema" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": "({\n" }]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 4 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": " name" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": ":" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": " String,\n" }]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 5 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": " email" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": ":" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": " String,\n" }]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 6 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": "});\n" }]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 7 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "emptyLinePlaceholder": true },
+                    "children": [{ "type": "text", "value": "\n" }]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 8 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": "export" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": " const" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": " User " }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": "=" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#50FA7B" },
+                    "children": [{ "type": "text", "value": " model" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": "(" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#E9F284" },
+                    "children": [{ "type": "text", "value": "\"" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F1FA8C" },
+                    "children": [{ "type": "text", "value": "User" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#E9F284" },
+                    "children": [{ "type": "text", "value": "\"" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [
+                      { "type": "text", "value": ", UserSchema);\n" }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "props": {},
+        "children": [
+          { "type": "text", "value": "Now let's create the " },
+          {
+            "type": "element",
+            "tag": "strong",
+            "props": {},
+            "children": [{ "type": "text", "value": "API Route" }]
+          },
+          { "type": "text", "value": " in " },
+          {
+            "type": "element",
+            "tag": "code",
+            "props": { "className": [] },
+            "children": [{ "type": "text", "value": "server/api/users.get.ts" }]
+          },
+          { "type": "text", "value": ":" }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "pre",
+        "props": {
+          "className": "language-ts shiki shiki-themes dracula",
+          "code": "import { User } from \"~~/server/models/user.model\";\n\nexport default defineEventHandler(async (event) => {\n const users = await User.find();\n\n return Users;\n});\n",
+          "filename": "server/api/users.get.ts",
+          "language": "ts",
+          "meta": "",
+          "style": ""
+        },
+        "children": [
+          {
+            "type": "element",
+            "tag": "code",
+            "props": { "__ignoreMap": "" },
+            "children": [
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 1 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": "import" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": " { User } " }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": "from" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#E9F284" },
+                    "children": [{ "type": "text", "value": " \"" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F1FA8C" },
+                    "children": [
+                      { "type": "text", "value": "~~/server/models/user.model" }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#E9F284" },
+                    "children": [{ "type": "text", "value": "\"" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": ";\n" }]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 2 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "emptyLinePlaceholder": true },
+                    "children": [{ "type": "text", "value": "\n" }]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 3 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": "export" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": " default" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#50FA7B" },
+                    "children": [
+                      { "type": "text", "value": " defineEventHandler" }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": "(" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": "async" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": " (" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": {
+                      "style": "--shiki-default:#FFB86C;--shiki-default-font-style:italic"
+                    },
+                    "children": [{ "type": "text", "value": "event" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": ") " }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": "=>" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": " {\n" }]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 4 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": " const" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": " users " }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": "=" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": " await" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": " User." }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#50FA7B" },
+                    "children": [{ "type": "text", "value": "find" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": "();\n" }]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 5 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "emptyLinePlaceholder": true },
+                    "children": [{ "type": "text", "value": "\n" }]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 6 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": " return" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": " Users;\n" }]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 7 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": "});\n" }]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "props": {},
+        "children": [
+          { "type": "text", "value": "If you navigate to the " },
+          {
+            "type": "element",
+            "tag": "code",
+            "props": { "className": [] },
+            "children": [{ "type": "text", "value": "/api/users" }]
+          },
+          {
+            "type": "text",
+            "value": " route, you should see a list of all the users in your database."
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "h3",
+        "props": { "id": "video-tutorial" },
+        "children": [{ "type": "text", "value": "Video Tutorial" }]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "props": {},
+        "children": [
+          {
+            "type": "text",
+            "value": "If you enjoy learning through video tutorials, I have created a video where i walk you through the above steps:"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "iframe",
+        "props": {
+          "loading": "lazy",
+          "style": "border: 0; top: 0; left: 0; width: 100%; height: 350px;",
+          "src": "https://www.youtube.com/embed/h10sAu3ETr8",
+          "title": "YouTube video player",
+          "frameBorder": "0",
+          "allow": "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
+          "allowFullScreen": true
+        },
+        "children": []
+      },
+      {
+        "type": "element",
+        "tag": "h3",
+        "props": { "id": "example-project" },
+        "children": [{ "type": "text", "value": "Example Project" }]
+      },
+      {
+        "type": "element",
+        "tag": "iframe",
+        "props": {
+          "loading": "lazy",
+          "style": "border: 0; top: 0; left: 0; width: 100%; height: 500px;",
+          "src": "https://stackblitz.com/edit/nuxt-server-utils?ctl=1&embed=1&file=nuxt.config.ts&hideNavigation=1",
+          "scrolling": "",
+          "allowFullScreen": true
+        },
+        "children": []
+      },
+      {
+        "type": "element",
+        "tag": "h2",
+        "props": { "id": "method-2-creating-a-nitro-plugin" },
+        "children": [
+          { "type": "text", "value": "Method 2: Creating a Nitro plugin" }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "props": {},
+        "children": [
+          { "type": "text", "value": "Nuxt 3 uses " },
+          {
+            "type": "element",
+            "tag": "a",
+            "props": { "href": "https://nitro.unjs.io/", "rel": ["nofollow"] },
+            "children": [{ "type": "text", "value": "Nitro" }]
+          },
+          {
+            "type": "text",
+            "value": " under the hood to power its server-side rendering capabilities. Nitro provides a simple API for creating plugins that can be used to extend the functionality of your Nuxt 3 application.\nIn this section, we'll create a Nitro plugin that will allow us to use MongoDB and Mongoose in our Nuxt 3 project."
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "props": {},
+        "children": [
+          {
+            "type": "text",
+            "value": "First, let's create a new plugin file in the "
+          },
+          {
+            "type": "element",
+            "tag": "code",
+            "props": { "className": [] },
+            "children": [{ "type": "text", "value": "server/plugins" }]
+          },
+          { "type": "text", "value": " directory:" }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "pre",
+        "props": {
+          "className": "language-bash shiki shiki-themes dracula",
+          "code": "touch server/plugins/mongodb.ts\n",
+          "language": "bash",
+          "meta": "",
+          "style": ""
+        },
+        "children": [
+          {
+            "type": "element",
+            "tag": "code",
+            "props": { "__ignoreMap": "" },
+            "children": [
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 1 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#50FA7B" },
+                    "children": [{ "type": "text", "value": "touch" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F1FA8C" },
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": " server/plugins/mongodb.ts\n"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "props": {},
+        "children": [
+          {
+            "type": "text",
+            "value": "Then let's install the required dependencies:"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "pre",
+        "props": {
+          "className": "language-bash shiki shiki-themes dracula",
+          "code": "npm install mongoose\n",
+          "language": "bash",
+          "meta": "",
+          "style": ""
+        },
+        "children": [
+          {
+            "type": "element",
+            "tag": "code",
+            "props": { "__ignoreMap": "" },
+            "children": [
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 1 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#50FA7B" },
+                    "children": [{ "type": "text", "value": "npm" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F1FA8C" },
+                    "children": [
+                      { "type": "text", "value": " install mongoose\n" }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "props": {},
+        "children": [
+          {
+            "type": "text",
+            "value": "Next, let's add the following code to the newly created plugin file:"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "pre",
+        "props": {
+          "className": "language-ts shiki shiki-themes dracula",
+          "code": "import { Nitro } from \"nitropack\";\nimport mongoose from \"mongoose\";\n\nexport default async (_nitroApp: Nitro) => {\n const config = useRuntimeConfig();\n\n try {\n await mongoose.connect(config.mongodbUri);\n console.log(\"Connected to MongoDB\");\n } catch (e) {\n console.error(e);\n }\n};\n",
+          "filename": "server/plugins/mongodb.ts",
+          "language": "ts",
+          "meta": "",
+          "style": ""
+        },
+        "children": [
+          {
+            "type": "element",
+            "tag": "code",
+            "props": { "__ignoreMap": "" },
+            "children": [
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 1 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": "import" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": " { Nitro } " }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": "from" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#E9F284" },
+                    "children": [{ "type": "text", "value": " \"" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F1FA8C" },
+                    "children": [{ "type": "text", "value": "nitropack" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#E9F284" },
+                    "children": [{ "type": "text", "value": "\"" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": ";\n" }]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 2 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": "import" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": " mongoose " }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": "from" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#E9F284" },
+                    "children": [{ "type": "text", "value": " \"" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F1FA8C" },
+                    "children": [{ "type": "text", "value": "mongoose" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#E9F284" },
+                    "children": [{ "type": "text", "value": "\"" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": ";\n" }]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 3 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "emptyLinePlaceholder": true },
+                    "children": [{ "type": "text", "value": "\n" }]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 4 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": "export" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": " default" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": " async" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": " (" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": {
+                      "style": "--shiki-default:#FFB86C;--shiki-default-font-style:italic"
+                    },
+                    "children": [{ "type": "text", "value": "_nitroApp" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": ":" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": {
+                      "style": "--shiki-default:#8BE9FD;--shiki-default-font-style:italic"
+                    },
+                    "children": [{ "type": "text", "value": " Nitro" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": ") " }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": "=>" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": " {\n" }]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 5 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": " const" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": " config " }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": "=" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#50FA7B" },
+                    "children": [
+                      { "type": "text", "value": " useRuntimeConfig" }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": "();\n" }]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 6 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "emptyLinePlaceholder": true },
+                    "children": [{ "type": "text", "value": "\n" }]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 7 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": " try" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": " {\n" }]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 8 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": " await" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": " mongoose." }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#50FA7B" },
+                    "children": [{ "type": "text", "value": "connect" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [
+                      { "type": "text", "value": "(config.mongodbUri);\n" }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 9 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": " console." }]
                   },
                   {
                     "type": "element",
@@ -175,152 +1701,109 @@
                     "type": "element",
                     "tag": "span",
                     "props": { "style": "--shiki-default:#F8F8F2" },
-                    "children": [{ "type": "text", "value": "(hello);\n" }]
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "element",
-        "tag": "p",
-        "props": {},
-        "children": [{ "type": "text", "value": "You can use blockquotes" }]
-      },
-      {
-        "type": "element",
-        "tag": "blockquote",
-        "props": {},
-        "children": [
-          {
-            "type": "element",
-            "tag": "p",
-            "props": {},
-            "children": [{ "type": "text", "value": "This is a blockquote" }]
-          }
-        ]
-      },
-      {
-        "type": "element",
-        "tag": "p",
-        "props": {},
-        "children": [{ "type": "text", "value": "You can use links" }]
-      },
-      {
-        "type": "element",
-        "tag": "p",
-        "props": {},
-        "children": [
-          {
-            "type": "element",
-            "tag": "a",
-            "props": { "href": "https://www.google.com", "rel": ["nofollow"] },
-            "children": [{ "type": "text", "value": "This is a link" }]
-          }
-        ]
-      },
-      {
-        "type": "element",
-        "tag": "p",
-        "props": {},
-        "children": [{ "type": "text", "value": "You can use tables" }]
-      },
-      {
-        "type": "text",
-        "value": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
-      },
-      {
-        "type": "element",
-        "tag": "table",
-        "props": {},
-        "children": [
-          {
-            "type": "element",
-            "tag": "thead",
-            "props": {},
-            "children": [
-              {
-                "type": "element",
-                "tag": "tr",
-                "props": {},
-                "children": [
-                  {
-                    "type": "element",
-                    "tag": "th",
-                    "props": {},
-                    "children": [{ "type": "text", "value": "Column 1" }]
+                    "children": [{ "type": "text", "value": "(" }]
                   },
                   {
                     "type": "element",
-                    "tag": "th",
-                    "props": {},
-                    "children": [{ "type": "text", "value": "Column 2" }]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "element",
-            "tag": "tbody",
-            "props": {},
-            "children": [
-              {
-                "type": "element",
-                "tag": "tr",
-                "props": {},
-                "children": [
-                  {
-                    "type": "element",
-                    "tag": "td",
-                    "props": {},
-                    "children": [{ "type": "text", "value": "Row 1" }]
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#E9F284" },
+                    "children": [{ "type": "text", "value": "\"" }]
                   },
                   {
                     "type": "element",
-                    "tag": "td",
-                    "props": {},
-                    "children": [{ "type": "text", "value": "Row 1" }]
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F1FA8C" },
+                    "children": [
+                      { "type": "text", "value": "Connected to MongoDB" }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#E9F284" },
+                    "children": [{ "type": "text", "value": "\"" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": ");\n" }]
                   }
                 ]
               },
               {
                 "type": "element",
-                "tag": "tr",
-                "props": {},
+                "tag": "span",
+                "props": { "class": "line", "line": 10 },
                 "children": [
                   {
                     "type": "element",
-                    "tag": "td",
-                    "props": {},
-                    "children": [{ "type": "text", "value": "Row 2" }]
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": " } " }]
                   },
                   {
                     "type": "element",
-                    "tag": "td",
-                    "props": {},
-                    "children": [{ "type": "text", "value": "Row 2" }]
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": "catch" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": " (e) {\n" }]
                   }
                 ]
               },
               {
                 "type": "element",
-                "tag": "tr",
-                "props": {},
+                "tag": "span",
+                "props": { "class": "line", "line": 11 },
                 "children": [
                   {
                     "type": "element",
-                    "tag": "td",
-                    "props": {},
-                    "children": [{ "type": "text", "value": "Row 3" }]
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": " console." }]
                   },
                   {
                     "type": "element",
-                    "tag": "td",
-                    "props": {},
-                    "children": [{ "type": "text", "value": "Row 3" }]
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#50FA7B" },
+                    "children": [{ "type": "text", "value": "error" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": "(e);\n" }]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 12 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": " }\n" }]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 13 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": "};\n" }]
                   }
                 ]
               }
@@ -333,74 +1816,327 @@
         "tag": "p",
         "props": {},
         "children": [
-          { "type": "text", "value": "You can use horizontal rules" }
-        ]
-      },
-      { "type": "element", "tag": "hr", "props": {}, "children": [] },
-      {
-        "type": "element",
-        "tag": "p",
-        "props": {},
-        "children": [{ "type": "text", "value": "You can use emphasis" }]
-      },
-      {
-        "type": "element",
-        "tag": "p",
-        "props": {},
-        "children": [
-          {
-            "type": "element",
-            "tag": "strong",
-            "props": {},
-            "children": [{ "type": "text", "value": "This is bold" }]
-          }
-        ]
-      },
-      {
-        "type": "element",
-        "tag": "p",
-        "props": {},
-        "children": [
-          {
-            "type": "element",
-            "tag": "em",
-            "props": {},
-            "children": [{ "type": "text", "value": "This is italic" }]
-          }
-        ]
-      },
-      {
-        "type": "element",
-        "tag": "p",
-        "props": {},
-        "children": [{ "type": "text", "value": "You can use inline code" }]
-      },
-      {
-        "type": "element",
-        "tag": "p",
-        "props": {},
-        "children": [
+          { "type": "text", "value": "Finally, let's add the plugin to the " },
           {
             "type": "element",
             "tag": "code",
             "props": { "className": [] },
-            "children": [{ "type": "text", "value": "const hello = 'world';" }]
+            "children": [{ "type": "text", "value": "plugins" }]
+          },
+          { "type": "text", "value": " section of our " },
+          {
+            "type": "element",
+            "tag": "code",
+            "props": { "className": [] },
+            "children": [{ "type": "text", "value": "nuxt.config.ts" }]
+          },
+          { "type": "text", "value": " file:" }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "pre",
+        "props": {
+          "className": "language-ts shiki shiki-themes dracula",
+          "code": "export default defineNuxtConfig({\n // ...\n nitro: {\n plugins: [\"~/server/plugins/mongodb.ts\"],\n },\n});\n",
+          "filename": "nuxt.config.ts",
+          "language": "ts",
+          "meta": "",
+          "style": ""
+        },
+        "children": [
+          {
+            "type": "element",
+            "tag": "code",
+            "props": { "__ignoreMap": "" },
+            "children": [
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 1 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": "export" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": " default" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#50FA7B" },
+                    "children": [
+                      { "type": "text", "value": " defineNuxtConfig" }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": "({\n" }]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 2 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#6272A4" },
+                    "children": [{ "type": "text", "value": " // ...\n" }]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 3 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": " nitro" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": ":" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": " {\n" }]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 4 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": " plugins" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#FF79C6" },
+                    "children": [{ "type": "text", "value": ":" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": " [" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#E9F284" },
+                    "children": [{ "type": "text", "value": "\"" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F1FA8C" },
+                    "children": [
+                      { "type": "text", "value": "~/server/plugins/mongodb.ts" }
+                    ]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#E9F284" },
+                    "children": [{ "type": "text", "value": "\"" }]
+                  },
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": "],\n" }]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 5 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": " },\n" }]
+                  }
+                ]
+              },
+              {
+                "type": "element",
+                "tag": "span",
+                "props": { "class": "line", "line": 6 },
+                "children": [
+                  {
+                    "type": "element",
+                    "tag": "span",
+                    "props": { "style": "--shiki-default:#F8F8F2" },
+                    "children": [{ "type": "text", "value": "});\n" }]
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
       {
         "type": "element",
-        "tag": "callout",
-        "props": { "title": "Hello World Callout" },
+        "tag": "p",
+        "props": {},
         "children": [
           {
-            "type": "element",
-            "tag": "p",
-            "props": {},
-            "children": [
-              { "type": "text", "value": "This is a quick tip about markdown" }
-            ]
+            "type": "text",
+            "value": "That's it! Now you can use mongoose in your Nuxt 3 server routes like how it is normally used in Express."
           }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "h3",
+        "props": { "id": "video-tutorial-1" },
+        "children": [{ "type": "text", "value": "Video Tutorial" }]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "props": {},
+        "children": [
+          {
+            "type": "text",
+            "value": "If you prefer video tutorials, you can watch the following video where I walk you through the process of adding MongoDB and Mongoose to a Nuxt 3 project:"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "iframe",
+        "props": {
+          "loading": "lazy",
+          "style": "border: 0; top: 0; left: 0; width: 100%; height: 350px;",
+          "src": "https://www.youtube.com/embed/EidO0c9L6b0",
+          "title": "YouTube video player",
+          "frameBorder": "0",
+          "allow": "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
+          "allowFullScreen": true
+        },
+        "children": []
+      },
+      {
+        "type": "element",
+        "tag": "h3",
+        "props": { "id": "example-project-1" },
+        "children": [{ "type": "text", "value": "Example Project" }]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "props": {},
+        "children": [
+          {
+            "type": "text",
+            "value": "Play around with the example project to get a better understanding of how to use MongoDB and Mongoose with Nuxt 3."
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "iframe",
+        "props": {
+          "loading": "lazy",
+          "style": "border: 0; top: 0; left: 0; width: 100%; height: 500px;",
+          "src": "https://stackblitz.com/github/jahidanowar/nuxt3-mongoose?ctl=1&embed=1&file=nuxt.config.ts&hideNavigation=1&theme=dark&view=editor",
+          "scrolling": "",
+          "allowFullScreen": true
+        },
+        "children": []
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "props": {},
+        "children": [
+          {
+            "type": "text",
+            "value": "You ca find the full source code of this example "
+          },
+          {
+            "type": "element",
+            "tag": "a",
+            "props": {
+              "href": "https://github.com/jahidanowar/nuxt3-mongoose",
+              "rel": ["nofollow"]
+            },
+            "children": [{ "type": "text", "value": "here" }]
+          },
+          { "type": "text", "value": "." }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "h2",
+        "props": { "id": "conclusion" },
+        "children": [{ "type": "text", "value": "Conclusion" }]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "props": {},
+        "children": [
+          {
+            "type": "text",
+            "value": "In this blog post, we explored two simple yet effective methods to add MongoDB and Mongoose to your Nuxt 3 project. Whether you're a seasoned developer or just starting your journey in full-stack web development, this guide will help you leverage the capabilities of MongoDB and Mongoose within the Nuxt ecosystem."
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "p",
+        "props": {},
+        "children": [
+          {
+            "type": "text",
+            "value": "If you have any questions or feedback, feel free to reach out to me on "
+          },
+          {
+            "type": "element",
+            "tag": "a",
+            "props": { "href": "https://jahid.dev/d", "rel": ["nofollow"] },
+            "children": [{ "type": "text", "value": "Discord" }]
+          },
+          { "type": "text", "value": " or " },
+          {
+            "type": "element",
+            "tag": "a",
+            "props": {
+              "href": "https://twitter.com/jahidDev",
+              "rel": ["nofollow"]
+            },
+            "children": [{ "type": "text", "value": "Twitter" }]
+          },
+          { "type": "text", "value": "." }
         ]
       },
       {
@@ -420,17 +2156,32 @@
       "searchDepth": 2,
       "depth": 2,
       "links": [
+        { "id": "prerequisites", "depth": 2, "text": "Prerequisites" },
         {
-          "id": "this-is-a-heading-2",
+          "id": "method-1-using-the-nuxt-server-utils-module",
           "depth": 2,
-          "text": "This is a heading 2"
-        }
+          "text": "Method 1: Using the nuxt-server-utils module",
+          "children": [
+            { "id": "video-tutorial", "depth": 3, "text": "Video Tutorial" },
+            { "id": "example-project", "depth": 3, "text": "Example Project" }
+          ]
+        },
+        {
+          "id": "method-2-creating-a-nitro-plugin",
+          "depth": 2,
+          "text": "Method 2: Creating a Nitro plugin",
+          "children": [
+            { "id": "video-tutorial-1", "depth": 3, "text": "Video Tutorial" },
+            { "id": "example-project-1", "depth": 3, "text": "Example Project" }
+          ]
+        },
+        { "id": "conclusion", "depth": 2, "text": "Conclusion" }
       ]
     }
   },
   "_type": "markdown",
-  "_id": "content:blog:hello-world.md",
+  "_id": "content:blog:mongo-db.md",
   "_source": "content",
-  "_file": "blog/hello-world.md",
+  "_file": "blog/mongo-db.md",
   "_extension": "md"
 }
