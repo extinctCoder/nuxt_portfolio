@@ -30,6 +30,22 @@
       class="aspect-21/9 max-h-64 object-cover object-center lg:aspect-4/3 lg:max-w-64"
     />
   </NuxtLink>
+  <div class="card image-full w-96 bg-base-100 shadow-xl">
+    <figure>
+      <NuxtImg
+        v-if="image"
+        :src="`/images/blog/${image}`"
+        class="aspect-21/9 max-h-64 object-cover object-center lg:aspect-4/3 lg:max-w-64"
+      />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title">{{ heading }}</h2>
+      <p>{{ body_text }}</p>
+      <div class="card-actions justify-end">
+        <button class="btn btn-primary">Buy Now</button>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script lang="ts" setup>
