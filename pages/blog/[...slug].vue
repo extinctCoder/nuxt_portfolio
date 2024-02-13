@@ -10,13 +10,12 @@
     links:
     {{ post.body.toc.links }}
 
-    <div v-for="link in post.body.toc.links" class="flex gap-2">
+    <div v-for="link in post.body.toc.links" class="flex flex-col gap-2">
       <p>{{ link }}</p>
       <a :hreflang="`#${link.id}`" class="border bg-red-300">{{ link.text }}</a>
-      <div v-if="link.children">
+      <div v-if="link.children" class="m-2 border bg-violet-400">
         {{ link.children }}
       </div>
-      if
     </div>
   </div>
 </template>
