@@ -1,10 +1,13 @@
 {
   "name": "Nuxt Portfolio",
   "dockerFile": "Dockerfile",
-  "appPort": 3000,
   "customizations": {
     "vscode": {
-      "extensions": []
+      "extensions": [
+        "patbenatar.advanced-new-file",
+        "aaron-bond.better-comments"
+      ]
     }
-  }
+  },
+  "forwardPorts": [3000]
 }
