@@ -6,7 +6,9 @@
     <br />
     <br />
     title: {{ post.body.toc.title }}
+    <br />
     links:
+    {{ post.body.toc.links }}
   </div>
 </template>
 
