@@ -16,8 +16,12 @@
         </div>
         <div class="prose w-full max-w-none prose-p:text-justify">
           <h1>{{ title }}</h1>
-          Posted {{ new Date(publish_date).toDateString() }} Updated
-          {{ new Date(update_date).toDateString() }} By Cotes Chung 3 min read
+          <p>
+            Posted
+            <strong>{{ new Date(publish_date).toDateString() }}</strong> Updated
+            {{ new Date(update_date).toDateString() }}
+          </p>
+          By Cotes Chung 3 min read
         </div>
       </div>
     </div>
