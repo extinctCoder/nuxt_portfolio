@@ -9,7 +9,6 @@
       </ul>
     </li>
   </ul>
-  {{ props }}
 </template>
 
 <script lang="ts" setup>
