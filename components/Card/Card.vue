@@ -29,7 +29,7 @@
     <NuxtImg
       v-if="image"
       :src="`/images/blog/${image}`"
-      class="aspect-21/9 max-h-64 object-cover object-center lg:aspect-4/3 lg:max-w-64"
+      class="aspect-21/9 object-cover object-center lg:aspect-4/3 lg:max-w-64"
     />
   </NuxtLink>
 </template>
@@ -48,8 +48,8 @@ const props = withDefaults(defineProps<CardInterface>(), {
   heading: "Lorem ipsum",
   to: "/",
   publish_date: undefined,
-  // tags: undefined,
-  tags: () => ["Lorem", "ipsum", "dolor", "sit"],
+  tags: undefined,
+  // tags: () => ["Lorem", "ipsum", "dolor", "sit"],
   image: undefined,
   body_text:
     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio enim optio sunt. Ipsa et blanditiis rerum adipisci. Optio eligendi porro autem voluptates, ducimus dolores minus voluptatem omnis culpa mollitia eius!",
