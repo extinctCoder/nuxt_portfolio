@@ -3,7 +3,7 @@
     <template #post-body>
       <ContentRenderer :value="post"></ContentRenderer>
     </template>
-    <template #toc>toc</template>
+    <template #toc><TableOfContent :children="post.body.toc.links" /></template>
   </Post>
 
   <!-- <template> -->
