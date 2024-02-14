@@ -1,9 +1,9 @@
 <template>
   <div class="flex gap-4">
     <div class="flex flex-col gap-4">
-      <div class="relative aspect-21/9 bg-red-400">
+      <div class="relative h-10 bg-red-400">
         <NuxtImg
-          class="h-full w-full object-cover"
+          class="aspect-21/9 object-cover object-center"
           src="/images/blog/unsplash.jpg"
         />
         <div
