@@ -3,9 +3,9 @@
     <template #post-body>
       {{ post.title }}
       <br />
-      {{ post.created_on }}
+      created_on: {{ post.created_on }}
       <br />
-      {{ post.date }}
+      updated_on: {{ post.updated_on }}
       <br />
 
       <ContentRenderer :value="post"></ContentRenderer>
