@@ -1,6 +1,6 @@
 <template>
   <div class="flex gap-8 bg-red-400">
-    <div class="flex w-9/12 flex-col gap-4 bg-green-400">
+    <div class="flex flex-col gap-4 bg-green-400">
       <div class="prose max-w-none bg-amber-300">
         <slot name="post-body" />
       </div>
