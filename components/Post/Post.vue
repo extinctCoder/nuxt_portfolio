@@ -8,7 +8,7 @@
     <div class="hidden flex-1 lg:block">
       <!-- <div class="sticky top-0"> -->
 
-      <ul class="menu">
+      <ul class="menu bg-slate-200">
         <li>
           <h2 class="menu-title">Recently Updated</h2>
           <ul>
