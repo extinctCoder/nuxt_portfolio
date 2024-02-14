@@ -15,20 +15,24 @@
           </div>
         </div>
       </div> -->
-      <div class="prose w-full max-w-none bg-zinc-400">
-        <h1 class="bg-green-400">{{ title }}</h1>
+      <div class="prose w-full max-w-none bg-zinc-400 prose-p:before:p-0">
+        <!-- <h1 class="bg-green-400">{{ title }}</h1> -->
+        <div class="flex content-center gap-4 bg-slate-400">
+          <div v-if="publish_date" class="inline-flex items-center gap-2">
+            <Icon name="heroicons:calendar-solid" />
+            <p>Posted</p>
+            <strong>{{ new Date(publish_date).toDateString() }}</strong>
+          </div>
+          <div v-if="publish_date" class="inline-flex items-center gap-2">
+            <Icon name="heroicons:calendar-solid" />
+            <p>Updated</p>
+            <strong>{{ new Date(update_date).toDateString() }} </strong>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="inline-flex content-center gap-2 bg-slate-400">
-    <Icon name="heroicons:calendar-solid" />
-    <p>Posted</p>
-    <strong>{{ new Date(publish_date).toDateString() }}</strong>
-    <Icon name="heroicons:calendar-solid" />
-    <p>Updated</p>
-    <strong>{{ new Date(update_date).toDateString() }} </strong>
-  </div>
   <p>
     Posted
     <strong>{{ new Date(publish_date).toDateString() }}</strong> Updated
