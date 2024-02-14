@@ -1,8 +1,12 @@
 <template>
+  <Post>
+    <ContentRenderer :value="post"></ContentRenderer>
+  </Post>
+
   <!-- <template> -->
   <!-- <div class="prose mx-auto max-w-none"> -->
   <!-- <div class="prose max-w-none">
-    <ContentRenderer :value="post"></ContentRenderer>
+ 
   </div>
   <TableOfContent :children="post.body.toc.links" />
   {{ post.body.toc }} -->
