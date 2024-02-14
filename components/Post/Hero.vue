@@ -1,24 +1,24 @@
 <template>
   <div class="relative rounded">
     <NuxtImg
-      class="aspect-21/9 max-h-64 w-full bg-white object-cover object-center opacity-5 blur"
+      class="aspect-21/9 max-h-64 w-full object-cover object-center opacity-15 blur"
       src="/images/blog/mountains_2.jpg"
     />
-    <div class="absolute bottom-0 h-full w-full bg-white opacity-80 blur"></div>
-    <div class="absolute bottom-0 flex w-full flex-row justify-between p-4">
-      <div class="avatar">
-        <div class="w-16 rounded">
-          <NuxtImg :src="avatar" />
+    <!-- <div class="absolute bottom-0 h-full w-full bg-white opacity-80 blur"></div> -->
+    <div
+      class="absolute bottom-0 flex w-full flex-row justify-between gap-4 bg-red-400 p-4"
+    >
+      <div class="flex content-center justify-center gap-4">
+        <div class="avatar bg-green-400">
+          <div class="w-16 rounded">
+            <NuxtImg :src="avatar" />
+          </div>
         </div>
-      </div>
-      <div class="prose">
-        <h1>Box Office News!</h1>
-        <p>
-          Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-          excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a
-          id nisi.
-        </p>
-        <button class="btn btn-primary">Get Started</button>
+        <div class="prose w-full max-w-none prose-p:text-justify">
+          <h1>{{ title }}</h1>
+          Posted {{ published_at }} Updated {{ updated_on }} By Cotes Chung 3
+          min read
+        </div>
       </div>
     </div>
   </div>
@@ -28,11 +28,15 @@
 interface CardInterface {
   title?: string;
   avatar?: string;
+  updated_on?: Date;
+  published_at?: Date;
 }
 
 const props = withDefaults(defineProps<CardInterface>(), {
   avatar: "/avatar.jpeg",
   title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+  updated_on: () => new Date(),
+  published_at: () => new Date(),
 });
 </script>
 
