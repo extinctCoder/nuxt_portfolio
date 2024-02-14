@@ -6,28 +6,30 @@
         class="aspect-21/9 max-h-80 w-full rounded object-cover object-center opacity-45 blur"
       />
       <div
-        class="absolute bottom-0 flex w-full flex-row items-center gap-4 p-4"
+        class="absolute bottom-0 flex w-full flex-row items-center gap-4 bg-slate-400 p-4"
       >
-        <NuxtImg
-          v-if="avatar"
-          :src="`/images/blog/${avatar}`"
-          class="aspect-1 max-w-16 flex-none rounded-lg object-cover object-center"
-        />
+        <div class="flex flex-row gap-4">
+          <NuxtImg
+            v-if="avatar"
+            :src="`/images/blog/${avatar}`"
+            class="aspect-1 max-w-16 flex-none rounded-lg object-cover object-center"
+          />
 
-        <div
-          class="prose flex w-full max-w-none flex-col gap-2 prose-h1:m-0 prose-p:m-0"
-        >
-          <h1>{{ title }}</h1>
-          <div class="flex content-center gap-4">
-            <div v-if="publish_date" class="inline-flex items-center gap-2">
-              <Icon name="heroicons:calendar-solid" />
-              <p>Posted</p>
-              <strong>{{ new Date(publish_date).toDateString() }}</strong>
-            </div>
-            <div v-if="publish_date" class="inline-flex items-center gap-2">
-              <Icon name="heroicons:calendar-solid" />
-              <p>Updated</p>
-              <strong>{{ new Date(update_date).toDateString() }} </strong>
+          <div
+            class="prose flex w-full max-w-none flex-col gap-2 prose-h1:m-0 prose-p:m-0"
+          >
+            <h1>{{ title }}</h1>
+            <div class="flex content-center gap-4">
+              <div v-if="publish_date" class="inline-flex items-center gap-2">
+                <Icon name="heroicons:calendar-solid" />
+                <p>Posted</p>
+                <strong>{{ new Date(publish_date).toDateString() }}</strong>
+              </div>
+              <div v-if="publish_date" class="inline-flex items-center gap-2">
+                <Icon name="heroicons:calendar-solid" />
+                <p>Updated</p>
+                <strong>{{ new Date(update_date).toDateString() }} </strong>
+              </div>
             </div>
           </div>
         </div>
