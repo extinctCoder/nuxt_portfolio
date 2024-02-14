@@ -21,7 +21,7 @@
     </div>
   </div>
 
-  <div class="flex flex-row content-center gap-2 bg-slate-400">
+  <div class="inline-flex content-center gap-2 bg-slate-400">
     <Icon name="heroicons:calendar-solid" />
     <p>Posted</p>
     <strong>{{ new Date(publish_date).toDateString() }}</strong>
