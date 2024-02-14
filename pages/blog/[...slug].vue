@@ -36,14 +36,8 @@
         v-for="child_link in link.children"
         :key="child_link.id"
       >
-        <li><a>Submenu 1</a></li>
-        <li><a>Submenu 2</a></li>
         <li>
-          <a>Parent</a>
-          <ul>
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
+          <a>{{ child_link.title }}</a>
         </li>
       </ul>
     </li>
