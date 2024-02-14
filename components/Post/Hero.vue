@@ -16,6 +16,17 @@
         </div>
         <div class="prose w-full max-w-none prose-p:text-justify">
           <h1>{{ title }}</h1>
+          <div class="flex flex-row gap-2">
+            <span>
+              Posted
+              <strong>{{ new Date(publish_date).toDateString() }}</strong>
+            </span>
+            <span><strong>.</strong></span>
+            <span>
+              Updated
+              <strong>{{ new Date(update_date).toDateString() }} </strong>
+            </span>
+          </div>
           <p>
             Posted
             <strong>{{ new Date(publish_date).toDateString() }}</strong> Updated
