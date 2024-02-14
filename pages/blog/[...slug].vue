@@ -8,6 +8,7 @@
     :text="post.body.toc.text"
     :children="post.body.toc.links"
   />
+  {{ post.body.toc }}
 </template>
 
 <script setup>
