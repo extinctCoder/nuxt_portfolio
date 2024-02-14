@@ -12,9 +12,9 @@
 </template>
 
 <script setup lang="ts">
-// definePageMeta({
-//   layout: "post-list",
-// });
+definePageMeta({
+  layout: "post-list",
+});
 const { path } = useRoute();
 const { data: posts } = await useAsyncData(path, () =>
   queryContent("/blog").find(),
