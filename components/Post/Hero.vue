@@ -61,6 +61,7 @@ const props = withDefaults(defineProps<CardInterface>(), {
   title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
   update_date: () => new Date(),
   publish_date: () => new Date(),
+  cover: "karl-pawlowicz-QUHuwyNgSA0-unsplash.jpg",
 });
 </script>
 
