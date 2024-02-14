@@ -1,5 +1,4 @@
 <template>
-  <!-- <div> -->
   <NuxtLayout name="default">
     <div class="flex gap-8">
       <div class="flex w-10/12 flex-auto flex-col gap-4">
@@ -24,7 +23,6 @@
       </div>
     </div>
   </NuxtLayout>
-  <!-- </div> -->
 </template>
 
 <script lang="ts" setup></script>

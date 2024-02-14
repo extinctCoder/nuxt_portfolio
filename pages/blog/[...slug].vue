@@ -1,6 +1,7 @@
 <template>
   <!-- <template> -->
-  <div class="prose mx-auto max-w-none">
+  <!-- <div class="prose mx-auto max-w-none"> -->
+  <div class="prose max-w-none">
     <ContentRenderer :value="post"></ContentRenderer>
   </div>
   <TableOfContent :children="post.body.toc.links" />
