@@ -1,25 +1,23 @@
 <template>
   <div class="relative rounded">
     <NuxtImg
-      class="aspect-21/9 max-h-64 w-full object-cover object-center opacity-15 blur"
+      class="aspect-21/9 max-h-96 w-full object-cover object-center opacity-15 blur"
       src="/images/blog/mountains_2.jpg"
     />
     <!-- <div class="absolute bottom-0 h-full w-full bg-white opacity-80 blur"></div> -->
     <div
       class="absolute bottom-0 flex w-full flex-row justify-between gap-4 bg-red-400 p-4"
     >
+      <NuxtImg :src="avatar" />
       <!-- <div class="flex content-center justify-center gap-4">
         <div class="avatar bg-green-400">
           <div class="w-16 rounded">
-            <NuxtImg :src="avatar" />
           </div>
         </div>
       </div> -->
-      <div
-        class="prose flex w-full max-w-none flex-col gap-2 bg-zinc-400 prose-p:m-0"
-      >
-        <h1 class="bg-green-400">{{ title }}</h1>
-        <div class="flex content-center gap-4 bg-slate-400">
+      <div class="prose flex w-full max-w-none flex-col gap-2 prose-p:m-0">
+        <h1>{{ title }}</h1>
+        <div class="flex content-center gap-4">
           <div v-if="publish_date" class="inline-flex items-center gap-2">
             <Icon name="heroicons:calendar-solid" />
             <p>Posted</p>
