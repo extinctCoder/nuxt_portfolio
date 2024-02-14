@@ -33,14 +33,13 @@
           </div>
         </div>
 
-        <NuxtLink class="btn btn-primary btn-active">Primary</NuxtLink>
+        <NuxtLink class="btn btn-primary btn-active">
+          <Icon name="jam:github" />Primary</NuxtLink
+        >
       </div>
     </div>
     <div class="prose w-full max-w-none text-center">
-      <span class="italic"
-        >{{ cover_description }}
-        <Icon name="jam:github" />
-      </span>
+      <span class="italic">{{ cover_description }} </span>
     </div>
   </div>
 </template>
