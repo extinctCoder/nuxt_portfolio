@@ -5,6 +5,9 @@
         :title="post.title"
         :update_date="post.updated_on"
         :publish_date="post.updated_at"
+        :avatar="post.avatar"
+        :cover="post.cover"
+        :cover_description="post.cover_description"
       />
     </template>
     <template #post-body>
