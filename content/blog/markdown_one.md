@@ -2,7 +2,8 @@
 title: Hello, World!
 description: This is my very first blog post and I'm so excited to share it with you!
 created_on: 2023-05-23
-updated_on: 2023-06-05
+updated_on: 2023-09-05
+published_at: 2023-07-12
 cover: nasa-Q1p7bh3SHj8-unsplash.jpg
 tags:
   - blog

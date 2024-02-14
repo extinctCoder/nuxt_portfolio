@@ -7,6 +7,7 @@
       <br />
       {{ post.date }}
       <br />
+
       <ContentRenderer :value="post"></ContentRenderer>
     </template>
     <template #toc><TableOfContent :children="post.body.toc.links" /></template>

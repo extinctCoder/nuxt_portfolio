@@ -47,8 +47,8 @@ interface CardInterface {
 const props = withDefaults(defineProps<CardInterface>(), {
   heading: "Lorem ipsum",
   to: "/",
-  publish_date: new Date().toDateString(),
-  tags: () => ["Lorem", "ipsum"],
+  publish_date: undefined,
+  tags: undefined,
   image: undefined,
   body_text:
     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio enim optio sunt. Ipsa et blanditiis rerum adipisci. Optio eligendi porro autem voluptates, ducimus dolores minus voluptatem omnis culpa mollitia eius!",
