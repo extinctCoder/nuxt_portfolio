@@ -8,7 +8,7 @@
       <div
         class="absolute bottom-0 flex w-full flex-row items-center gap-4 bg-slate-400 p-4"
       >
-        <div class="flex flex-row gap-4">
+        <div class="flex flex-1 flex-row gap-4 bg-red-400">
           <NuxtImg
             v-if="avatar"
             :src="`/images/blog/${avatar}`"
@@ -32,6 +32,9 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="w-16 bg-purple-400">
+          <button class="btn btn-primary btn-active">Primary</button>
         </div>
       </div>
     </div>
