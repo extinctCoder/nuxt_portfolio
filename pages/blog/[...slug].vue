@@ -28,9 +28,9 @@
       </div>
     </div>
   </div>
-  <ul class="menu w-56 rounded-box bg-base-200">
+  <ul class="menu bg-base-200">
     <li v-for="link in post.body.toc.links">
-      <a>Parent</a>
+      <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
       <ul>
         <li><a>Submenu 1</a></li>
         <li><a>Submenu 2</a></li>
