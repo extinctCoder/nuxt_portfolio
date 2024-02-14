@@ -1,9 +1,10 @@
 <template>
-  <div class="flex gap-8">
+  <div class="flex gap-2">
     <div class="prose w-full max-w-none bg-amber-300">
       <slot name="post-body" />
     </div>
-    <div class="bg-green-400">
+    <span class="divider divider-horizontal"></span>
+    <div class="min-w bg-green-400">
       <slot name="toc" />
     </div>
   </div>
