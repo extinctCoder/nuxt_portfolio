@@ -1,7 +1,10 @@
 <template>
-  <div class="flex gap-8 bg-red-400">
-    <div class="prose w-full bg-amber-300">
+  <div class="flex gap-8">
+    <div class="prose w-full max-w-none bg-amber-300">
       <slot name="post-body" />
+    </div>
+    <div class="bg-green-400">
+      <slot name="toc" />
     </div>
   </div>
   <!-- <div class="hidden flex-1 bg-zinc-400 lg:block">
