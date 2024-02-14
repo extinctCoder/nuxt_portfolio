@@ -1,5 +1,8 @@
 <template>
   <Post>
+    <template #post-hero>
+      <PostHero />
+    </template>
     <template #post-body>
       {{ post.title }}
       <br />

@@ -1,7 +1,7 @@
 <template>
   <div class="flex gap-4">
     <div class="flex flex-col gap-4">
-      <PostHero />
+      <slot name="post-hero" />
       <div class="prose w-full max-w-none prose-p:text-justify">
         <slot name="post-body" />
       </div>
