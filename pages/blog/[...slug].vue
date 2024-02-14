@@ -29,8 +29,7 @@
     </div>
   </div>
   <ul class="menu w-56 rounded-box bg-base-200">
-    <li><a>Item 1</a></li>
-    <li>
+    <li v-for="link in post.body.toc.links">
       <a>Parent</a>
       <ul>
         <li><a>Submenu 1</a></li>
