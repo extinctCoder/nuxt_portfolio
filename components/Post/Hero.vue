@@ -16,8 +16,8 @@
         </div>
         <div class="prose w-full max-w-none prose-p:text-justify">
           <h1>{{ title }}</h1>
-          Posted {{ published_at }} Updated {{ updated_on }} By Cotes Chung 3
-          min read
+          Posted {{ new Date(publish_date).toDateString() }} Updated
+          {{ new Date(update_date).toDateString() }} By Cotes Chung 3 min read
         </div>
       </div>
     </div>
@@ -28,15 +28,15 @@
 interface CardInterface {
   title?: string;
   avatar?: string;
-  updated_on?: Date;
-  published_at?: Date;
+  update_date?: Date;
+  publish_date?: Date;
 }
 
 const props = withDefaults(defineProps<CardInterface>(), {
   avatar: "/avatar.jpeg",
   title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-  updated_on: () => new Date(),
-  published_at: () => new Date(),
+  update_date: () => new Date(),
+  publish_date: () => new Date(),
 });
 </script>
 
