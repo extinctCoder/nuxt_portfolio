@@ -1,6 +1,9 @@
 <template>
   <Post>
-    <ContentRenderer :value="post"></ContentRenderer>
+    <template #post-body>
+      <ContentRenderer :value="post"></ContentRenderer>
+    </template>
+    <template #toc>toc</template>
   </Post>
 
   <!-- <template> -->
