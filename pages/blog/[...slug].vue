@@ -6,7 +6,6 @@
     <template #toc><TableOfContent :children="post.body.toc.links" /></template>
   </Post>
   {{ path }}
-  {{ breadcrumbs }}
 </template>
 
 <script setup>
