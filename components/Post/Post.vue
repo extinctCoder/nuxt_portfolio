@@ -4,11 +4,9 @@
       <div class="relative bg-red-400">
         <NuxtImg
           class="aspect-21/9 max-h-64 w-full object-cover object-center"
-          src="/images/blog/img_1.jpeg"
+          src="/images/blog/mountains_2.jpg"
         />
-        <div
-          class="absolute bottom-0 w-full bg-black bg-opacity-50 p-4 text-white"
-        >
+        <div class="absolute bottom-0 w-full p-4 text-white">
           <p>Your text here</p>
 
           <div class="flex flex-row bg-red-400">
