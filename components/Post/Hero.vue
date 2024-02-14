@@ -15,8 +15,10 @@
           </div>
         </div>
       </div> -->
-      <div class="prose w-full max-w-none bg-zinc-400 prose-p:before:p-0">
-        <!-- <h1 class="bg-green-400">{{ title }}</h1> -->
+      <div
+        class="prose flex w-full max-w-none flex-col gap-2 bg-zinc-400 prose-p:m-0"
+      >
+        <h1 class="bg-green-400">{{ title }}</h1>
         <div class="flex content-center gap-4 bg-slate-400">
           <div v-if="publish_date" class="inline-flex items-center gap-2">
             <Icon name="heroicons:calendar-solid" />
