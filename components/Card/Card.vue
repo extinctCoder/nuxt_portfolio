@@ -18,7 +18,7 @@
           </div>
           <div v-if="tags" class="inline-flex items-center gap-2">
             <Icon name="heroicons:folder-open-solid" />
-            <span> {{ tags.join(", ") }}</span>
+            <span> {{ formattedTags }}</span>
           </div>
         </div>
         <div class="inline-flex items-center gap-2">
@@ -52,6 +52,13 @@ const props = withDefaults(defineProps<CardInterface>(), {
   image: undefined,
   body_text:
     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio enim optio sunt. Ipsa et blanditiis rerum adipisci. Optio eligendi porro autem voluptates, ducimus dolores minus voluptatem omnis culpa mollitia eius!",
+});
+
+const formattedTags = computed(() => {
+  if (props.tags) {
+    return props.tags.map((tag) => tag.toLocaleUpperCase()).join(", ");
+  }
+  return "";
 });
 </script>
 
