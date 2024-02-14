@@ -7,19 +7,19 @@
     </div>
     <div class="hidden w-72 flex-auto lg:block">
       <!-- <div class="sticky top-0"> -->
-      post single
+
+      <ul class="menu">
+        <li>
+          <h2 class="menu-title">Recently Updated</h2>
+          <ul>
+            <li><NuxtLink>Writing a New Post</NuxtLink></li>
+            <li><NuxtLink>Getting Started</NuxtLink></li>
+            <li><NuxtLink>Text and Typography</NuxtLink></li>
+            <li><NuxtLink>Customize the Favicon</NuxtLink></li>
+          </ul>
+        </li>
+      </ul>
       <slot name="toc" />
-      <!-- <ul class="menu">
-              <li>
-                <h2 class="menu-title">Recently Updated</h2>
-                <ul>
-                  <li><NuxtLink>Writing a New Post</NuxtLink></li>
-                  <li><NuxtLink>Getting Started</NuxtLink></li>
-                  <li><NuxtLink>Text and Typography</NuxtLink></li>
-                  <li><NuxtLink>Customize the Favicon</NuxtLink></li>
-                </ul>
-              </li>
-            </ul> -->
       <!-- </div> -->
     </div>
   </div>

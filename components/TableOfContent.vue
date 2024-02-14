@@ -1,5 +1,5 @@
 <template>
-  <ul class="menu bg-red-200">
+  <ul class="menu">
     <li>
       <h2 class="menu-title">Contents</h2>
       <ul>
