@@ -5,6 +5,7 @@
   <TableOfContent :children="post.body.toc.links" />
   {{ post.body.toc }}
 </template>
+<template v-slot:toc>toc</template>
 
 <script setup>
 definePageMeta({
