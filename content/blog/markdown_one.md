@@ -1,5 +1,5 @@
 ---
-title: Hello, World!
+title: Markdown Syntax
 description: This is my very first blog post and I'm so excited to share it with you!
 created_on: 2023-05-23
 updated_on: 2023-09-05
