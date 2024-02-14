@@ -11,7 +11,7 @@
         </div>
       </div>
       <div class="flex justify-between">
-        <div class="flex flex-wrap gap-8">
+        <div class="prose flex flex-wrap gap-8">
           <div v-if="publish_date" class="inline-flex items-center gap-2">
             <Icon name="heroicons:calendar-solid" />
             <span>{{ new Date(publish_date).toDateString() }}</span>
