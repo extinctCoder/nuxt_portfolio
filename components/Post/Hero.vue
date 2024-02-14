@@ -12,8 +12,13 @@
         </div>
       </div>
       <div class="prose">
-        <p>Your text here</p>
-        <p>Your text here</p>
+        <h1>Box Office News!</h1>
+        <p>
+          Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+          excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a
+          id nisi.
+        </p>
+        <button class="btn btn-primary">Get Started</button>
       </div>
     </div>
   </div>
