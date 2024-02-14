@@ -5,16 +5,11 @@
       src="/images/blog/mountains_2.jpg"
     />
     <!-- <div class="absolute bottom-0 h-full w-full bg-white opacity-80 blur"></div> -->
-    <div
-      class="absolute bottom-0 flex w-full flex-row items-center gap-4 bg-red-400 p-4"
-    >
-      <div class="avatar bg-green-400">
-        <div class="w-8 rounded"></div>
-        <NuxtImg
-          class="aspect-4/3 flex-none object-cover object-center"
-          :src="avatar"
-        />
-      </div>
+    <div class="absolute bottom-0 flex w-full flex-row items-center gap-4 p-4">
+      <NuxtImg
+        class="aspect-1 max-w-16 flex-none rounded-lg object-cover object-center shadow"
+        :src="avatar"
+      />
 
       <!-- <div class="flex content-center justify-center gap-4">
         <div class="avatar bg-green-400">
