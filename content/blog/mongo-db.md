@@ -3,7 +3,7 @@ title: "Integrating MongoDB and Mongoose with Nuxt 3"
 date: 2023-10-06
 draft: false
 tags: ["nuxt", "nuxt3", "mongodb", "mongoose"]
-thumbnail: "/img/mongodb.webp"
+thumbnail: "images/mountains_2.jpg"
 slug: mongo-db
 description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat deleniti enim quaerat illum id autem inventore praesentium et facere ea nulla quasi, reiciendis voluptatibus corrupti officiis totam dicta provident nemo. Building dynamic web applications often requires seamless integration with a robust database solution. When it comes to creating powerful server-side applications, MongoDB has emerged as a popular choice among developers due to its flexibility and scalability.
 ---
