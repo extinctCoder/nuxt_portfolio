@@ -33,7 +33,7 @@
           </div>
         </div>
 
-        <NuxtLink class="btn btn-primary btn-active">
+        <NuxtLink class="btn btn-outline btn-active">
           <Icon name="jam:github" />Primary</NuxtLink
         >
       </div>
