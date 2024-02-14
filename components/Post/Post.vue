@@ -1,11 +1,11 @@
 <template>
-  <div class="flex gap-8">
-    <div class="flex w-10/12 flex-auto flex-col gap-4">
+  <div class="flex gap-8 bg-red-400">
+    <div class="flex w-10/12 flex-col gap-4 bg-green-400">
       <div class="prose mx-auto max-w-none">
         <slot name="post-body" />
       </div>
     </div>
-    <div class="hidden w-72 flex-auto lg:block">
+    <div class="hidden flex-1 lg:block">
       <!-- <div class="sticky top-0"> -->
 
       <ul class="menu">
