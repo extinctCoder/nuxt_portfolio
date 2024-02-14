@@ -1,19 +1,15 @@
 <template>
   <div class="flex gap-4">
     <div class="flex flex-col gap-4">
-      <div class="h-4 bg-red-400">
-        <div class="relative h-64">
-          <nuxt-image
-            class="h-full w-full object-cover"
-            width="1920"
-            height="1280"
-            src="/images/blog/unsplash.jpg"
-          />
-          <div
-            class="absolute bottom-0 right-0 bg-black bg-opacity-50 p-4 text-white"
-          >
-            <p>Your text here</p>
-          </div>
+      <div class="relative aspect-21/9 bg-red-400">
+        <NuxtImg
+          class="h-full w-full object-cover"
+          src="/images/blog/unsplash.jpg"
+        />
+        <div
+          class="absolute bottom-0 right-0 bg-black bg-opacity-50 p-4 text-white"
+        >
+          <p>Your text here</p>
         </div>
       </div>
       <div class="prose w-full max-w-none bg-green-400 prose-p:text-justify">
