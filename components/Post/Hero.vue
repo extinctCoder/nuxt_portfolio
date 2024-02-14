@@ -1,14 +1,15 @@
 <template>
   <div class="relative rounded">
     <NuxtImg
+      :src="`/images/blog/${cover}`"
       class="aspect-21/9 max-h-96 w-full object-cover object-center opacity-15 blur"
-      src="/images/blog/mountains_2.jpg"
     />
     <!-- <div class="absolute bottom-0 h-full w-full bg-white opacity-80 blur"></div> -->
     <div class="absolute bottom-0 flex w-full flex-row items-center gap-4 p-4">
       <NuxtImg
+        v-if="avatar"
+        :src="`/images/blog/${avatar}`"
         class="aspect-1 max-w-16 flex-none rounded-lg object-cover object-center shadow"
-        :src="avatar"
       />
 
       <!-- <div class="flex content-center justify-center gap-4">
@@ -51,6 +52,8 @@ interface CardInterface {
   avatar?: string;
   update_date?: Date;
   publish_date?: Date;
+  cover?: string;
+  cover_description?: string;
 }
 
 const props = withDefaults(defineProps<CardInterface>(), {

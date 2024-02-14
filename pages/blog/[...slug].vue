@@ -1,7 +1,11 @@
 <template>
   <Post>
     <template #post-hero>
-      <PostHero />
+      <PostHero
+        :title="post.title"
+        :update_date="post.updated_on"
+        :publish_date="post.updated_at"
+      />
     </template>
     <template #post-body>
       {{ post.title }}

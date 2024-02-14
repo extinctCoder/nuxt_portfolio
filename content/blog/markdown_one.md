@@ -5,6 +5,7 @@ created_on: 2023-05-23
 updated_on: 2023-09-05
 published_at: 2023-07-12
 cover: nasa-Q1p7bh3SHj8-unsplash.jpg
+cover_description: Responsive rendering of Chirpy theme on multiple devices.
 tags:
   - blog
   - markdown
