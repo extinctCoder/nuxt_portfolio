@@ -31,8 +31,8 @@
   <ul class="menu bg-base-200">
     <li v-for="link in post.body.toc.links" :key="link.id">
       <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
-      <ul v-for="child_link in link.children" :key="child_link.id">
-        <li>
+      <ul v-if="link.children">
+        <li v-for="child_link in link.children" :key="child_link.id">
           <a>{{ child_link.text }}</a>
         </li>
       </ul>
