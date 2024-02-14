@@ -10,7 +10,10 @@
     >
       <div class="avatar bg-green-400">
         <div class="w-8 rounded"></div>
-        <NuxtImg class="flex-none object-cover object-center" :src="avatar" />
+        <NuxtImg
+          class="aspect-4/3 flex-none object-cover object-center"
+          :src="avatar"
+        />
       </div>
 
       <!-- <div class="flex content-center justify-center gap-4">
