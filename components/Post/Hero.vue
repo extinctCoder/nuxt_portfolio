@@ -8,7 +8,12 @@
     <div
       class="absolute bottom-0 flex w-full flex-row justify-between gap-4 bg-red-400 p-4"
     >
-      <NuxtImg :src="avatar" />
+      <NuxtImg
+        class="object-cover object-center"
+        height="64"
+        width="64"
+        :src="avatar"
+      />
       <!-- <div class="flex content-center justify-center gap-4">
         <div class="avatar bg-green-400">
           <div class="w-16 rounded">
