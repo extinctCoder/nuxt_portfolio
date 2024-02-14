@@ -3,8 +3,8 @@
     <div class="flex flex-col gap-4">
       <div class="relative bg-red-400">
         <NuxtImg
-          class="aspect-21/9 object-cover object-center"
-          src="/images/blog/unsplash.jpg"
+          class="aspect-21/9 object-fill object-center"
+          src="/images/blog/img_1.jpeg"
         />
         <div
           class="absolute bottom-0 right-0 bg-black bg-opacity-50 p-4 text-white"
