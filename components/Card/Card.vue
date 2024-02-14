@@ -18,9 +18,7 @@
           </div>
           <div v-if="tags" class="inline-flex items-center gap-2">
             <Icon name="heroicons:folder-open-solid" />
-            <span>
-              {{ array.map((item) => tags.toUpperCase()).join(", ") }}
-            </span>
+            <span> {{ tags.join(", ") }}</span>
           </div>
         </div>
         <div class="inline-flex items-center gap-2">
