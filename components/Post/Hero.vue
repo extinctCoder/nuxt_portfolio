@@ -21,11 +21,13 @@
 
 <script lang="ts" setup>
 interface CardInterface {
+  title?: string;
   avatar?: string;
 }
 
 const props = withDefaults(defineProps<CardInterface>(), {
   avatar: "/avatar.jpeg",
+  title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
 });
 </script>
 
