@@ -7,7 +7,7 @@
       <div class="flex flex-col gap-6">
         <div class="prose max-w-none">
           <h3>{{ heading }}</h3>
-          <p class="w-full">{{ body_text }}</p>
+          <p class="w-full text-justify">{{ body_text }}</p>
         </div>
       </div>
       <div class="flex justify-between">
