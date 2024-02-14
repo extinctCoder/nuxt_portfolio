@@ -34,7 +34,7 @@
         </div>
 
         <NuxtLink to="/" class="btn btn-outline btn-primary">
-          <Icon name="jam:github" />view source code</NuxtLink
+          <Icon name="ph:git-branch-bold" />view source code</NuxtLink
         >
       </div>
     </div>
