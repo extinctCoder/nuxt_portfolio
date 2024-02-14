@@ -13,7 +13,7 @@ const { path } = useRoute();
 const { data: post } = await useAsyncData(path, () =>
   queryContent().where({ _path: path }).findOne(),
 );
-const breadcrumbs = route.value.matched.map((routeItem) => ({
+const breadcrumbs = $route.value.matched.map((routeItem) => ({
   text: routeItem.name,
   to: routeItem.path,
 }));
