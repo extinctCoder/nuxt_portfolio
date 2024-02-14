@@ -8,11 +8,11 @@
       <div
         class="absolute bottom-0 flex w-full flex-row items-center gap-4 p-4"
       >
-        <div class="flex flex-1 flex-row gap-4">
+        <div class="flex flex-1 flex-row items-center gap-4">
           <NuxtImg
             v-if="avatar"
             :src="`/images/blog/${avatar}`"
-            class="aspect-1 max-w-16 flex-none rounded-lg object-cover object-center"
+            class="aspect-1 max-h-16 max-w-16 flex-none rounded-lg object-cover object-center"
           />
           <div
             class="prose flex w-full max-w-none flex-col gap-2 prose-h1:m-0 prose-p:m-0"
@@ -33,8 +33,8 @@
           </div>
         </div>
 
-        <NuxtLink class="btn btn-outline btn-active">
-          <Icon name="jam:github" />Primary</NuxtLink
+        <NuxtLink to="/" class="btn btn-outline btn-primary">
+          <Icon name="jam:github" />view source code</NuxtLink
         >
       </div>
     </div>
