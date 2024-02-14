@@ -5,8 +5,9 @@
         <div class="relative h-64">
           <nuxt-image
             class="h-full w-full object-cover"
-            src="your-image-url.jpg"
-            alt="Alt text for image"
+            width="1920"
+            height="1280"
+            src="/images/blog/unsplash.jpg"
           />
           <div
             class="absolute bottom-0 right-0 bg-black bg-opacity-50 p-4 text-white"
