@@ -6,12 +6,13 @@
     />
     <!-- <div class="absolute bottom-0 h-full w-full bg-white opacity-80 blur"></div> -->
     <div class="absolute bottom-0 flex w-full flex-row gap-4 bg-red-400 p-4">
-      <NuxtImg
-        class="shrink object-cover object-center"
+      <!-- <NuxtImg
+        class="flex-none object-cover object-center"
         height="64"
         width="64"
         :src="avatar"
-      />
+      /> -->
+      <div class="h-auto w-16 bg-green-400"></div>
       <!-- <div class="flex content-center justify-center gap-4">
         <div class="avatar bg-green-400">
           <div class="w-16 rounded">
