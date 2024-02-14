@@ -1,14 +1,14 @@
 <template>
   <div class="flex gap-8 bg-red-400">
-    <div class="flex w-10/12 flex-col gap-4 bg-green-400">
+    <div class="flex w-9/12 flex-col gap-4 bg-green-400">
       <div class="prose mx-auto max-w-none">
         <slot name="post-body" />
       </div>
     </div>
-    <div class="hidden flex-1 lg:block">
+    <div class="hidden flex-1 bg-zinc-400 lg:block">
       <!-- <div class="sticky top-0"> -->
 
-      <ul class="menu bg-slate-200">
+      <ul class="menu">
         <li>
           <h2 class="menu-title">Recently Updated</h2>
           <ul>
