@@ -1,12 +1,11 @@
 <template>
   <div class="relative rounded">
     <NuxtImg
-      class="aspect-21/9 max-h-64 w-full object-cover object-center opacity-5 blur"
+      class="aspect-21/9 max-h-64 w-full bg-white object-cover object-center opacity-5 blur"
       src="/images/blog/mountains_2.jpg"
     />
-    <div
-      class="absolute bottom-0 flex w-full flex-row justify-between bg-white p-4"
-    >
+    <div class="absolute bottom-0 h-full w-full bg-white opacity-80 blur"></div>
+    <div class="absolute bottom-0 flex w-full flex-row justify-between p-4">
       <div class="avatar">
         <div class="w-16 rounded">
           <NuxtImg :src="avatar" />
