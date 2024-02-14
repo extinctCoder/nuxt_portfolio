@@ -12,9 +12,6 @@
 </template>
 
 <script lang="ts" setup>
-// interface ToCInterface {
-//   links?: object;
-// }
 interface ToCInterface {
   id?: string;
   depth?: number;
