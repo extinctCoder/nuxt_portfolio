@@ -33,7 +33,7 @@
       <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
       <ul v-if="link.children">
         <li v-for="child_link in link.children" :key="child_link.id">
-          <a>{{ child_link.text }}</a>
+          <NuxtLink :to="`#${child_link.id}`">{{ child_link.text }}</NuxtLink>
         </li>
       </ul>
     </li>
