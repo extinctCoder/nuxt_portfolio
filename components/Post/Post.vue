@@ -1,6 +1,6 @@
 <template>
   <div class="flex gap-2">
-    <div class="prose w-full max-w-none">
+    <div class="prose w-full max-w-none prose-p:text-justify">
       <slot name="post-body" />
     </div>
 
