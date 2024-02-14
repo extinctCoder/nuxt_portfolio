@@ -2,9 +2,8 @@
   <div class="relative rounded">
     <NuxtImg
       :src="`/images/blog/${cover}`"
-      class="aspect-21/9 max-h-96 w-full rounded object-cover object-center opacity-50 blur-lg"
+      class="aspect-21/9 max-h-96 w-full rounded object-cover object-center opacity-35 blur-lg"
     />
-    <!-- <div class="absolute bottom-0 h-full w-full bg-white opacity-80 blur"></div> -->
     <div class="absolute bottom-0 flex w-full flex-row items-center gap-4 p-4">
       <NuxtImg
         v-if="avatar"
@@ -12,12 +11,6 @@
         class="aspect-1 max-w-16 flex-none rounded-lg object-cover object-center shadow"
       />
 
-      <!-- <div class="flex content-center justify-center gap-4">
-        <div class="avatar bg-green-400">
-          <div class="w-16 rounded">
-          </div>
-        </div>
-      </div> -->
       <div
         class="prose flex w-full max-w-none flex-col gap-2 prose-h1:m-0 prose-p:m-0"
       >
