@@ -37,7 +37,6 @@
       <span class="italic">{{ cover_description }}</span>
     </div>
   </div>
-  By Cotes Chung 3 min read
 </template>
 
 <script lang="ts" setup>
