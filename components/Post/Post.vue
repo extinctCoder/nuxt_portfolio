@@ -1,7 +1,7 @@
 <template>
   <div class="flex gap-8 bg-red-400">
     <div class="prose w-full bg-amber-300">
-      <slot name="post-body " />
+      <slot name="post-body" />
     </div>
   </div>
   <!-- <div class="hidden flex-1 bg-zinc-400 lg:block">
