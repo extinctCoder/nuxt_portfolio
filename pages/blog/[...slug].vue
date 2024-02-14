@@ -8,7 +8,7 @@
 
 <script setup>
 definePageMeta({
-  layout: "post-list",
+  layout: "post-single",
 });
 const { path } = useRoute();
 const { data: post } = await useAsyncData(path, () =>
