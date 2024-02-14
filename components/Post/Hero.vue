@@ -5,9 +5,7 @@
       src="/images/blog/mountains_2.jpg"
     />
     <!-- <div class="absolute bottom-0 h-full w-full bg-white opacity-80 blur"></div> -->
-    <div
-      class="absolute bottom-0 flex w-full flex-row justify-between gap-4 bg-red-400 p-4"
-    >
+    <div class="absolute bottom-0 flex w-full flex-row gap-4 bg-red-400 p-4">
       <NuxtImg
         class="object-cover object-center"
         height="64"
