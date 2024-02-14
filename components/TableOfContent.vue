@@ -1,5 +1,6 @@
 <template>
   <ul class="menu">
+    <h2 class="menu-title">Contents</h2>
     <li v-for="link in children" :key="link.id">
       <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
       <ul v-if="link.children">
