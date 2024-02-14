@@ -1,14 +1,14 @@
 <template>
-  <div v-for="post in posts" :key="post._path">
-    <Card
-      :to="post._path"
-      :heading="post.title"
-      :body_text="post.description"
-      :publish_date="post.date"
-      :image="post.cover"
-      :tags="post.tags"
-    ></Card>
-  </div>
+  <Card
+    :to="post._path"
+    :heading="post.title"
+    :body_text="post.description"
+    :publish_date="post.date"
+    :image="post.cover"
+    :tags="post.tags"
+    :key="post._path"
+    v-for="post in posts"
+  ></Card>
 </template>
 
 <script setup lang="ts">
