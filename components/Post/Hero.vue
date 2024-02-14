@@ -3,7 +3,7 @@
     <div class="relative rounded">
       <NuxtImg
         :src="`/images/blog/${cover}`"
-        class="aspect-21/9 max-h-96 w-full rounded object-cover object-center opacity-35 blur-lg"
+        class="aspect-21/9 max-h-96 w-full rounded object-cover object-center opacity-45 blur-lg"
       />
       <div
         class="absolute bottom-0 flex w-full flex-row items-center gap-4 p-4"
@@ -34,7 +34,7 @@
       </div>
     </div>
     <div class="prose w-full max-w-none text-center">
-      <span class="italic">Posted</span>
+      <span class="italic">{{ cover_description }}</span>
     </div>
   </div>
   By Cotes Chung 3 min read
@@ -56,6 +56,8 @@ const props = withDefaults(defineProps<CardInterface>(), {
   update_date: () => new Date(),
   publish_date: () => new Date(),
   cover: "karl-pawlowicz-QUHuwyNgSA0-unsplash.jpg",
+  cover_description:
+    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem optio, et esse voluptatem ducimus animi.",
 });
 </script>
 
