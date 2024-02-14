@@ -37,7 +37,10 @@
       </div>
     </div>
     <div class="prose w-full max-w-none text-center">
-      <span class="italic">{{ cover_description }}</span>
+      <span class="italic"
+        >{{ cover_description }}
+        <Icon name="jam:github" />
+      </span>
     </div>
   </div>
 </template>
