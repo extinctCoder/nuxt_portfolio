@@ -17,10 +17,10 @@
         <div class="prose w-full max-w-none prose-p:text-justify">
           <h1>{{ title }}</h1>
           <div class="flex flex-row gap-2">
-            <span>
-              Posted
-              <strong>{{ new Date(publish_date).toDateString() }}</strong>
-            </span>
+            <Icon name="heroicons:calendar-solid" />
+            <p>Posted</p>
+            <strong>{{ new Date(publish_date).toDateString() }}</strong>
+
             <span><strong>.</strong></span>
             <span>
               Updated
