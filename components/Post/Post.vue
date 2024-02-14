@@ -3,7 +3,7 @@
     <div class="prose w-full max-w-none bg-amber-300">
       <slot name="post-body" />
     </div>
-    <span class="divider divider-horizontal"></span>
+    <span class="divider divider-horizontal"> OR</span>
     <div class="min-w bg-green-400">
       <slot name="toc" />
     </div>
