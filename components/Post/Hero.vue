@@ -6,15 +6,14 @@
         class="aspect-21/9 max-h-80 w-full rounded object-cover object-center opacity-45 blur"
       />
       <div
-        class="absolute bottom-0 flex w-full flex-row items-center gap-4 bg-slate-400 p-4"
+        class="absolute bottom-0 flex w-full flex-row items-center gap-4 p-4"
       >
-        <div class="flex flex-1 flex-row gap-4 bg-red-400">
+        <div class="flex flex-1 flex-row gap-4">
           <NuxtImg
             v-if="avatar"
             :src="`/images/blog/${avatar}`"
             class="aspect-1 max-w-16 flex-none rounded-lg object-cover object-center"
           />
-
           <div
             class="prose flex w-full max-w-none flex-col gap-2 prose-h1:m-0 prose-p:m-0"
           >
@@ -33,9 +32,8 @@
             </div>
           </div>
         </div>
-        <div class="w-16 bg-purple-400">
-          <button class="btn btn-primary btn-active">Primary</button>
-        </div>
+
+        <NuxtLink class="btn btn-primary btn-active">Primary</NuxtLink>
       </div>
     </div>
     <div class="prose w-full max-w-none text-center">
