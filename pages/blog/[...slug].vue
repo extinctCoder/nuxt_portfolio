@@ -7,6 +7,10 @@
       <br />
       updated_on: {{ post.updated_on }}
       <br />
+      draft: {{ post.draft }}
+      <br />
+      author: {{ post.author }}
+      <br />
 
       <ContentRenderer :value="post"></ContentRenderer>
     </template>
