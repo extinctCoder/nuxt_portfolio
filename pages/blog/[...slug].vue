@@ -14,7 +14,9 @@
 
       <ContentRenderer :value="post"></ContentRenderer>
     </template>
-    <template #toc><TableOfContent :children="post.body.toc.links" /></template>
+    <template #toc>
+      <PostTableOfContent :children="post.body.toc.links" />
+    </template>
   </Post>
   {{ path }}
 </template>
