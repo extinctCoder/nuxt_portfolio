@@ -1,11 +1,13 @@
 <template>
+  <!-- <template> -->
   <div class="prose mx-auto max-w-none">
     <ContentRenderer :value="post"></ContentRenderer>
   </div>
   <TableOfContent :children="post.body.toc.links" />
   {{ post.body.toc }}
+  <!-- </template> -->
+  <!-- <template #toc>toc</template> -->
 </template>
-<template v-slot:toc>toc</template>
 
 <script setup>
 definePageMeta({
