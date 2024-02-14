@@ -1,14 +1,20 @@
 <template>
   <div class="flex gap-4">
     <div class="flex flex-col gap-4">
-      <div class="relative rounded border">
+      <div class="relative rounded">
         <NuxtImg
-          class="aspect-21/9 max-h-64 w-full object-cover object-center opacity-10 blur"
+          class="aspect-21/9 max-h-64 w-full object-cover object-center opacity-5 blur"
           src="/images/blog/mountains_2.jpg"
         />
         <div class="absolute bottom-0 flex w-full flex-row justify-between p-4">
-          <p>Your text here</p>
-          <p>Your text here</p>
+          <div class="prose">
+            <p>Your text here</p>
+            <p>Your text here</p>
+          </div>
+          <div class="prose">
+            <p>Your text here</p>
+            <p>Your text here</p>
+          </div>
         </div>
       </div>
       <div class="prose w-full max-w-none bg-green-400 prose-p:text-justify">
