@@ -8,17 +8,6 @@
       />
     </template>
     <template #post-body>
-      {{ post.title }}
-      <br />
-      created_on: {{ post.created_on }}
-      <br />
-      updated_on: {{ post.updated_on }}
-      <br />
-      draft: {{ post.draft }}
-      <br />
-      author: {{ post.author }}
-      <br />
-
       <ContentRenderer :value="post"></ContentRenderer>
     </template>
     <template #toc>
