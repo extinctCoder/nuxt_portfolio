@@ -1,6 +1,7 @@
 <template>
   <Post>
     <template #post-body>
+      {{ post.title }}
       <ContentRenderer :value="post"></ContentRenderer>
     </template>
     <template #toc><TableOfContent :children="post.body.toc.links" /></template>
