@@ -1,10 +1,10 @@
 <template>
   <div class="flex gap-2">
-    <div class="prose w-full max-w-none bg-amber-300">
+    <div class="prose w-full max-w-none">
       <slot name="post-body" />
     </div>
 
-    <div class="min-w bg-green-400">
+    <div class="w-10/12 min-w-64 max-w-96">
       <slot name="toc" />
     </div>
   </div>
