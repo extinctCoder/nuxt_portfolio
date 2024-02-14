@@ -31,17 +31,12 @@
   <ul class="menu bg-base-200">
     <li v-for="link in post.body.toc.links" :key="link.id">
       <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
-      <ul
-        v-if="link.children"
-        v-for="child_link in link.children"
-        :key="child_link.id"
-      >
+      <ul v-for="child_link in link.children" :key="child_link.id">
         <li>
-          <a>{{ child_link.title }}</a>
+          <a>{{ child_link.text }}</a>
         </li>
       </ul>
     </li>
-    <li><a>Item 3</a></li>
   </ul>
 </template>
 
