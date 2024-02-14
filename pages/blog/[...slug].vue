@@ -5,6 +5,7 @@
     </template>
     <template #toc><TableOfContent :children="post.body.toc.links" /></template>
   </Post>
+  {{ path }}
   {{ breadcrumbs }}
 </template>
 
@@ -13,10 +14,6 @@ const { path } = useRoute();
 const { data: post } = await useAsyncData(path, () =>
   queryContent().where({ _path: path }).findOne(),
 );
-const breadcrumbs = $route.value.matched.map((routeItem) => ({
-  text: routeItem.name,
-  to: routeItem.path,
-}));
 </script>
 
 <style></style>
