@@ -5,11 +5,9 @@
         :src="`/images/blog/${cover}`"
         class="aspect-21/9 max-h-80 w-full rounded object-cover object-center opacity-45 blur"
       />
-      <div class="absolute top-0 flex w-full flex-row items-center gap-4 p-6">
-        hello
-      </div>
-      <div class="absolute right-0 top-0 bg-black bg-opacity-50 p-4 text-white">
-        <p>Your text here</p>
+
+      <div class="absolute right-0 top-0 p-4">
+        <p>bg-black bg-opacity-50</p>
       </div>
       <div
         class="absolute bottom-0 flex w-full flex-row items-center gap-4 p-4"
