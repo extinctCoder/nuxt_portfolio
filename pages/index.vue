@@ -1,9 +1,11 @@
 <template>
-  {{ data }}
+  {{ countries }}
 </template>
 
 <script lang="ts" setup>
-const data = await GqlCountries();
+const { data: countries } = await useAsyncGql({
+  operation: "countries",
+});
 </script>
 
 <style></style>
