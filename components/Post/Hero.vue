@@ -5,7 +5,11 @@
         :src="`/images/blog/${cover}`"
         class="aspect-21/9 max-h-80 w-full rounded object-cover object-center opacity-45 blur"
       />
-
+      <div
+        class="absolute top-0 flex w-full flex-row items-center justify-end gap-4 p-6"
+      >
+        hello
+      </div>
       <div
         class="absolute bottom-0 flex w-full flex-row items-center gap-4 p-4"
       >
