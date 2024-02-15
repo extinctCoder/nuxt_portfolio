@@ -10,6 +10,7 @@
         :cover_description="post.cover_description"
         :author="post.author"
         :source="post.source"
+        :read_time="post.read_time"
       />
     </template>
     <template #post-body>
