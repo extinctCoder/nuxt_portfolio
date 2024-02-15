@@ -10,7 +10,11 @@
         class="absolute bottom-0 flex w-full flex-row items-center gap-4 p-4"
       >
         <div class="flex flex-1 flex-col">
-          <div>by extinctcoder</div>
+          <div v-if="publish_date" class="inline-flex items-center gap-2">
+            <Icon name="heroicons:calendar-solid" />
+            <p>Posted</p>
+            <strong>{{ new Date(publish_date).toDateString() }}</strong>
+          </div>
           <div class="flex flex-1 flex-row items-center gap-4">
             <NuxtImg
               v-if="avatar"
