@@ -49,12 +49,12 @@
         </div>
 
         <NuxtLink
-          v-if="source_control"
-          :to="source_control"
+          v-if="source"
+          :to="source"
           class="btn btn-outline btn-primary"
         >
-          <Icon name="ph:git-branch-bold" />view source code</NuxtLink
-        >
+          <Icon name="ph:git-branch-bold" />view source code
+        </NuxtLink>
       </div>
     </div>
     <div v-if="cover_description" class="prose w-full max-w-none text-center">
@@ -73,7 +73,7 @@ interface CardInterface {
   cover?: string;
   cover_description?: string;
   read_time: string;
-  source_control: string;
+  source: string;
 }
 
 const props = withDefaults(defineProps<CardInterface>(), {
@@ -92,7 +92,7 @@ const props = withDefaults(defineProps<CardInterface>(), {
   // "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem optio, et esse voluptatem ducimus animi.",
   read_time: undefined,
   // source_control: "https://github.com/extinctCoder",
-  source_control: undefined,
+  source: undefined,
 });
 </script>
 

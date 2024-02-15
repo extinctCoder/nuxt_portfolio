@@ -4,10 +4,12 @@
       <PostHero
         :title="post.title"
         :update_date="post.updated_on"
-        :publish_date="post.updated_at"
+        :publish_date="post.published_at"
         :avatar="post.avatar"
         :cover="post.cover"
         :cover_description="post.cover_description"
+        :author="post.author"
+        :source="post.source"
       />
     </template>
     <template #post-body>
