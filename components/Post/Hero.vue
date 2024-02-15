@@ -7,7 +7,9 @@
       />
 
       <div class="absolute right-0 top-0 p-4">
-        <p>bg-black bg-opacity-50</p>
+        <div class="badge badge-outline gap-2">
+          <Icon name="heroicons:clock-solid" />25 min
+        </div>
       </div>
       <div
         class="absolute bottom-0 flex w-full flex-row items-center gap-4 p-4"
