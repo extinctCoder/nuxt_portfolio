@@ -15,7 +15,7 @@
         class="absolute bottom-0 flex w-full flex-row items-center gap-4 p-4"
       >
         <div class="flex flex-1 flex-col gap-2">
-          <div v-if="publish_date" class="inline-flex items-center gap-2">
+          <div v-if="author" class="inline-flex items-center gap-2">
             <!-- <Icon name="heroicons:user-solid" /> -->
             <p>by</p>
             <strong>{{ author }}</strong>
@@ -76,7 +76,8 @@ interface CardInterface {
 
 const props = withDefaults(defineProps<CardInterface>(), {
   avatar: "/avatar.jpeg",
-  author: "extinctCoder",
+  // author: "extinctCoder",
+  author: undefined,
   title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
   update_date: () => new Date(),
   publish_date: () => new Date(),
@@ -84,7 +85,8 @@ const props = withDefaults(defineProps<CardInterface>(), {
   cover_description:
     "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem optio, et esse voluptatem ducimus animi.",
   read_time: undefined,
-  source_control: "https://github.com/extinctCoder",
+  // source_control: "https://github.com/extinctCoder",
+  source_control: undefined,
 });
 </script>
 
