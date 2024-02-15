@@ -14,8 +14,8 @@
       />
     </template>
     <template #post-body>
-      <ContentRenderer v-if="post" :value="post"></ContentRenderer>
-      <!-- <ContentRendererMarkdown :value="body" v-if="body" /> -->
+      <!-- <ContentRenderer v-if="post" :value="post"></ContentRenderer> -->
+      <ContentRendererMarkdown :value="body" v-if="body" />
     </template>
     <template #toc>
       <PostTableOfContent :children="post?.body?.toc?.links" />
