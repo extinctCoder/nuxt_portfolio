@@ -1,5 +1,5 @@
 <template>
-  <Post>
+  <!-- <Post>
     <template #post-hero>
       <PostHero
         :title="post?.title"
@@ -19,8 +19,9 @@
     <template #toc>
       <PostTableOfContent :children="post?.body?.toc?.links" />
     </template>
-  </Post>
-  {{ path }}
+  </Post> -->
+  <!-- <ContentRendererMarkdown :value="result" v-if="result" /> -->
+  {{ result }}
 </template>
 
 <script lang="ts" setup>
@@ -28,6 +29,17 @@ const { path } = useRoute();
 const { data: post } = await useAsyncData(path, () =>
   queryContent().where({ _path: path }).findOne(),
 );
+
+// const result = ref(null);
+// const loadMarkdown = async () => {
+//   const data = await $fetch(
+//     "https://raw.githubusercontent.com/extinctCoder/markdown-cv/master/README.md",
+//   );
+//   result.value = await parseMarkdown(data);
+// };
+
+const result = remoteMarkdown();
+console.log(result);
 </script>
 
 <style></style>
