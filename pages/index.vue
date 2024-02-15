@@ -1,10 +1,10 @@
 <template>
-  {{ countries }}
+  {{ pokemon }}
 </template>
 
 <script lang="ts" setup>
-const { data: countries } = await useAsyncGql({
-  operation: "countries",
+const { data: pokemon } = await useAsyncGql({
+  operation: "pokemon",
 });
 </script>
 

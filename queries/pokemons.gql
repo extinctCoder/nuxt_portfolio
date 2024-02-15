@@ -1,7 +1,0 @@
-query countries {
-  countries {
-    name
-    code
-    capital
-  }
-}
