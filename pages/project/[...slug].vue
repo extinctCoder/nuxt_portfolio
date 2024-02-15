@@ -14,14 +14,14 @@
       />
     </template>
     <template #post-body>
-      <!-- <ContentRenderer v-if="post" :value="post"></ContentRenderer> -->
-      <ContentRendererMarkdown :value="body" v-if="body" />
+      <ContentRenderer v-if="post" :value="post"></ContentRenderer>
+      <!-- <ContentRendererMarkdown :value="body" v-if="body" /> -->
     </template>
     <template #toc>
       <PostTableOfContent :children="post?.body?.toc?.links" />
     </template>
   </Post>
-  {{ body }}
+  <!-- {{ body }} -->
 </template>
 
 <script lang="ts" setup>
@@ -30,11 +30,11 @@ const { data: post } = await useAsyncData(path, () =>
   queryContent().where({ _path: path }).findOne(),
 );
 
-const { data: body } = useAsyncData(async () => {
-  return await remoteMarkdown(
-    "https://raw.githubusercontent.com/extinctCoder/markdown-cv/master/README.md",
-  );
-});
+// const { data: body } = useAsyncData(async () => {
+//   return await remoteMarkdown(
+//     "https://raw.githubusercontent.com/extinctCoder/markdown-cv/master/README.md",
+//   );
+// });
 </script>
 
 <style></style>
