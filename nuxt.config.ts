@@ -20,7 +20,7 @@ export default defineNuxtConfig({
   ],
   runtimeConfig: {
     public: {
-      GQL_HOST: "https://countries.trevorblades.com/graphql",
+      GQL_HOST: "https://beta.pokeapi.co/graphql/v1beta",
     },
   },
   content: {
