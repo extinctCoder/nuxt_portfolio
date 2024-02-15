@@ -16,7 +16,13 @@ export default defineNuxtConfig({
     "nuxt-headlessui",
     "nuxt-icon",
     "@nuxt/content",
+    "nuxt-graphql-client",
   ],
+  runtimeConfig: {
+    public: {
+      GQL_HOST: "https://countries.trevorblades.com/graphql",
+    },
+  },
   content: {
     highlight: {
       theme: "dracula",

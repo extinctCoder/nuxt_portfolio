@@ -1,7 +1,9 @@
 <template>
-  <NuxtImg width="1920" height="1280" src="/images/mountains_2.jpg" />
+  {{ data }}
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const data = await GqlCountries();
+</script>
 
 <style></style>
