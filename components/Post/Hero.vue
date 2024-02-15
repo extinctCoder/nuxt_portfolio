@@ -36,7 +36,7 @@
                   <p>Posted</p>
                   <strong>{{ new Date(publish_date).toDateString() }}</strong>
                 </div>
-                <div v-if="publish_date" class="inline-flex items-center gap-2">
+                <div v-if="update_date" class="inline-flex items-center gap-2">
                   <Icon name="heroicons:calendar-solid" />
                   <p>Updated</p>
                   <strong>{{ new Date(update_date).toDateString() }} </strong>
@@ -75,12 +75,15 @@ interface CardInterface {
 }
 
 const props = withDefaults(defineProps<CardInterface>(), {
-  avatar: "/avatar.jpeg",
+  // avatar: "/avatar.jpeg",
+  avatar: undefined,
   // author: "extinctCoder",
   author: undefined,
   title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-  update_date: () => new Date(),
-  publish_date: () => new Date(),
+  // update_date: () => new Date(),
+  // publish_date: () => new Date(),
+  update_date: undefined,
+  publish_date: undefined,
   cover: "karl-pawlowicz-QUHuwyNgSA0-unsplash.jpg",
   cover_description:
     "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem optio, et esse voluptatem ducimus animi.",
