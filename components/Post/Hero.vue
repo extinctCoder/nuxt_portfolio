@@ -6,9 +6,9 @@
         class="aspect-21/9 max-h-80 w-full rounded object-cover object-center opacity-45 blur"
       />
 
-      <div class="absolute right-0 top-0 p-4">
+      <div v-if="read_time" class="absolute right-0 top-0 p-4">
         <div class="badge badge-outline gap-2">
-          <Icon name="heroicons:clock-solid" />25 min
+          <Icon name="heroicons:clock-solid" />{{ read_time }}
         </div>
       </div>
       <div
@@ -46,7 +46,11 @@
           </div>
         </div>
 
-        <NuxtLink to="/" class="btn btn-outline btn-primary">
+        <NuxtLink
+          v-if="source_control"
+          :to="source_control"
+          class="btn btn-outline btn-primary"
+        >
           <Icon name="ph:git-branch-bold" />view source code</NuxtLink
         >
       </div>
@@ -66,6 +70,8 @@ interface CardInterface {
   publish_date?: Date;
   cover?: string;
   cover_description?: string;
+  read_time: string;
+  source_control: string;
 }
 
 const props = withDefaults(defineProps<CardInterface>(), {
@@ -77,6 +83,8 @@ const props = withDefaults(defineProps<CardInterface>(), {
   cover: "karl-pawlowicz-QUHuwyNgSA0-unsplash.jpg",
   cover_description:
     "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem optio, et esse voluptatem ducimus animi.",
+  read_time: undefined,
+  source_control: "https://github.com/extinctCoder",
 });
 </script>
 
