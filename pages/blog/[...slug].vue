@@ -24,8 +24,6 @@
 </template>
 
 <script lang="ts" setup>
-import type { ParsedContent } from "@nuxt/content/types";
-
 const { path } = useRoute();
 const { data: post } = await useAsyncData(path, () =>
   queryContent().where({ _path: path }).findOne(),
