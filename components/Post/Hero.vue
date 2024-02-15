@@ -9,11 +9,11 @@
       <div
         class="absolute bottom-0 flex w-full flex-row items-center gap-4 p-4"
       >
-        <div class="flex flex-1 flex-col">
+        <div class="flex flex-1 flex-col gap-2">
           <div v-if="publish_date" class="inline-flex items-center gap-2">
-            <Icon name="heroicons:calendar-solid" />
-            <p>Posted</p>
-            <strong>{{ new Date(publish_date).toDateString() }}</strong>
+            <!-- <Icon name="heroicons:user-solid" /> -->
+            <p>by</p>
+            <strong>{{ author }}</strong>
           </div>
           <div class="flex flex-1 flex-row items-center gap-4">
             <NuxtImg
@@ -56,6 +56,7 @@
 interface CardInterface {
   title?: string;
   avatar?: string;
+  author?: string;
   update_date?: Date;
   publish_date?: Date;
   cover?: string;
@@ -64,6 +65,7 @@ interface CardInterface {
 
 const props = withDefaults(defineProps<CardInterface>(), {
   avatar: "/avatar.jpeg",
+  author: "extinctCoder",
   title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
   update_date: () => new Date(),
   publish_date: () => new Date(),
