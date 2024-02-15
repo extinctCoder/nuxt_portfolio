@@ -1,9 +1,10 @@
 <template>
-  <div class="flex flex-col gap-4">
+  <div v-if="cover" class="flex flex-col gap-4">
     <div class="relative rounded">
       <NuxtImg
         :src="`/images/blog/${cover}`"
-        class="aspect-21/9 max-h-80 w-full rounded object-cover object-center opacity-45 blur"
+        class="aspect-21/9 max-h-80 w-full rounded object-cover object-center"
+        :class="{ 'opacity-45 blur': title }"
       />
 
       <div v-if="read_time" class="absolute right-0 top-0 p-4">
@@ -27,6 +28,7 @@
               class="aspect-1 max-h-16 max-w-16 flex-none rounded-lg object-cover object-center"
             />
             <div
+              v-if="title"
               class="prose flex w-full max-w-none flex-col gap-2 prose-h1:m-0 prose-p:m-0"
             >
               <h1>{{ title }}</h1>
@@ -55,7 +57,7 @@
         >
       </div>
     </div>
-    <div class="prose w-full max-w-none text-center">
+    <div v-if="cover_description" class="prose w-full max-w-none text-center">
       <span class="italic">{{ cover_description }} </span>
     </div>
   </div>
@@ -79,14 +81,15 @@ const props = withDefaults(defineProps<CardInterface>(), {
   avatar: undefined,
   // author: "extinctCoder",
   author: undefined,
-  title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+  title: undefined,
+  // title: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
   // update_date: () => new Date(),
   // publish_date: () => new Date(),
   update_date: undefined,
   publish_date: undefined,
-  cover: "karl-pawlowicz-QUHuwyNgSA0-unsplash.jpg",
-  cover_description:
-    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem optio, et esse voluptatem ducimus animi.",
+  // cover: "karl-pawlowicz-QUHuwyNgSA0-unsplash.jpg",
+  // cover_description:
+  // "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem optio, et esse voluptatem ducimus animi.",
   read_time: undefined,
   // source_control: "https://github.com/extinctCoder",
   source_control: undefined,
