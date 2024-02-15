@@ -1,5 +1,5 @@
 <template>
-  <!-- <Post>
+  <Post>
     <template #post-hero>
       <PostHero
         :title="post?.title"
@@ -14,32 +14,29 @@
       />
     </template>
     <template #post-body>
-      <ContentRenderer v-if="post" :value="post"></ContentRenderer>
+      <!-- <ContentRenderer v-if="post" :value="post"></ContentRenderer> -->
+      <ContentRendererMarkdown :value="body" v-if="body" />
     </template>
     <template #toc>
       <PostTableOfContent :children="post?.body?.toc?.links" />
     </template>
-  </Post> -->
-  <!-- <ContentRendererMarkdown :value="result" v-if="result" /> -->
-  {{ result }}
+  </Post>
+  {{ body }}
 </template>
 
 <script lang="ts" setup>
+import type { ParsedContent } from "@nuxt/content/types";
+
 const { path } = useRoute();
 const { data: post } = await useAsyncData(path, () =>
   queryContent().where({ _path: path }).findOne(),
 );
 
-// const result = ref(null);
-// const loadMarkdown = async () => {
-//   const data = await $fetch(
-//     "https://raw.githubusercontent.com/extinctCoder/markdown-cv/master/README.md",
-//   );
-//   result.value = await parseMarkdown(data);
-// };
-
-const result = remoteMarkdown();
-console.log(result);
+const { data: body } = useAsyncData(async () => {
+  return await remoteMarkdown(
+    "https://raw.githubusercontent.com/extinctCoder/markdown-cv/master/README.md",
+  );
+});
 </script>
 
 <style></style>
