@@ -1,5 +1,6 @@
 <template>
   <!-- {{ pokemon }} -->
+  this is home page
 </template>
 
 <script lang="ts" setup>
