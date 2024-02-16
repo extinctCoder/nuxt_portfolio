@@ -17,6 +17,7 @@ export default defineNuxtConfig({
     "nuxt-icon",
     "@nuxt/content",
     "nuxt-graphql-client",
+    "@nuxtjs/google-fonts",
   ],
   runtimeConfig: {
     public: {
@@ -39,5 +40,15 @@ export default defineNuxtConfig({
   },
   tailwindcss: {
     cssPath: "~/assets/tailwind.css",
+  },
+  googleFonts: {
+    display: "swap",
+    families: {
+      "Fira Sans": true,
+      Lato: true,
+      Inter: true,
+      Roboto: true,
+      "Dancing Script": true,
+    },
   },
 });
