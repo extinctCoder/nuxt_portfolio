@@ -1,5 +1,5 @@
 <template>
-  {{ pokemon }}
+  <!-- {{ pokemon }} -->
 </template>
 
 <script lang="ts" setup>

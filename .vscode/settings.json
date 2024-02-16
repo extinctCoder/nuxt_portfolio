@@ -20,6 +20,8 @@
     "esbenp",
     "Expt",
     "fabiospampinato",
+    "fiverr",
+    "flowbite",
     "gitdoc",
     "GUIDLINE",
     "headlessui",
@@ -28,6 +30,7 @@
     "iconify",
     "intellicode",
     "Knaiba",
+    "lato",
     "memchached",
     "mikestead",
     "minio",
@@ -39,6 +42,7 @@
     "patbenatar",
     "pawlowicz",
     "pflannery",
+    "roboto",
     "steoates",
     "studygiveway",
     "tailwindcss",
@@ -47,5 +51,6 @@
     "versionlens",
     "voluptatem",
     "vscodeintellicode"
-  ]
+  ],
+  "gitdoc.enabled": true
 }
