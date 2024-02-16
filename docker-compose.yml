@@ -1,0 +1,7 @@
+version: "3.9"
+
+services:
+  portfolio_server:
+    build:
+      context: .
+      dockerfile: Dockerfile
