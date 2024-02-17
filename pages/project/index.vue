@@ -17,7 +17,7 @@ definePageMeta({
 });
 const { path } = useRoute();
 const { data: posts } = await useAsyncData(path, () =>
-  queryContent("/blog").find(),
+  queryContent("/project").find(),
 );
 </script>
 

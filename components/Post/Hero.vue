@@ -1,5 +1,5 @@
 <template>
-  <div v-if="cover" class="flex flex-col gap-4">
+  <div class="flex flex-col gap-4">
     <div class="relative rounded">
       <NuxtImg
         :src="`/images/blog/${cover}`"
@@ -57,8 +57,8 @@
         </NuxtLink>
       </div>
     </div>
-    <div v-if="cover_description" class="prose w-full max-w-none text-center">
-      <span class="italic">{{ cover_description }} </span>
+    <div v-if="description" class="prose w-full max-w-none text-center">
+      <span class="italic">{{ description }} </span>
     </div>
   </div>
 </template>
@@ -71,7 +71,7 @@ interface CardInterface {
   update_date?: Date;
   publish_date?: Date;
   cover?: string;
-  cover_description?: string;
+  description?: string;
   read_time: string;
   source: string;
 }
