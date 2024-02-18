@@ -1,13 +1,13 @@
 <template>
   <NuxtLink
     :to="to"
-    class="flex cursor-pointer flex-col-reverse gap-2 overflow-hidden rounded border lg:flex-row lg:justify-between"
+    class="flex h-full cursor-pointer flex-col-reverse gap-2 rounded border lg:flex-row lg:justify-between"
   >
     <div class="flex flex-1 flex-col justify-between gap-6 p-4">
       <div class="flex flex-col gap-6">
-        <div class="prose max-w-none">
+        <div class="prose max-w-none prose-p:text-justify">
           <h3>{{ heading }}</h3>
-          <p class="w-full text-justify">{{ body_text }}</p>
+          <p>{{ body_text }}</p>
         </div>
       </div>
       <div class="flex justify-between">
@@ -47,10 +47,9 @@ interface CardInterface {
 const props = withDefaults(defineProps<CardInterface>(), {
   heading: "Lorem ipsum",
   to: "/",
-  publish_date: undefined,
-  tags: undefined,
-  // tags: () => ["Lorem", "ipsum", "dolor", "sit"],
-  image: undefined,
+  publish_date: "12/02/2022",
+  tags: () => ["Lorem", "ipsum", "dolor", "sit"],
+  image: "img_1.jpeg",
   body_text:
     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio enim optio sunt. Ipsa et blanditiis rerum adipisci. Optio eligendi porro autem voluptates, ducimus dolores minus voluptatem omnis culpa mollitia eius!",
 });

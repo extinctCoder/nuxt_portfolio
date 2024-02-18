@@ -16,18 +16,18 @@ export default defineNuxtConfig({
     "nuxt-headlessui",
     "nuxt-icon",
     "@nuxt/content",
-    "nuxt-graphql-client",
+    // "nuxt-graphql-client",
     "@nuxtjs/google-fonts",
   ],
-  runtimeConfig: {
-    public: {
-      GQL_HOST: "https://beta.pokeapi.co/graphql/v1beta",
-    },
-  },
+  // runtimeConfig: {
+  //   public: {
+  //     GQL_HOST: "https://beta.pokeapi.co/graphql/v1beta",
+  //   },
+  // },
   content: {
     highlight: {
       theme: "dracula",
-      langs: ["js", "ts", "python", "html", "css", "mermaid", "math"],
+      // langs: ["js", "ts", "python", "html", "css", "mermaid", "math"],
     },
     markdown: {
       // Object syntax can be used to override default options

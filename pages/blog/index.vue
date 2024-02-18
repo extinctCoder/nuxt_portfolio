@@ -1,4 +1,5 @@
 <template>
+  <CardSkeleton v-if="pending" />
   <Card
     :to="post._path"
     :heading="post.title"
@@ -8,16 +9,17 @@
     :tags="post.tags"
     :key="post._path"
     v-for="post in posts"
+    v-if="!pending"
   ></Card>
 </template>
 
-<script setup lang="ts">
+<script setup lang="js">
 definePageMeta({
   layout: "post-list",
 });
 const { path } = useRoute();
-const { data: posts } = await useAsyncData(path, () =>
-  queryContent("/blog").find(),
+const { data: posts, pending } = await useAsyncData(path, () =>
+  queryContent(path).find(),
 );
 </script>
 
