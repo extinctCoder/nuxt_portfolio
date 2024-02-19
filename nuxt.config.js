@@ -18,6 +18,7 @@ export default defineNuxtConfig({
     "@nuxt/content",
     // "nuxt-graphql-client",
     "@nuxtjs/google-fonts",
+    "@nuxtjs/color-mode",
   ],
   // runtimeConfig: {
   //   public: {
@@ -38,16 +39,9 @@ export default defineNuxtConfig({
         },
       },
     },
-
-    // baseURL: "/api/_content",
   },
   image: {
     inject: true,
-    // provider: "ipxStatic",
-    // format: ["webp"],
-    // ipxStatic: {
-    //   baseURL: "",
-    // },
   },
   tailwindcss: {
     cssPath: "~/assets/tailwind.css",
@@ -62,4 +56,5 @@ export default defineNuxtConfig({
       "Dancing Script": true,
     },
   },
+  colorMode: { preference: "system" },
 });
