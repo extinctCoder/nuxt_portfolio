@@ -16,14 +16,36 @@ export default defineNuxtConfig({
     "nuxt-headlessui",
     "nuxt-icon",
     "@nuxt/content",
-    // "nuxt-graphql-client",
+    "nuxt-graphql-client",
     "@nuxtjs/google-fonts",
+    "@pinia/nuxt",
   ],
   // runtimeConfig: {
   //   public: {
-  //     GQL_HOST: "https://beta.pokeapi.co/graphql/v1beta",
+  //     GQL_HOST: "https://api.github.com/graphql",
+  //     GQL_TOKEN_NAME: "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",
+  //     GQL_HEADERS: { "User-Agent": "Nuxt Portfolio App" },
   //   },
   // },
+  runtimeConfig: {
+    public: {
+      "graphql-client": {
+        clients: {
+          default: {
+            host: "https://api.github.com/graphql",
+            headers: {
+              "User-Agent": "Nuxt Portfolio App",
+            },
+            token: {
+              type: "Bearer",
+              name: "Authorization",
+              value: "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",
+            },
+          },
+        },
+      },
+    },
+  },
   content: {
     highlight: {
       theme: "dracula",

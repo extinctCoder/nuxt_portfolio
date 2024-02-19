@@ -1,12 +1,12 @@
 <template>
-  <!-- {{ pokemon }} -->
+  {{ github }}
   this is home page
 </template>
 
 <script lang="ts" setup>
-// const { data: pokemon } = await useAsyncGql({
-//   operation: "pokemon",
-// });
+const { data: github } = await useAsyncGql({
+  operation: "github",
+});
 definePageMeta({
   layout: "test-layout",
 });
