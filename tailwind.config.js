@@ -8,12 +8,9 @@ export default {
     "./plugins/**/*.{js,ts}",
     "./app.vue",
     "./error.vue",
-    "./node_modules/flowbite/**/*.{js,ts}",
   ],
   theme: {
     extend: {
-      // primary: "#FF6363",
-
       colors: {
         brand: {
           linkedin: "#0077B5",
@@ -36,27 +33,34 @@ export default {
         },
       },
       fontFamily: {
-        dancing_script: "Dancing Script",
         lato: "Lato",
+        inter: "Inter",
         roboto: "Roboto",
+        fira_sans: "Fira Sans",
+        dancing_script: "Dancing Script",
       },
 
       aspectRatio: {
         "4/3": "4 / 3",
+        "3/2": "3 / 2",
         "16/9": "16 / 9",
+        "12/5": "12 / 5",
         "21/9": "21 / 9",
+        "32/9": "32 / 9",
       },
     },
   },
   plugins: [
-    require("daisyui"),
     require("@tailwindcss/typography"),
-    // require("@tailwindcss/forms"),
+    require("@tailwindcss/forms"),
     require("@tailwindcss/aspect-ratio"),
-    // require("@tailwindcss/container-queries"),
-    // require("flowbite/plugin"),
+    require("@tailwindcss/container-queries"),
+    require("daisyui"),
   ],
   daisyui: {
-    themes: ["light", "dark", "dracula"],
+    themes: ["light", "dracula", "cupcake"],
+    darkTheme: "dracula",
+    styled: true,
+    utils: false,
   },
 };
