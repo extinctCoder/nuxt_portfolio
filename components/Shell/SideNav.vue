@@ -27,23 +27,6 @@
         </div>
       </NuxtLink>
     </div>
-    <div class="flex gap-1">
-      <div class="card image-full bg-base-100 shadow-xl">
-        <figure>
-          <img
-            src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-            alt="Shoes"
-          />
-        </figure>
-        <div class="card-body">
-          <h2 class="card-title">Shoes!</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div class="card-actions justify-end">
-            <button class="btn btn-primary">Buy Now</button>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="flex items-center justify-center gap-1">
       <NuxtLink
         v-for="nav_item in footer_nav"
@@ -54,6 +37,25 @@
       >
         <Icon :name="`jam:${nav_item.id}`" class="h-4 w-4" />
       </NuxtLink>
+    </div>
+
+    <div class="stats flex shadow">
+      <div class="stat flex flex-col">
+        <div class="stat-title">Total Page Views</div>
+        <div class="flex flex-row justify-evenly gap-2">
+          <div class="flex flex-row gap-2">
+            <Icon name="jam:github" class="stat-figure h-8 w-8 text-primary" />
+            <span class="stat-value text-primary">{{
+              bio.user?.contributionsCollection.totalCommitContributions
+            }}</span>
+          </div>
+          <div class="flex flex-row gap-2">
+            <Icon name="jam:gitlab" class="stat-figure h-8 w-8 text-primary" />
+            <span class="stat-value text-primary">0</span>
+          </div>
+        </div>
+        <div class="stat-desc">21% more than last month</div>
+      </div>
     </div>
   </div>
 </template>

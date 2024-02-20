@@ -17,5 +17,11 @@ query GHBio($login: String = "extinctCoder") {
     name
     bio
     avatarUrl
+    contributionsCollection {
+      totalCommitContributions
+    }
+    followers {
+      totalCount
+    }
   }
 }
