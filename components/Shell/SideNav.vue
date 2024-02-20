@@ -41,20 +41,23 @@
 
     <div class="stats flex shadow">
       <div class="stat flex flex-col">
-        <div class="stat-title">Total Page Views</div>
+        <div class="stat-title">Commits in major platforms</div>
         <div class="flex flex-row justify-evenly gap-2">
           <div class="flex flex-row gap-2">
             <Icon name="jam:github" class="stat-figure h-8 w-8 text-primary" />
-            <span class="stat-value text-primary">{{
-              bio.user?.contributionsCollection.totalCommitContributions
-            }}</span>
+            <span class="stat-value text-primary"
+              >{{
+                bio.user?.contributionsCollection.totalCommitContributions
+              }}
+              +</span
+            >
           </div>
           <div class="flex flex-row gap-2">
             <Icon name="jam:gitlab" class="stat-figure h-8 w-8 text-primary" />
             <span class="stat-value text-primary">0</span>
           </div>
         </div>
-        <div class="stat-desc">21% more than last month</div>
+        <div class="stat-desc">Only shown in current year.</div>
       </div>
     </div>
   </div>
