@@ -5,7 +5,7 @@
   >
     <!-- <div class="flex w-10/12 min-w-64 max-w-96 flex-col bg-base-200 lg:w-96"> -->
     <div
-      class="md:w-12/12 flex w-10/12 min-w-64 bg-base-200 md:max-w-96 lg:w-3/12"
+      class="md:w-12/12 flex h-full w-10/12 min-w-64 bg-base-200 md:max-w-96 lg:w-3/12"
     >
       <!-- sidenav bar position -->
       <ShellSideNav />

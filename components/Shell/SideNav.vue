@@ -43,7 +43,7 @@
 
     <div class="stats flex shadow">
       <div class="stat flex flex-col">
-        <div class="stat-title">Commits history</div>
+        <div class="stat-title">Commit history</div>
         <div class="flex flex-row justify-evenly gap-2">
           <div class="flex flex-row gap-2">
             <Icon name="jam:github" class="stat-figure h-8 w-8 text-primary" />
