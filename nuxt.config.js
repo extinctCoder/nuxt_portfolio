@@ -35,7 +35,7 @@ export default defineNuxtConfig({
           default: {
             host: "https://api.github.com/graphql",
             headers: {
-              "User-Agent": "Nuxt Portfolio App",
+              "User-Agent": "Nuxt Portfolio App 2",
             },
             token: {
               type: "Bearer",
