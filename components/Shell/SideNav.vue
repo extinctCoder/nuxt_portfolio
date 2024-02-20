@@ -8,10 +8,12 @@
           <NuxtImg :src="bio.user?.avatarUrl" />
         </div>
       </div>
-      <NuxtLink href="/" class="text-wrap text-center text-2xl font-bold"
+      <NuxtLink
+        href="/"
+        class="text-wrap text-center text-2xl font-bold text-secondary"
         >{{ bio.user?.name }}
       </NuxtLink>
-      <span class="text-center italic">{{ bio.user?.bio }}</span>
+      <span class="text-center italic text-accent">{{ bio.user?.bio }}</span>
     </div>
 
     <div class="flex flex-1 flex-col justify-center gap-2 overflow-y-auto p-4">
@@ -41,7 +43,7 @@
 
     <div class="stats flex shadow">
       <div class="stat flex flex-col">
-        <div class="stat-title">Commits in major platforms</div>
+        <div class="stat-title">Commits history</div>
         <div class="flex flex-row justify-evenly gap-2">
           <div class="flex flex-row gap-2">
             <Icon name="jam:github" class="stat-figure h-8 w-8 text-primary" />
@@ -73,6 +75,11 @@ const side_nav = [
   { title: "Home", to: "/", icon: "heroicons:home-solid" },
   { title: "Blog", to: "/blog", icon: "heroicons:list-bullet-solid" },
   { title: "Projects", to: "/project", icon: "heroicons:tag-solid" },
+  {
+    title: "Test PAGE",
+    to: "/test",
+    icon: "heroicons:information-circle-solid",
+  },
   // { title: "Archives", to: "/uses", icon: "heroicons:archive-box-solid" },
   // { title: "About", to: "/uses", icon: "heroicons:information-circle-solid" },
 ];
