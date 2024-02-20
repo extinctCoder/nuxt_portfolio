@@ -5,13 +5,13 @@
         <div
           class="m-2 w-32 rounded-xl ring ring-primary ring-offset-2 ring-offset-base-100"
         >
-          <NuxtImg src="https://avatars.githubusercontent.com/u/16348041" />
+          <NuxtImg :src="bio.user?.avatarUrl" />
         </div>
       </div>
       <NuxtLink href="/" class="text-wrap text-center text-2xl font-bold"
-        >Sabbir Ahmed Shourov</NuxtLink
-      >
-      <span class="text-center italic">Senior Software Engineer, YGBL</span>
+        >{{ bio.user?.name }}
+      </NuxtLink>
+      <span class="text-center italic">{{ bio.user?.bio }}</span>
     </div>
 
     <div class="flex flex-1 flex-col justify-center gap-2 overflow-y-auto p-4">
@@ -27,6 +27,23 @@
         </div>
       </NuxtLink>
     </div>
+    <div class="flex gap-1">
+      <div class="card image-full bg-base-100 shadow-xl">
+        <figure>
+          <img
+            src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+            alt="Shoes"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="flex items-center justify-center gap-1">
       <NuxtLink
         v-for="nav_item in footer_nav"
@@ -41,7 +58,12 @@
   </div>
 </template>
 
-<script lang="ts" setup>
+<script lang="js" setup>
+// TODO: js -> ts
+const { data: bio } = await useAsyncGql({
+  operation: "GHBio",
+  variables: { login: "extinctCoder" },
+});
 const side_nav = [
   { title: "Home", to: "/", icon: "heroicons:home-solid" },
   { title: "Blog", to: "/blog", icon: "heroicons:list-bullet-solid" },

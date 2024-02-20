@@ -21,26 +21,19 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
     "@nuxtjs/color-mode",
   ],
-  // runtimeConfig: {
-  //   public: {
-  //     GQL_HOST: "https://api.github.com/graphql",
-  //     GQL_TOKEN_NAME: "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",
-  //     GQL_HEADERS: { "User-Agent": "Nuxt Portfolio App" },
-  //   },
-  // },
   runtimeConfig: {
     public: {
       "graphql-client": {
         clients: {
           default: {
-            host: "https://api.github.com/graphql",
+            host: process.env.GQL_HOST,
             headers: {
-              "User-Agent": "Nuxt Portfolio App 2",
+              "User-Agent": "Nuxt Portfolio App",
             },
             token: {
               type: "Bearer",
               name: "Authorization",
-              value: "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",
+              value: process.env.GQL_API_KEY,
             },
           },
         },

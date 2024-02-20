@@ -1,24 +1,29 @@
 <template>
-  <div class="font-inter drawer lg:drawer-open" data-theme="light">
-    <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
-    <div class="drawer-content">
-      <Header />
-      <div class="container mx-auto mt-8 px-8"><slot /></div>
+  <div
+    class="flex h-screen flex-row font-lato prose-p:text-justify"
+    :data-theme="$colorMode.value"
+  >
+    <!-- <div class="flex w-10/12 min-w-64 max-w-96 flex-col bg-base-200 lg:w-96"> -->
+    <div
+      class="md:w-12/12 flex w-10/12 min-w-64 bg-base-200 md:max-w-96 lg:w-3/12"
+    >
+      <!-- sidenav bar position -->
+      <ShellSideNav />
     </div>
-    <div class="drawer-side border-r">
-      <label
-        for="my-drawer-2"
-        aria-label="close sidebar"
-        class="drawer-overlay"
-      ></label>
-      <SideNav />
+    <div class="flex w-full flex-col gap-1">
+      <!-- header position -->
+      <ShellHeader />
+      <div class="flex-1 overflow-y-auto">
+        <div class="container mx-auto px-2">
+          <slot />
+        </div>
+      </div>
+      <!-- footer position -->
+      <!-- <footer>Handcrafted with love and passion.</footer> -->
     </div>
   </div>
-  <SpeedInsights />
 </template>
 
-<script lang="ts" setup>
-import { SpeedInsights } from "@vercel/speed-insights/nuxt";
-</script>
+<script lang="ts" setup></script>
 
 <style></style>

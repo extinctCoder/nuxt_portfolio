@@ -8,7 +8,7 @@ const { data: github } = await useAsyncGql({
   operation: "github",
 });
 definePageMeta({
-  layout: "test-layout",
+  layout: "default",
 });
 </script>
 

@@ -644,7 +644,7 @@
 
 <script lang="ts" setup>
 definePageMeta({
-  layout: "layout-new",
+  layout: "default",
 });
 </script>
 

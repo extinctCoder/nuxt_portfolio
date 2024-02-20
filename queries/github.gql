@@ -1,21 +1,21 @@
-# query github {
-#   repository(owner: "Harshita-mindfire", name: "graphQL") {
-#     issues {
-#       totalCount
-#     }
-#     open: issues(states: OPEN) {
-#       totalCount
-#     }
-#     closed: issues(states: CLOSED) {
-#       totalCount
-#     }
-#   }
-# }
+query github {
+  repository(owner: "Harshita-mindfire", name: "graphQL") {
+    issues {
+      totalCount
+    }
+    open: issues(states: OPEN) {
+      totalCount
+    }
+    closed: issues(states: CLOSED) {
+      totalCount
+    }
+  }
+}
 
-# query GHBio($login: String = "extinctCoder") {
-#   user(login: $login) {
-#     name
-#     bio
-#     avatarUrl
-#   }
-# }
+query GHBio($login: String = "extinctCoder") {
+  user(login: $login) {
+    name
+    bio
+    avatarUrl
+  }
+}
