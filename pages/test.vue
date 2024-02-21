@@ -31,9 +31,14 @@
       </div>
     </div> -->
   </Dialog>
+
+  Store Value : {{ store.count }}
+  <button class="btn" @click="store.increment">inc</button>
+  <button class="btn" @click="store.decrement">dec</button>
 </template>
 
 <script setup>
 import { Dialog, DialogPanel } from "@headlessui/vue";
 const open = ref(true);
+const store = useCounterStore();
 </script>
