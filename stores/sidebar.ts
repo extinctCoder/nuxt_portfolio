@@ -44,10 +44,12 @@ export const useSidebarStore = defineStore("sidebarStore", () => {
       to: "https://www.fiverr.com/extinctcoder",
     },
   ];
+  const navOpen = ref(false);
 
   return {
     sideNav,
     footerNav,
     ghBio,
+    navOpen,
   };
 });

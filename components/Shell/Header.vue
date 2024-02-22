@@ -1,7 +1,10 @@
 <template>
   <div class="flex h-16 flex-row gap-4 bg-base-100 p-2">
-    <div class="inline-flex w-12 items-center justify-center">
-      <button class="btn btn-square btn-ghost">
+    <div class="inline-flex w-12 items-center justify-center lg:hidden">
+      <button
+        @click="sidebarStore.navOpen = true"
+        class="btn btn-square btn-ghost"
+      >
         <Icon name="heroicons:bars-3-solid" class="inline-block h-6 w-6" />
       </button>
     </div>
@@ -23,6 +26,8 @@
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const sidebarStore = useSidebarStore();
+</script>
 
 <style></style>
