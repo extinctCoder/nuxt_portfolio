@@ -5,7 +5,7 @@
       <div class="flex flex-1 flex-col gap-4 overflow-y-auto">
         <slot />
       </div>
-      <div>hello</div>
+      <div class="hidden lg:flex">hello</div>
       <!-- <div class="hidden w-72 flex-auto lg:block"> -->
       <!-- <div class="sticky top-0"> -->
 
