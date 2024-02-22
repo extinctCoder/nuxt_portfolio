@@ -1,40 +1,31 @@
 <template>
   <Post>
     <template #post-hero>
-      <PostHero
-        :title="post?.title"
-        :update_date="post?.updated_on"
-        :publish_date="post?.published_at"
-        :avatar="post?.avatar"
-        :cover="post?.cover"
-        :cover_description="post?.cover_description"
-        :author="post?.author"
-        :source="post?.source"
-        :read_time="post?.read_time"
-      />
+      <PostHero :title="post?.title" :description="post?.description" />
     </template>
     <template #post-body>
       <ContentRenderer v-if="post" :value="post"></ContentRenderer>
-      <!-- <ContentRendererMarkdown :value="body" v-if="body" /> -->
     </template>
     <template #toc>
       <PostTableOfContent :children="post?.body?.toc?.links" />
     </template>
   </Post>
-  <!-- {{ body }} -->
+  {{ post }}
 </template>
 
 <script lang="ts" setup>
 const { path } = useRoute();
-const { data: post } = await useAsyncData(path, () =>
+const { data: post_local } = await useAsyncData(path, () =>
   queryContent().where({ _path: path }).findOne(),
 );
 
-// const { data: body } = useAsyncData(async () => {
-//   return await remoteMarkdown(
-//     "https://raw.githubusercontent.com/extinctCoder/markdown-cv/master/README.md",
-//   );
-// });
+const { data: post } = useAsyncData(post_local.value?.github, () => {
+  return remoteMarkdown(
+    "https://raw.githubusercontent.com/" +
+      post_local.value?.github +
+      "/master/README.md",
+  );
+});
 </script>
 
 <style></style>

@@ -1,9 +1,0 @@
-query pokemon($limit: Int = 10) {
-  pokemon_v2_pokemon(limit: $limit) {
-    height
-    id
-    name
-    order
-    pokemon_species_id
-  }
-}

@@ -1,0 +1,64 @@
+# Issue-Count: To get the count of all the github issues(total, open and closed)
+query {
+  repository(owner: "Harshita-mindfire", name: "graphQL") {
+    issues {
+      totalCount
+    }
+    open: issues(states: OPEN) {
+      totalCount
+    }
+    closed: issues(states: CLOSED) {
+      totalCount
+    }
+  }
+}
+
+# Issue-details : Getting details of last 100 open issues.
+query {
+  repository(owner: "Harshita-mindfire", name: "graphQL") {
+    issues(last: 100, states: OPEN) {
+      edges {
+        node {
+          id
+          title
+          url
+          number
+          state
+          author {
+            url
+          }
+          labels(first: 5) {
+            edges {
+              node {
+                name
+              }
+            }
+          }
+          body
+        }
+      }
+    }
+  }
+}
+
+# Search query : Searches the last 100 open issues created between 28/08/2021 to 30/09/2021
+query {
+  search(
+    query: "repo:Harshita-mindfire/graphql is:issue is:open   created:2021-08-28..2021-09-30"
+    type: ISSUE
+    last: 100
+  ) {
+    issueCount
+    edges {
+      node {
+        ... on Issue {
+          title
+          url
+          createdAt
+          number
+          state
+        }
+      }
+    }
+  }
+}
