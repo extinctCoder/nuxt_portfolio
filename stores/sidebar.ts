@@ -10,11 +10,6 @@ export const useSidebarStore = defineStore("sidebarStore", () => {
     { title: "Home", to: "/", icon: "heroicons:home-solid" },
     { title: "Blog", to: "/blog", icon: "heroicons:list-bullet-solid" },
     { title: "Projects", to: "/project", icon: "heroicons:tag-solid" },
-    {
-      title: "Test PAGE",
-      to: "/test",
-      icon: "heroicons:information-circle-solid",
-    },
   ];
 
   const footerNav = [
