@@ -63,5 +63,5 @@
     "vscodeintellicode",
     "YGBL"
   ],
-  "gitdoc.enabled": false
+  "gitdoc.enabled": true
 }
