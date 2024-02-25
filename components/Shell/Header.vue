@@ -8,11 +8,12 @@
         <Icon name="heroicons:bars-3-solid" class="inline-block h-6 w-6" />
       </button>
     </div>
-    <div class="inline-flex flex-1">
-      <button class="btn-block btn btn-ghost w-full">block</button>
+    <div class="inline-flex flex-1 items-center">
+      <!-- <button class="btn-block btn btn-ghost w-full">block</button> -->
+      <span class="w-full">Nuxt Portfolio</span>
     </div>
     <div class="flex flex-row gap-1">
-      <div class="inline-flex w-12 items-center justify-center">
+      <!-- <div class="inline-flex w-12 items-center justify-center">
         <button class="btn btn-square btn-ghost">
           <Icon name="heroicons:bars-3-solid" class="inline-block h-6 w-6" />
         </button>
@@ -21,7 +22,7 @@
         <button class="btn btn-square btn-ghost">
           <Icon name="heroicons:bars-3-solid" class="inline-block h-6 w-6" />
         </button>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
